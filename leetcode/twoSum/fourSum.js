@@ -47,7 +47,7 @@ var fourSum1 = function(nums, target) {
             const rst = map.get(currSum) || [];
             rst.push([i, j]);
 
-            console.log(`rst是 ${rst}`);
+            // console.log(`rst是 ${rst}`);
             map.set(currSum, rst);
         }
     }
@@ -61,10 +61,10 @@ var fourSum1 = function(nums, target) {
             if (!list) {
                 continue;
             }
-            console.log(`list是 ${list}`);
+            // console.log(`list是 ${list}`);
             // 4数之和等于目标值
             for (let one of list) {
-                // 有什么用？？
+                // 
                 if (one[1] < i) {
                     results.push([ nums[one[0]], nums[one[1]], nums[i], nums[j] ]);
                 }
