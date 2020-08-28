@@ -80,3 +80,69 @@ console.log(`原数组 ${nums}`);
 const target = 0;
 console.log(fourSum1(nums, target));
 
+console.log('======================');
+
+/**
+ * 
+ * 解法2: 同3数之和，双指针法
+ * 
+ * 时间复杂度O(n^3)
+ * 空间复杂度O(1)
+ * 
+ * @param {*} nums 
+ * @param {*} target 
+ */
+function fourSum2(nums, target) {
+    let n = nums.length;
+    if (n < 4) {
+        return [];
+    }
+    nums = nums.sort((a, b) => {
+        return parseInt(a) - parseInt(b);
+    });
+    
+    let results = [];
+    for (let first = 0; first < n; first++) {
+        if (nums[first] === nums[first - 1]) {
+            continue;
+        }
+
+        for (let second = first + 1; second < n; second++) {
+            if (second > first + 1 && nums[second] == nums[second-1]) {
+                continue;
+            }
+
+            let third = second + 1;
+            let four = n - 1;
+            
+            // 双指针
+            while (third < four) {
+                const sum = nums[first] + nums[second] + nums[third] + nums[four];
+                if (sum > target) {
+                    four--; 
+                } else if (sum < target){
+                    third++;
+                } else {
+                    results.push([nums[first], nums[second], nums[third], nums[four]]);
+                    // 第3数重复，继续向后移动指针
+                    while(third < four && nums[third] === nums[third + 1]) {
+                        third++;
+                    }
+                    // 第4数重复，继续向前移动指针
+                    while(third < four && nums[four] === nums[four - 1]) {
+                        four--;
+                    }
+                    // 继续移动third,four指针
+                    third++;
+                    four--;
+                }
+            }
+        }
+    }
+    return results;
+}
+
+const nums2 = [1, 0, -1, 0, -2, 2];
+console.log(`原数组 ${nums2}`);
+const target2 = 0;
+console.log(fourSum2(nums2, target2));
