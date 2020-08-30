@@ -2,7 +2,7 @@
 const arr = [1, 2, 4, 5, 7, 10, 11, 23, 44]
 
 /**
- * 循环实现二分查找
+ * 二分查找实现方式一：循环
  * @param {*} arr 
  * @param {*} target 
  */
@@ -31,21 +31,27 @@ const binarySearch1 = (arr, target) => {
     return -1;
 }
 
-console.log(binarySearch1(arr, 5))
-console.log(binarySearch1(arr, 44))
-console.log(binarySearch1(arr, 1))
-console.log(binarySearch1(arr, 102))
-console.log('========================')
+console.log(binarySearch1(arr, 5));
+console.log(binarySearch1(arr, 44));
+console.log(binarySearch1(arr, 1));
+console.log(binarySearch1(arr, 102));
+console.log('========================');
 
 
-// 实现方式二，递归实现二分查找
+/**
+ * 二分查找实现方式二：递归
+ * @param {*} sortedArr 
+ * @param {*} target 
+ */
 const binarySearch2 = (sortedArr, target) => {
     let length = sortedArr.length;
     return bsearchInternally(sortedArr, 0, length - 1, target);
 }
 
 function bsearchInternally(arr, low, high, value) {
-    if (low > high) return -1;
+    if (low > high) { 
+        return -1;
+    }
 
     const mid = low+((high-low)>>1);
     if (arr[mid] === value) {
@@ -57,7 +63,7 @@ function bsearchInternally(arr, low, high, value) {
     }
 }
 
-console.log(binarySearch2(arr, 5))
-console.log(binarySearch2(arr, 44))
-console.log(binarySearch2(arr, 1))
-console.log(binarySearch2(arr, 102))
+console.log(binarySearch2(arr, 5));
+console.log(binarySearch2(arr, 44));
+console.log(binarySearch2(arr, 1));
+console.log(binarySearch2(arr, 102));
