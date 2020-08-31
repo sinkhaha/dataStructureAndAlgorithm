@@ -1,3 +1,5 @@
+const { first } = require("lodash");
+
 /**
  * 变形三：查找第一个大于等于给定值的元素
  * @param {*} a 
@@ -30,5 +32,5 @@ const binaryFindFistBig = (a, target) => {
 
 const arr = [1, 2, 3, 4, 4, 4, 4, 4, 6, 7, 8, 8, 9];
 
-const FisrtBig = binaryFindFistBig(arr, 5);
-console.log(`FindFisrtBig: ${FisrtBig}`);
+const firstBig = binaryFindFistBig(arr, 5);
+console.log(`查找第一个大于等于给定值的元素: indes=${firstBig} value=${arr[firstBig]}`);
