@@ -27,6 +27,5 @@ const binaryFindLastSmall = (a, target) => {
 }
 
 const arr = [1, 2, 3, 4, 4, 4, 4, 4, 6, 7, 8, 8, 9];
-
-const LastSmall = binaryFindLastSmall(arr, 4);
-console.log(`FindLastSmall: ${LastSmall}`);
+const lastSmall = binaryFindLastSmall(arr, 4);
+console.log(`查找最后一个小于等于给定值的元素: index=${lastSmall} value=${arr[lastSmall]}`);
