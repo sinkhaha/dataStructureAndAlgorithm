@@ -1,0 +1,79 @@
+
+/**
+ * 链表节点类
+ * @param {*} val 
+ */
+function ListNode(val) {
+    this.val = val;
+    this.next = null;
+}
+
+// leetcode 141题
+/**  判断单链表有环的2种方法 */
+/**
+* 快慢指针检查链表是否有环
+* 
+* 实现方式：在快指针快追上慢的，它们之间一定只差1个格子或2个格子。
+*   如果快的落后1个，那么下一次就追上了；
+*   如果快的落后2个，那么下一次就是落后1个，再下一次就能追上了
+* 
+* 时间复杂度O(n)
+* 空间复杂度O(1)
+* @param {*} head 
+*/
+function hasCycle1(head) {
+   if (head === null || head.next === null) {
+       return false
+   }
+
+   let slow = head;
+   let fast = head.next; // 指向下一个节点
+
+   while (slow !== fast) {
+       if(fast === null || fast.next === null) {
+           return false;
+       }
+       fast = fast.next.next; // 快指针走两步
+       slow = slow.next; // 慢指针走一步
+   }
+   console.log(`相遇节点的值是：${fast.val}`);
+
+   return true;
+}
+
+/**
+* 哈希表检查单链表是否有环
+* 
+* 实现方式：循环链表把每个节点存在哈希表中，边循环链表边判断是否存在存哈希表中
+*     存在则返回true
+*     不存在则把节点放入哈希表
+* 
+* 时间复杂度O(n)
+* 空间复杂度O(n)
+* @param {*} head 
+*/
+function hasCycle2(head) {
+   const map = new Map();
+
+   while (head !== null) {
+       if (map.has(head)) {
+           return true;
+       } else {
+           map.set(head);
+           head = head.next;
+       }
+   }
+   return false;
+}
+
+const node1 = new ListNode(1);
+const node2 = new ListNode(2);
+const node3 = new ListNode(3);
+const node4 = new ListNode(4);
+node1.next = node2;
+node2.next = node3;
+node3.next = node4;
+node4.next = node2;
+
+console.log('是否有环：' + hasCycle1(node1));
+console.log('是否有环：' + hasCycle2(node1));
