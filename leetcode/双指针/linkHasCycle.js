@@ -181,3 +181,32 @@ function hasCycleAndGetNode2(head) {
 
 console.log('入环节点：' + hasCycleAndGetNode2(node1).val);
 
+/**
+ * 实现思路同hasCycleAndGetNode2
+ * @param {*} head 
+ */
+function hasCycleAndGetNode3(head) {
+    let fast = head;
+    let slow = head; // 快慢指针指向同个起点
+
+    while (fast && fast.next) {
+        fast = fast.next.next;
+        slow = slow.next;
+
+        if(fast == slow){
+            console.log(`相遇节点值是：${slow.val}`);
+            // 其中一个指针指向不动，另一个指针指向头
+            slow = head;
+            while (fast !== slow) {
+                // 快慢指针都同时只移动一步
+                slow = slow.next;
+                fast = fast.next;
+            }
+            // 此时再次相遇，指向的那个节点就是入环节点
+            return slow; 
+        }
+    }
+
+    return -1;
+}
+console.log('入环节点：' + hasCycleAndGetNode3(node1).val);
