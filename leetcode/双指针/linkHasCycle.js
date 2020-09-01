@@ -115,3 +115,24 @@ function hasCycleAndGetCycleLength(head) {
 }
 
 console.log('环的长度是：' + hasCycleAndGetCycleLength(node1));
+
+/**  变形问题2: 判断单链表有环,且求出入环的的节点 */
+/**
+ * 和用哈希表判断链表是否有环一样，入环节点即相遇节点
+ * @param {*} head 
+ */
+function hasCycleAndGetNode1(head) {
+    const map = new Map();
+
+    while (head !== null) {
+        if (map.has(head)) {
+            return head; // 有环，此时的节点为入环节点
+        } else {
+            map.set(head);
+            head = head.next;
+        }
+    }
+    return -1;
+}
+
+console.log('入环节点值是：' + hasCycleAndGetNode1(node1).val);
