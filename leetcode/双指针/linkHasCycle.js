@@ -77,3 +77,41 @@ node4.next = node2;
 
 console.log('是否有环：' + hasCycle1(node1));
 console.log('是否有环：' + hasCycle2(node1));
+
+
+/**  变形问题1: 判断单链表有环,且求环的长度 */
+
+/**
+ * 变形问题1: 判断单链表有环,且求环的长度
+ * 
+ * 实现：
+ * 快慢指针法中，两个指针的速度差为1；
+ * 当两个指针在环的某个节点相遇时，快指针走了慢指针的2倍长度，
+ * 此时慢指针走了n步，快指针走了2n步，而快指针比慢指针多走的n步即环的长度
+ * 
+ * 时间复杂度O(n)
+ * 空间复杂度O(1)
+ * @param {*} head 
+ */
+function hasCycleAndGetCycleLength(head) {
+    if (head === null || head.next === null) {
+        return -1;
+    }
+
+    let slow = head;
+    let fast = head.next; // 指向下一个节点，快慢指针相差1，
+
+    let count = 1; // 因为快慢指针相差1，所以从1开始
+
+    while (slow !== fast) {
+        if(fast === null || fast.next === null) {
+            return -1;
+        }
+        fast = fast.next.next; // 快指针走两步
+        slow = slow.next; // 慢指针走一步
+        count += 1;
+    }
+    return count;
+}
+
+console.log('环的长度是：' + hasCycleAndGetCycleLength(node1));
