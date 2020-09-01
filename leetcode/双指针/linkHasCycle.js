@@ -136,3 +136,48 @@ function hasCycleAndGetNode1(head) {
 }
 
 console.log('入环节点值是：' + hasCycleAndGetNode1(node1).val);
+
+/**
+ * 使用快慢指针找出环的入环节点
+ * 
+ * 通过推导可以得出公式： 
+ *    环外链表的长度 = 快慢指针第一次相遇点 + n-1次环的长度 (前提条件是快慢指针必须是在同个起点开始走)
+ * 
+ * 实现思路：当快慢指针第一次相遇时(此时快慢指针必须是在同个起点开始走)，只需要将其中一个指针移动到链表头部，
+ * 另一个指针保持在第一次相遇位置，两个指针同时出发，且行进速度为一个节点，
+ * 再次相遇点则为环的入口
+ * 
+ * @param {*} head 
+ */
+function hasCycleAndGetNode2(head) {
+    if (head === null || head.next === null) {
+        return -1;
+    }
+
+    let slow = head;
+    let fast = head.next; // 指向下一个节点，注意这里快慢指针的起始点相差了1，和hasCycleAndGetNode3的区别
+
+    while (slow !== fast) {
+        if(fast === null || fast.next === null) {
+            return -1;
+        }
+        fast = fast.next.next; // 快指针走两步
+        slow = slow.next; // 慢指针走一步
+    }
+
+    // 此时快慢指针相遇，有环，使得其中一个指针指向头，另一个指针不变
+    // 因为fast和slow的起始点相差了1，所以slow指向头时，需要把fast指向下一个元素，表示同时前进了一步
+    slow = head;
+    fast = fast.next; // TODO: 和hasCycleAndGetNode3的区别
+
+    while (fast !== slow) {
+        // 快慢指针都同时只移动一步
+        slow = slow.next;
+        fast = fast.next;
+    }
+    // 此时再次相遇，指向的那个节点就是入环节点
+    return slow; 
+}
+
+console.log('入环节点：' + hasCycleAndGetNode2(node1).val);
+
