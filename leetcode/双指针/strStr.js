@@ -8,8 +8,10 @@
  * 输入: txt = "hello", pat = "ll"
  * 输出: 2
  * 
- * 暴力解法：
- * 时间复杂度 O(MN)，空间复杂度O(1)
+ * 暴力解法一：
+ * 时间复杂度 O(MN)
+ * 空间复杂度O(1)
+ * 
  * @param {string} txt
  * @param {string} pat
  * @return {number}
@@ -21,10 +23,12 @@ var strStr1 = function(txt, pat) {
     for (let i = 0; i < N - M; i++) {
         let j;
         for (j = 0; j < M; j++) {
-            if (txt[i + j] !== pat[j]) {
+            // 模式串有一位不等于文本串的值，则跳过
+            if (pat[j] !== txt[i + j] ) {
                 break;
             }
         }
+        // 当模式串遍历完了，即说明pat前面都位全都匹配了
         if (j === M) {
             return i;
         }
