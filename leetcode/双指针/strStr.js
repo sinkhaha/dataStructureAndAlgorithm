@@ -37,6 +37,11 @@ var strStr1 = function(txt, pat) {
     return -1;
 };
 
-const haystack = 'hello';
-const needle = 'll';
-console.log(strStr1(haystack, needle)); // 2
+const txt = 'hello';
+const pat = 'll';
+console.log(strStr1(txt, pat)); // 2
+
+// kmp
+var strStr2 = function(txt, pat) {
+    
+};
