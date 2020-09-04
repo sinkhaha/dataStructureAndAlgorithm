@@ -89,7 +89,7 @@ var minWindow = function(source, target) {
         }
     }
 
-    // console.log(`start=${start} len=${len}`);
+    console.log(`start=${start} len=${len}`);
 
     return len === Number.MAX_VALUE 
         ? null
@@ -98,19 +98,19 @@ var minWindow = function(source, target) {
 
 const source = 'ADOBECODEBANC';
 const target = 'ABC';
-console.log(minWindow(source, target));
+console.log(minWindow(source, target)); // BANC
 console.log('=============================');
 
 const source1 = 'a';
 const target1 = 'aa';
-console.log(minWindow(source1, target1));
+console.log(minWindow(source1, target1)); // null
 console.log('=============================');
 
 const source2 = 'aa';
 const target2 = 'aa';
-console.log(minWindow(source2, target2));
+console.log(minWindow(source2, target2)); // aa
 console.log('=============================');
 
 const source3 = 'bbaa';
 const target3 = 'aba';
-console.log(minWindow(source3, target3));
+console.log(minWindow(source3, target3)); // baa
