@@ -27,13 +27,16 @@ var minWindow = function(source, target) {
     
     while (right < source.length) {
         let rightLetter = source[right];
-
+                
         // 进行窗口的数据更新，当前字符是需要的则加入窗口
         if (needs.has(rightLetter)) {
-            const count = window.get(rightLetter);
-            if (count) {
+            const count = window.get(rightLetter); // key不存在返回undefined
+            if (count === undefined) {
+                window.set(rightLetter, 1);
+            } else {
                 window.set(rightLetter, count + 1);
             }
+
             // 如果相等则有效计数+1，排除掉窗口中值大于1的，即有重复的字符
             if (needs.get(rightLetter) === window.get(rightLetter)) {
                 isValidCount++;
@@ -57,8 +60,9 @@ var minWindow = function(source, target) {
                 if (window.get(l) === needs.get(l)) {
                     isValidCount--;
                 }
+                
                 const curWinValue = window.get(l);
-                if (curWinValue) {
+                if (curWinValue !== undefined) {
                     window.set(l, curWinValue - 1);
                 }
             }
@@ -67,6 +71,8 @@ var minWindow = function(source, target) {
             left++;
         }
     }
+
+    console.log(`start=${start} len=${len}`);
 
     return len === Number.MAX_VALUE 
         ? ''
