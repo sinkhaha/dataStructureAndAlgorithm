@@ -64,9 +64,9 @@ var checkInclusion = function(source, target) {
 
         right++; // 右移动窗口
 
-        // 3.区别(1)：左移动窗口，当前左右指针的长度>=要找的目标字符串长度
+        // 3.区别(1)：左移动窗口，当前左右指针的长度>=要找的目标字符串长度 即可向右滑动窗口
         while (right - left >= target.length) {
-            // 区别(2)
+            // 区别(2) 当前窗口的个数符合需要查找的个数了，即可返回true
             if (isValidCount === needs.size) {
                 return true;
             }
