@@ -1,6 +1,6 @@
 /**
  * leetcode 76 最小覆盖子串
- * middle
+ * Medium
  * 
  * 时间复杂度O(N) N为source度长度
  * 空间复杂度O(M) M为target度长度

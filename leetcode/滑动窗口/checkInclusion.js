@@ -1,6 +1,6 @@
 /**
  * leetcode 567 字符串的排列
- * middle
+ * Medium
  * 
  * 输入: s1 = "ab" s2 = "eidbaooo"
  * 输出: True
