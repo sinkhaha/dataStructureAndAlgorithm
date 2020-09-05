@@ -1,16 +1,30 @@
 /**
+ * leetcode 438 找到字符串中所有字母异位词
+ * middle 
+ * 
+ * 输入: source: "abab"  target: "ab"
+ * 输出:[0, 1, 2]
+ * 
+ * 解释:
+ * 起始索引等于 0 的子串是 "ab", 它是 "ab" 的字母异位词。
+ * 起始索引等于 1 的子串是 "ba", 它是 "ab" 的字母异位词。
+ * 起始索引等于 2 的子串是 "ab", 它是 "ab" 的字母异位词。
+ *
+ *
+ * 解法类似567题的 checkInclusion
+ * 
+ * 时间复杂度O(N) N为source度长度
+ * 空间复杂度O(M) M为target度长度
+ * 
  * @param {string} s
  * @param {string} p
  * @return {number[]}
  */
 var findAnagrams = function(source, target) {
-    const results = [];
+    const results = []; // 结果数组
     if (source.length < target.length) {
         return results;
     }
-    // if (source.includes(target)) {
-    //     return true;
-    // }
 
     // key是要匹配的字符，value值是1，即出现的次数
     const needs = new Map();

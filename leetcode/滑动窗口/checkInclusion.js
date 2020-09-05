@@ -1,11 +1,12 @@
 /**
  * leetcode 567 字符串的排列
+ * middle
  * 
  * 输入: s1 = "ab" s2 = "eidbaooo"
  * 输出: True
  * 解释: s2 包含 s1 的排列之一 ("ba")
  * 
- * 解法如minWindow.js的leetcode 76题
+ * 解法如leetcode 76题的minWindow
  * 区别点在于
  * （1）左指针在什么时候要移动
  * （2）什么时候返回true
