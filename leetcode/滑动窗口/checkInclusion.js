@@ -10,6 +10,9 @@
  * （1）左指针在什么时候要移动
  * （2）什么时候返回true
  *
+ * 时间复杂度O(N) N为source度长度
+ * 空间复杂度O(M) M为target度长度
+ * 
  * @param {string} source 如eidbaooo
  * @param {string} target 如ab, 注意可能包含重复字符
  * @return {boolean}
