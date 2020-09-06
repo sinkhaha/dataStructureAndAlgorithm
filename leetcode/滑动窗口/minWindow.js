@@ -5,6 +5,16 @@
  * 时间复杂度O(N) N为source度长度
  * 空间复杂度O(M) M为target度长度
  * 
+ * 滑动窗口需要思考以下四个问题：
+ * 1、当移动right扩大窗口，即加入字符时，要更新什么数据
+ * 
+ * 2、窗口在什么条件时应该暂停扩大，开始移动left缩小窗口
+ * 
+ * 3、当移动left缩小窗口，即移出字符时，需要更新什么数据
+ *
+ * 4、我们要的结果应该在扩大窗口时还是缩小窗口时进行更新
+ * 滑动窗口可参考 https://mp.weixin.qq.com/s/ioKXTMZufDECBUwRRp3zaA
+ * 
  * @param {string} s
  * @param {string} t
  * @return {string}
