@@ -28,7 +28,9 @@
  * 3、当移动left缩小窗口，即移出字符时，需要更新什么数据
  *
  * 4、我们要的结果应该在扩大窗口时还是缩小窗口时进行更新
- * 
+ * 如果一个字符进入窗口，应该增加window计数器；如果一个字符将移出窗口的时候，
+ * 应该减少window计数器；当isValidCount满足need时应该收缩窗口；
+ * 应该在收缩窗口的时候更新最终结果。
  * 
  * 滑动窗口可参考 https://mp.weixin.qq.com/s/ioKXTMZufDECBUwRRp3zaA
  * 
@@ -44,6 +46,7 @@ var minWindow = function(source, target) {
         return target;
     }
 
+    // window和need两个哈希表，记录窗口中的字符和需要凑齐的字符
     // key是要匹配的字符，value值是1，即出现的次数
     const needs = new Map();
     for (let t of target) {
@@ -57,7 +60,7 @@ var minWindow = function(source, target) {
    
     console.log(needs);
 
-    // 滑动窗口，key是出现在target的字符，value是出现的次数
+    // 存滑动窗口出现的字符，key是出现在target的字符，value是出现的次数
     const window = new Map();
 
     let isValidCount = 0; // 存放滑动窗口中的key的个数满足needs条件的字符个数
