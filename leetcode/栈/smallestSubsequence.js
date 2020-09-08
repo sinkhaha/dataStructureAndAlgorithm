@@ -1,5 +1,8 @@
 /**
- * 解法同316题
+ * leetcode 1081 不同字符的最小子序列
+ * 
+ * 解法同316题 removeDuplicateLetters
+ * 
  * @param {string} text
  * @return {string}
  */
