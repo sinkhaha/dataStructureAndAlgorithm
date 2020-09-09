@@ -42,3 +42,42 @@ var subarraySum = function(nums, k) {
     return count;
 };
 
+const nums = [1, 1, 1];
+const k = 2;
+console.log(subarraySum(nums, k)); // 2
+
+/**
+ * 解法2:
+ * @param {*} nums 
+ * @param {*} k 
+ */
+var subarraySum2 = function(nums, k) {
+    let n = nums.length;
+    let count = 0;
+    // map存 {前缀和j: 该前缀和出现的次数}
+    let preSumObj = {};
+    preSumObj[0] = 1;
+
+    // 前缀和
+    let sum_j = 0;
+    for (let j = 0; j < n; j++) {
+        sum_j += nums[j];
+
+        // 要找的前缀和 nums[0...i]
+        const sum_i = sum_j - k;
+        // 如果前面有这个前缀和，直接更新结果（出现的次数，即有多少个i满足条件）
+        if (preSumObj[sum_i] !== undefined) {
+            count += preSumObj[sum_i];
+        }
+
+        // 记录 前缀和nums[0...j] 的 出现次数
+        preSumObj[sum_j] = preSumObj[sum_j] !== undefined 
+            ? preSumObj[sum_j] + 1
+            : 1;
+    }
+    
+    console.log(preSumObj);
+    return count;
+};
+
+console.log(subarraySum2(nums, k)); // 2
