@@ -1,3 +1,5 @@
+const { SSL_OP_NO_SSLv2 } = require("constants");
+
 /**
  * 差分值算法类
  * 
@@ -79,7 +81,8 @@ console.log(difference.getDiff()); // [ 8, -1, 4, -5, -5 ]
 /**
  * leetcode 1109 航班预订统计
  * 
- * 题解有其他解法
+ * 时间复杂度O(n)
+ * 空间复杂度O(n)
  * 
  * 示例:
  * 输入：bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5
@@ -92,7 +95,9 @@ var corpFlightBookings1 = function(bookings, n) {
     // nums实例化n为元素且初始化为全 0，不能用 new Array(n)，不然是undefined
     const nums = Array(n).fill(0);
     const difference = new Difference(nums);
-   
+
+    console.log(`difference=${JSON.stringify(difference)}`);
+
     for (let booking of bookings) { // 如[1, 2, 20]
         // 注意转成数组索引要减一
         let i = booking[0] - 1;
@@ -108,4 +113,35 @@ var corpFlightBookings1 = function(bookings, n) {
 
 const bookings = [[1,2,10], [2,3,20], [2,5,25]];
 const n = 5;
-console.log('结果是：', corpFlightBookings1(bookings, n)); // [ 10, 55, 45, 25, 25 ]
+console.log('解法一结果是：', corpFlightBookings1(bookings, n)); // [ 10, 55, 45, 25, 25 ]
+
+/**=================================================================== */
+
+/**
+ * 解法二：
+ * 参考题解，其实解法和解法一思路一样
+ * @param {*} bookings 
+ * @param {*} n 
+ */
+var corpFlightBookings2 = function(bookings, n) {
+    // 类似差分数组
+    const counters = Array(n).fill(0);
+
+    // 利用差分值数组给原数组闭区间nums[i, j]增加 val值
+    for (let booking of bookings) {
+        counters[booking[0] - 1] += booking[2];
+        if (booking[1] < n) {
+            counters[booking[1]] -= booking[2];
+        }
+    }
+
+    // 通过差分值数组反推得到原数组
+    for (let i = 1; i < n; i++) {
+        counters[i] += counters[i - 1];
+    }
+    return counters;
+}
+
+const bookings2 = [[1,2,10], [2,3,20], [2,5,25]];
+const n2 = 5;
+console.log('解法二结果是：', corpFlightBookings2(bookings2, n2)); // [ 10, 55, 45, 25, 25 ]
