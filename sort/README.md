@@ -1,5 +1,5 @@
 ## 排序算法
-* 冒泡排序
+* [冒泡排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/sort/bubbleSort.js)
 * 直接插入排序
 * 桶排序
 * 计数排序
