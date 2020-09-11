@@ -49,3 +49,25 @@ function fib2(n) {
     sumMap[n] = rst;
     return rst;
 }
+/**
+ * 解法三：动态规划(自底向上)
+ * 
+ * 解法二备忘录存储技巧的升级，使用dp数组来单独存储这个备忘录
+ * 
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(n)
+ * 
+ * @param {*} n 
+ */
+function fib3(n) {
+    if (n === 0) {
+        return 0;
+    }
+    const dp = new Array(n);
+    dp[1] = 1;
+    dp[2] = 1;
+    for (let i = 3; i <= n; i++) {
+       dp[i] = dp[i -1] + dp[i-2];
+    }
+    return dp[n];
+}
