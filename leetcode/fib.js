@@ -1,5 +1,5 @@
 /**
- * 斐波那契数列的4种解法和对比
+ * leetcode 509 斐波那契数列的4种解法和对比
  */
 /**
  * 解法一：暴力递归(自顶向下)
@@ -49,6 +49,7 @@ function fib2(n) {
     sumMap[n] = rst;
     return rst;
 }
+
 /**
  * 解法三：动态规划(自底向上)
  * 
@@ -70,4 +71,32 @@ function fib3(n) {
        dp[i] = dp[i -1] + dp[i-2];
     }
     return dp[n];
+}
+
+/**
+ * 解法四：动态规划(自底向上)
+ * 
+ * 解法三的优化，利用(状态压缩技巧)，其实状态只跟前一个数和当前数有关，
+ * 不需要像第三种解法那样用一个数组进行存储，只需用两个值存储即可
+ * 
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(n)
+ * 
+ * @param {*} n 
+ */
+function fib4(n) {
+    if (n === 0) {
+        return 0;
+    }
+    if (n === 1 || n === 2) {
+        return 1;
+    }
+    let pre = 1;
+    let cur = 1;
+    for (let i = 3; i <= n; i++) {
+        const sum = pre + cur;
+        pre = cur;
+        cur = sum;
+    }
+    return cur;
 }
