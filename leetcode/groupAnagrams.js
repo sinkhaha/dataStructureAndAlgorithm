@@ -51,3 +51,30 @@ var groupAnagrams1 = function(strs) {
 
 const strs = ['eat','tea','tan','ate','nat','bat'];
 console.log(groupAnagrams1(strs));
+
+var groupAnagrams2 = function(strs) {
+    if (strs.length === 0) {
+        return [];
+    }
+    // key是有序的字符串，value是所有的异位词
+    let strCountMap = {};
+
+    for (let str of strs) {
+        let countArr = Array(26).fill(0);
+        for (let i = 0; i < str.length; i++) {
+           const index = str.charCodeAt(i) - 97;
+           countArr[index]++;
+        }
+        const key = countArr.join('#');
+        const value = strCountMap[key];
+        if (value === undefined) {
+            strCountMap[key] = [str];
+        } else {
+            value.push(str);
+            strCountMap[key] = value;
+        }
+    }
+    console.log('strCountMap是', strCountMap);
+    return Object.values(strCountMap);
+};
+console.log(groupAnagrams2(strs));
