@@ -2,7 +2,7 @@
  * leetcode 322 零钱兑换问题
  */
 /**
- * 解法一：暴力解法
+ * 解法一：暴力递归解法
  * 
  * @param {*} coins
  * @param {*} amount
@@ -80,8 +80,8 @@ function coinChange2(coins, amount) {
 /**
  * 解法三：动态规划，自底向上
  * 
- * 时间复杂度O(n)
- * 空间复杂度O()
+ * 时间复杂度O(n*m),n为coins的长度,m为amount
+ * 空间复杂度O(1)
  * 
  * @param {*} coins 
  * @param {*} amount 
