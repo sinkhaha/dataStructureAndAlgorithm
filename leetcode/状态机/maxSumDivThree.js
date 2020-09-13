@@ -39,6 +39,7 @@ console.log(maxSumDivThree1(nums)); // 12
 
 
 /**
+ * 解法二
  * 有限状态机
  * 
  * 解题思路：
@@ -88,3 +89,24 @@ var maxSumDivThree2 = function(nums) {
 };
 
 console.log(maxSumDivThree2(nums)); // 12
+
+/**
+ * 解法二的代码整洁版
+ * @param {*} nums 
+ */
+var maxSumDivThree3 = function(nums) {
+    let state = [0, Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER];
+
+    for (let num of nums) {
+        const temp = [0, 0, 0];
+        for (let i = 0; i < 3; i++) {
+            const index = (i + num) % 3;
+            temp[index] = Math.max(state[index], state[i] + num);
+        }
+        state = temp;
+    }
+
+    return state[0];
+}
+console.log(maxSumDivThree3(nums)); // 12
+
