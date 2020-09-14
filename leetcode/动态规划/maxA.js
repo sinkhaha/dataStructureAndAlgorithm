@@ -76,6 +76,8 @@ console.log(maxA1(n2)); // 9
  * 
  * 解法二：解法一的优化（添加备忘录，消除重叠子问题）
  * 
+ * 效率低，复杂度起码有 O(N^3) 
+ * 
  * @param {*} n 
  */
 function maxA2(n) {
@@ -141,7 +143,7 @@ function maxA3(n) {
     if (n <= 1) {
         return n;
     }
-    
+
     const dp = new Array(n + 1);
     // 第0次有0个a
     dp[0] = 0;
