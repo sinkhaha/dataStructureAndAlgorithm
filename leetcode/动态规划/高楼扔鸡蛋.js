@@ -40,6 +40,8 @@
  * // max(碎，没碎) + 1，加1是因为在第i层楼扔了一次
  * max(dp(K - 1, i - 1), dp(K, N - i)) + 1
  * 
+ * leetcode会超出时间限制
+ * 
  */
 function superEggDrop1(K, N) {
     // 定义dp函数
@@ -77,6 +79,18 @@ console.log(superEggDrop1(K3, N3)); // 4
 
 /**
  * 解法一的优化：增加备忘录，消除重叠子问题
+ * 
+ * leetcode会超出时间限制
+ * 
+ * 动态规划算法的时间复杂度是: ⼦问题个数 × 函数本⾝的复杂度
+ * 
+ * 函数本⾝的复杂度是忽略递归部分的复杂度，
+ * dp函数有⼀个for循环，所以函数本⾝的复杂度是 O(N)
+ * 
+ * ⼦问题个数就是不同状态组合的总数，是两个状态的乘积，是 O(KN)
+ * 
+ * 时间复杂度 O(K*N^2)
+ * 空间复杂度 O(KN)
  * 
  * @param {*} K 
  * @param {*} N 
@@ -119,3 +133,8 @@ function superEggDrop2(K, N) {
 console.log(superEggDrop2(K1, N1));
 console.log(superEggDrop2(K2, N2));
 console.log(superEggDrop2(K3, N3));
+
+
+function superEggDrop3(K, N) {
+
+}
