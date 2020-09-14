@@ -27,6 +27,8 @@
  * 基本思路：一个⼆维的 dp 数组或者带有两个状态参数的 dp 函数来表⽰状态转移；
  * 再加⼀个 for 循环来遍历所有选择，择最优的选择更新状态
  * 
+ * dp(K, N):当前状态为 k 个鸡蛋，⾯对 n 层楼, 返回这个状态下最少的扔鸡蛋次数
+ * 
  * 2. base case:
  * 当楼层数 N 等于 0 时，不需要扔鸡蛋 if(N == 0) { return 0 }
  * 当鸡蛋数 K 为 1 时，只能线性扫描所有楼层 if(K == 1) { return N } 
@@ -39,6 +41,9 @@
  * 因为要求的是最坏情况下扔鸡蛋的次数，所以鸡蛋在第i层楼碎没碎，取结果更⼤的情况：
  * // max(碎，没碎) + 1，加1是因为在第i层楼扔了一次
  * max(dp(K - 1, i - 1), dp(K, N - i)) + 1
+ * 
+ * 状态转移方程:
+ * dp(K, N) = min{max(dp(K - 1, i - 1), dp(K, N - i)) + 1}
  * 
  * leetcode会超出时间限制
  * 
@@ -118,6 +123,7 @@ function superEggDrop2(K, N) {
 
         // 穷举所有选择,i可以取到N值
         for (let i = 1; i <= N; i++) {
+            // 状态转移方程
             result = Math.min(result, Math.max(
                 dp(K - 1, i - 1),
                 dp(K, N - i)
@@ -134,7 +140,82 @@ console.log(superEggDrop2(K1, N1));
 console.log(superEggDrop2(K2, N2));
 console.log(superEggDrop2(K3, N3));
 
-
+/**
+ * 解法三：利用二分搜索
+ * 
+ * 根据解法二的状态转移方程
+ * dp(K, N) = min{max(dp(K - 1, i - 1), dp(K, N - i)) + 1}
+ *
+ * 1. 根据 dp(K, N) 数组的定义（有 K 个鸡蛋⾯对 N 层楼，最少需要扔⼏次），
+ * 当 K 固定时，这个函数随着 N 的增加⼀定是单调递增的，即楼层增加测试次数⼀定要增加
+ * 
+ * 注意 dp(K - 1, i - 1) 和 dp(K, N - i) 这两个函数，
+ * 其中 i 是从 1 到 N 单增的，如果我们固定 K 和 N ，
+ * 把这两个函数看做关于 i 的函数，前者随着 i 的增加应该也是单调递增的，
+ * ⽽后者随着 i 的增加应该 是单调递减的。
+ * 
+ * 这时候求⼆者的较⼤值，再求这些最⼤值之中的最⼩值，其实就是求这两条直线交点，也就是折线的最低点。
+ * 
+ * 时间复杂度是 O(K*N*logN)
+ * 空间复杂度 O(KN)
+ * 
+ * @param {*} K 
+ * @param {*} N 
+ */
 function superEggDrop3(K, N) {
+    // 备忘录
+    const map = {};
+
+    // 定义dp函数
+    this.dp = function(K, N) {
+        // base case
+        if (N === 0) {
+            return 0;
+        }
+        if (K === 1) {
+            return N;
+        }
+
+        const key = `${N}_${K}`
+        if (map[key] !== undefined) {
+            return map[key];
+        }
+
+        let result = Number.MAX_SAFE_INTEGER;
+        let low = 1;
+        let high = 1;
+        while (low <= high) {
+            let mid = Math.floor(low + (high-low)/2);
+            let broken = dp(K - 1, mid - 1); // 碎
+            let unBroken = dp(K, N - mid); // 没碎
+            
+            if (broken > unBroken) {
+                high = mid - 1;
+                result = Math.min(result, broken + 1);
+            } else {
+                low = mid + 1;
+                result = Math.min(result, unBroken + 1);
+            }
+        }
+
+        map[key] = result;
+        return result;
+    }
+
+    return this.dp(K, N);
+}
+
+console.log(superEggDrop3(K1, N1));
+console.log(superEggDrop3(K2, N2));
+console.log(superEggDrop3(K3, N3));
+
+/**
+ * 解法四：动态规划(最优解)
+ * 
+ * 
+ * @param {*} K 
+ * @param {*} N 
+ */
+function superEggDrop4(K, N) {
 
 }
