@@ -45,6 +45,10 @@
  * (3)ctrl+a ctrl+c时(全选和复制必然是联合使用的)，dp(n-2, a_num, a_num)
  */
 function maxA1(n) {
+    if (n <= 1) {
+        return n;
+    }
+
     // 对于(n, a_num, copy)，屏幕上最多有dp(n, a_num, copy)个a
     this.dp = function (n, a_num, copy) {
         if (n <= 0) {
@@ -75,6 +79,9 @@ console.log(maxA1(n2)); // 9
  * @param {*} n 
  */
 function maxA2(n) {
+    if (n <= 1) {
+        return n;
+    }
     // key为状态a-n_num-copy，value为该状态对应的最多a
     const map = {};
     this.dp = function (n, a_num, copy) {
@@ -131,6 +138,10 @@ console.log(maxA2(n2));
  * @param {*} n 
  */
 function maxA3(n) {
+    if (n <= 1) {
+        return n;
+    }
+    
     const dp = new Array(n + 1);
     // 第0次有0个a
     dp[0] = 0;
