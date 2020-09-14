@@ -45,6 +45,7 @@
  * (3)ctrl+a ctrl+c时(全选和复制必然是联合使用的)，dp(n-2, a_num, a_num)
  */
 function maxA1(n) {
+    // 对于(n, a_num, copy)，屏幕上最多有dp(n, a_num, copy)个a
     this.dp = function (n, a_num, copy) {
         if (n <= 0) {
             return a_num;
@@ -58,7 +59,7 @@ function maxA1(n) {
         }
     }
 
-    // 初始化时，剩余数为n，a的个数为0，剪切板的个数为0
+    // 初始化时，剩余数最多为n，a的个数为0，剪切板的个数为0
     return this.dp(n, 0, 0);
 }
 
@@ -67,9 +68,15 @@ const n2 = 7;
 console.log(maxA1(n1)); // 3
 console.log(maxA1(n2)); // 9
 
-// 解法一的优化，备忘录
+/**
+ * 
+ * 解法二：解法一的优化（添加备忘录，消除重叠子问题）
+ * 
+ * @param {*} n 
+ */
 function maxA2(n) {
-    const map = {}; // key为a-n_num-copy
+    // key为状态a-n_num-copy，value为该状态对应的最多a
+    const map = {};
     this.dp = function (n, a_num, copy) {
         if (n <= 0) {
             return a_num;
@@ -92,8 +99,8 @@ function maxA2(n) {
     return this.dp(n, 0, 0);
 }
 
-console.log(maxA2(n1)); // 3
-console.log(maxA2(n2)); // 9
+console.log(maxA2(n1));
+console.log(maxA2(n2));
 
 /**
  * 只定义一个「状态」，也就是剩余的敲击次数n
