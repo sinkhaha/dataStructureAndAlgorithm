@@ -73,6 +73,8 @@ function superEggDrop1(K, N) {
     return this.dp(K, N);
 }
 
+console.log('==========superEggDrop1===========');
+
 const K1 = 1,N1 = 2;
 console.log(superEggDrop1(K1, N1)); // 2
 
@@ -136,6 +138,7 @@ function superEggDrop2(K, N) {
     return this.dp(K, N);
 }
 
+console.log('==========superEggDrop2===========');
 console.log(superEggDrop2(K1, N1));
 console.log(superEggDrop2(K2, N2));
 console.log(superEggDrop2(K3, N3));
@@ -205,17 +208,70 @@ function superEggDrop3(K, N) {
     return this.dp(K, N);
 }
 
+console.log('==========superEggDrop3===========');
 console.log(superEggDrop3(K1, N1));
 console.log(superEggDrop3(K2, N2));
 console.log(superEggDrop3(K3, N3));
 
 /**
  * 解法四：动态规划(最优解)
+ * 跟解法一的区别：重新定义状态转移
  * 
+ * 定义：
+ * dp(K, N)改成用dp数组表⽰：dp[k][n] = m 
+ * 当前状态为 k 个鸡蛋，⾯对 n 层楼这个状态下最少的扔鸡蛋次数为 m
+ * 
+ * 按照定义，确定当前的鸡蛋个数和⾯对的楼层数，就知道最⼩扔鸡蛋次数
+ * 最终的答案就是 dp(K, N) 的结果
+ * 
+ * 现在改进的做法：
+ * 稍微修改 dp 数组的定义，确定当前的鸡蛋个数和最多允许的扔鸡蛋次数，
+ * 就知道能够确定 F 的最⾼楼层数。
+ * 具体来说是这个意思：
+ * dp[k][m] = n
+ * 当前有 k 个鸡蛋，可以尝试扔 m 次鸡蛋 
+ * 这个状态下，最坏情况下最多能确切测试⼀栋 n 层的楼 
+ * ⽐如：
+ * dp[1][7] = 7 表⽰
+ * 现在有 1 个鸡蛋，允许你扔 7 次
+ * 这个状态下最多给你 7 层楼，使得你可以确定楼层 F 使得鸡蛋恰好摔不碎 （⼀层⼀层线性探查）
+ * 
+ * 这就是原始思路的⼀个【反向】版本
+ * 
+ * 状态转移⽅程： dp[k][m] = dp[k][m - 1] + dp[k - 1][m - 1] + 1
+ * 
+ * 时间复杂度 O(KN)
  * 
  * @param {*} K 
  * @param {*} N 
  */
 function superEggDrop4(K, N) {
+    // 二维数组 [k+1]行 [N+1]列
+    const dp = [];
+    for (let i = 0; i <= K; i++) {
+        dp[i] = [];
+        for (let j = 0; j <= N; j++) {
+            dp[i][j] = 0; // 都初始化为0
+        }
+    }
+    // console.log('dp数组初始化后是:', dp);
 
+    // base case 定时dp时已经默认数组都为0了
+    // dp[0][..] = 0;
+    // dp[..][0] = 0;
+
+    let m = 0;
+    while (dp[K][m] < N) {
+        m++;
+        for (let k = 1; k <= K; k++) {
+            dp[k][m] = dp[k][m - 1] + dp[k - 1][m - 1] + 1;
+        }
+    }
+    return m;
 }
+
+console.log('==========superEggDrop4===========');
+
+console.log(superEggDrop4(K1, N1));
+console.log(superEggDrop4(K2, N2));
+console.log(superEggDrop4(K3, N3));
