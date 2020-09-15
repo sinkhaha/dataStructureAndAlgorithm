@@ -20,7 +20,10 @@
  * 
  * 
  * (1)选择:选择dp[j](j<i,nums[j]<nums[i])时，此时dp[i]都最大长度
+ * 
  * (2)状态:dp[i]的值即最大长度改变
+ * 状态转移方程为：dp[i]=max(dp[j])+1,其中0≤j<i且num[j]<num[i]
+ *
  * (3)base case: dp数组的每一项初始值都值都为1, 因为子序列最少要包含自己，所以长度最小为 1
  * 
  * 
@@ -60,3 +63,50 @@ var lengthOfLIS1 = function(nums) {
 const nums = [10, 9, 2, 5, 3, 7, 101, 18];
 console.log(lengthOfLIS1(nums)); // 4
 
+
+/**
+ * 二分查找法
+ * 
+ * 时间复杂度O(NlogN)
+ * 空间复杂度O(N)
+ * 
+ * @param {*} nums 
+ */
+var lengthOfLIS2 = function(nums) {
+    const n = nums.length;
+    if (n <= 0) {
+        return n; 
+    }
+
+    let top = Array(n).fill(0);
+
+    let piles = 0; // 堆数
+    for (let i = 0; i < n; i++) {
+        // 当前值
+        let poker = nums[i];
+
+        let left = 0;
+        let right = piles;
+
+        while (left < right) {
+            let mid = Math.floor((right+left)/2);
+            if (top[mid] > poker) {
+                right = mid; 
+            } else if (top[mid] < poker) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+
+        // 没找到合适的堆，新建一个
+        if (left === piles) {
+            piles++;
+        }
+        // 把当前值放入该堆
+        top[left] = poker;
+    }
+    return piles;
+}
+
+console.log(lengthOfLIS2(nums)); // 4
