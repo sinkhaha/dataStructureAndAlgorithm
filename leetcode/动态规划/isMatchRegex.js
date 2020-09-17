@@ -1,4 +1,7 @@
 /**
+ * leetcode 10 正则表达式匹配
+ */
+/**
  * 
  * dp函数的定义如下
  * 若dp(s,i,p,j) = true，则表示s[i..]可以匹配p[j..]
@@ -72,7 +75,7 @@ const p = 'ab*c*';
 console.log(isMatch(s, p));
 
 /**
- * 解法一的优化，增加备忘录
+ * 解法一的优化，增加备忘录(推荐)
  * 
  * 时间复杂度 O(mn) m为s的长度，n为p的长度
  * 空间复杂度 O(mn)
@@ -140,3 +143,39 @@ function isMatch2(s, p) {
 }
 
 console.log(isMatch2(s, p));
+
+/**
+ * 暴力解法
+ * @param {string} s
+ * @param {string} p
+ * @return {boolean}
+ */
+var isMatch3 = function(s, p) {
+    const map = {};
+    this.dp = function(i, j) {
+        const key = `${i}_${j}`;
+        if (map[key]) {
+            return map[key];
+        }
+
+        if (j === p.length) {
+            return i === s.length;
+        }
+
+        let first = i < s.length && [s[i], '.'].includes(p[j]);
+        
+        let ans = false;
+        if (j <= p.length - 2 && p[j+1] === '*') {
+            ans = dp(i, j+2) || (first && dp(i + 1, j));
+        } else {
+            ans = first && dp(i+1, j+1);
+        }
+
+        map[key] = ans
+        return ans;
+    }
+
+    return this.dp(0, 0);
+};
+
+console.log(isMatch3(s, p));
