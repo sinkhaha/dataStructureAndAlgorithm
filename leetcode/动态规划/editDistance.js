@@ -53,3 +53,44 @@ function minDistance(word1, word2) {
 const word1 = 'horse';
 const word2 = 'ros';
 console.log(minDistance(word1, word2)); // 3
+
+// 解法一的优化，备忘录
+function minDistance2(word1, word2) {
+    let m = word1.length;
+    let n = word2.length;
+
+    // m+1行，n+1列,初始为0
+    const dp = [];
+    for (let i = 0; i < m + 1; i++) {
+        dp[i] = [];
+        for (let j = 0; j < n+1; j++) {
+            if (i === 0) {
+                dp[0][j] = j;
+            } else if (j === 0) {
+                dp[i][0] = i;
+            } else {
+                dp[i][j] = 0;
+            }
+        }
+    }
+    
+    console.log(dp);
+
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (word1[i-1] === word2[j-1]) {
+                dp[i][j] = dp[i-1][j-1];
+            } else {
+                dp[i][j] = Math.min(
+                    dp[i][j-1] +1,
+                    dp[i-1][j] + 1,
+                    dp[i-1][j-1] + 1
+                );
+            }
+        }
+    }
+
+    return dp[m][n];
+}
+
+console.log(minDistance2(word1, word2)); // 3
