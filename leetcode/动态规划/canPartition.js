@@ -1,6 +1,8 @@
 /**
  * 416 分割等和子集
+ * 给定一个只包含正整数的非空数组。是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
  * 
+ * 例如：
  * 输入: [1, 5, 11, 5]
  * 输出: true
  * 解释: 数组可以分割成 [1, 5, 5] 和 [11]
@@ -66,8 +68,8 @@ var canPartition1 = function(nums) {
     }
     console.log(dp);
 
-    for (let i = 1; i <= n; i++) {
-        for (let j = 1; j <= sum; j++) {
+    for (let i = 1; i < n + 1; i++) {
+        for (let j = 1; j < sum + 1; j++) {
             // 背包容量不够，只有不装
             if (j - nums[i - 1] < 0) {
                 dp[i][j] = dp[i-1][j];
