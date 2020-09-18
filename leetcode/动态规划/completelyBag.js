@@ -66,3 +66,27 @@ function change(amount, coins) {
 const amount = 5;
 const coins = [1, 2, 5];
 console.log(change(amount, coins)); // 4
+
+/**
+ * 解法一的优化：状态压缩
+ * 
+ * 时间复杂度 O(N*amount)，N为coins的长度
+ * 空间复杂度 O(amount)
+ * 
+ * @param {*} amount 
+ * @param {*} coins 
+ */
+function change2(amount, coins) {
+    let n = coins.length;
+    const dp = Array(amount + 1).fill(0);
+    dp[0] = 1;
+    for (let i = 0; i < n; i++) {
+        for (let j = 1; j <= amount; j++) {
+            if (j - coins[i] >= 0) {
+                dp[j] = dp[j] + dp[j-coins[i]];
+            }
+        }
+    }
+    return dp[amount];
+}
+console.log(change2(amount, coins)); // 4
