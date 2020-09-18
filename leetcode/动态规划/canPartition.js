@@ -33,6 +33,8 @@
  * 是dp[..][0] = true和dp[0][..] = false，
  * 因为背包没有空间的时候，就相当于装满了，而当没有物品可选择的时候，肯定没办法装满背包
  * 
+ * 时间复杂度 O(n*sum)，n为nums的个数,sum为nums数组元素的和
+ * 空间复杂度 O(n*sum)
  * 
  * @param {number[]} nums
  * @return {boolean}
@@ -80,3 +82,50 @@ var canPartition1 = function(nums) {
 
 const nums = [1, 5, 11, 5];
 console.log(canPartition1(nums));
+
+/**
+ * 解法一的优化：状态压缩
+ * 
+ * 注意到dp[i][j]都是通过上一行dp[i-1][..]转移过来的，之前的数据都不会再用了。
+ * 所以可以进行状态压缩，将二维dp数组压缩为一维，节约空间复杂度
+ * 
+ * 时间复杂度 O(n*sum)，n为nums的个数,sum为nums数组元素的和
+ * 空间复杂度 O(sum)
+ * 
+ * @param {*} nums 
+ */
+var canPartition2 = function(nums) {
+    // 总和
+    let sum = 0;
+    for (let num of nums) {
+        sum = sum + num;
+    }
+
+    // 和为奇数时，不能平分为两个相等的子集
+    if (sum % 2 !== 0) {
+        return false;
+    }
+
+    let n = nums.length;
+    sum = sum / 2;
+    console.log(`sum=${sum}, n=${n}`);
+
+    const dp = Array(sum + 1).fill(false);
+    dp[0] = true; // base case
+
+    console.log(dp);
+
+    // 只在一行dp数组上操作，i每进行一轮迭代，dp[j]其实就相当于dp[i-1][j]，所以只需要一维数组就够用了
+    // 需要注意的是j应该从后往前反向遍历，因为每个物品（或者说数字）只能用一次，以免之前的结果影响其他的结果
+    for (let i = 0; i < n; i++) {
+        for (let j = sum; j >= 0; j--) {
+            if (j - nums[i] >= 0) {
+                dp[j] = dp[j] || dp[j - nums[i]];
+            }
+        }
+    }
+       
+    return dp[sum];
+
+}
+console.log(canPartition2(nums));
