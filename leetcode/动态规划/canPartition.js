@@ -72,15 +72,18 @@ var canPartition1 = function(nums) {
             if (j - nums[i - 1] < 0) {
                 dp[i][j] = dp[i-1][j];
             } else {
-                dp[i][j] = dp[i-1][j] || dp[i-1][j - nums[i]]; // 不装 || 装
+                dp[i][j] = dp[i-1][j] || dp[i-1][j - nums[i - 1 ]]; // 不装 || 装
             }
         }
     }
+    console.log(dp);
 
     return dp[n][sum];
 };
 
-const nums = [1, 5, 11, 5];
+// const nums = [1, 5, 11, 5];
+const nums = [1, 2, 5];
+
 console.log(canPartition1(nums));
 
 /**
