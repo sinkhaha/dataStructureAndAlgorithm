@@ -16,7 +16,7 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function(prices) {
+var maxProfit = function (prices) {
     if (prices.length === 0) {
         return 0;
     }
@@ -28,10 +28,13 @@ var maxProfit = function(prices) {
         // 判断当前是否是最低价格点
         if (prices[i] < minPrice) {
             minPrice = prices[i];
-        // 当前值比最低点大，重新计算是否是最大利润    
-        } else if (prices[i] - minPrice > maxProfit){
+            // 当前值比最低点大，重新计算是否是最大利润    
+        } else if (prices[i] - minPrice > maxProfit) {
             maxProfit = prices[i] - minPrice;
         }
     }
     return maxProfit;
 };
+
+const prices = [7, 1, 5, 3, 6, 4];
+console.log(maxProfit(prices)); // 5
