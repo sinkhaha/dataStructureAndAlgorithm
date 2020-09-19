@@ -23,9 +23,12 @@
  * 综上就是两种选择，而想求的dp[i][j]是“共有多少种凑法”，所以dp[i][j]的值应该是以上两种选择的结果之和
  * 
  * base case：
- * dp[0][..] = 0 和 dp[..][0] = 1
+ * dp[0][..] = 0 和 dp[..][0] = 1 (注意dp[0][0]=1)
  * 因为如果不使用任何硬币面值，就无法凑出任何金额；
  * 如果凑出的目标金额为 0，那么“无为而治”就是唯一的一种凑法
+ * 
+ * 时间复杂度 O(N*amount)，N为coins的长度
+ * 空间复杂度 O(N*amount)
  * 
  * @param {*} amount 
  * @param {*} coins 
@@ -39,7 +42,8 @@ function change(amount, coins) {
             // base case
             if (i === 0) {
                 dp[0][j] = 0;
-            } else if (j === 0) {
+            }
+            if (j === 0) {
                 dp[i][0] = 1;
             } else {
                 dp[i][j] = 0;
