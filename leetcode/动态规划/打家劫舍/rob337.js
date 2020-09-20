@@ -14,39 +14,42 @@ function TreeNode(val) {
 }
 
 /**
+ * 备忘录递归
+ * 
+ * 时间复杂度 O(N)，N为数的节点数
  * @param {TreeNode} root
  * @return {number}
  */
 var rob1 = function (root) {
-    const map = new Map();
+    const memo = new Map();
     this.dp = function (root) {
         if (root == null) {
             return 0;
         }
         // 备忘录消除重复子问题
-        if (map.has(root)) {
-            return map.get(root);
+        if (memo.has(root)) {
+            return memo.get(root);
         }
 
         // 抢，然后去下下家 
-        let do_it = root.val
-            + (root.left == null
-                ? 0
-                : this.dp(root.left.left) + this.dp(root.left.right))
-            + (root.right == null
-                ? 0
-                : this.dp(root.right.left) + this.dp(root.right.right));
+        let do_it = root.val;
+        if (root.left) {
+            do_it += dp(root.left.left) + dp(root.left.right);
+        }
+        if (root.right) {
+            do_it += dp(root.right.left) + dp(root.right.right);
+        }
 
         // console.log(do_it);
 
         // 不抢，然后去下家 
-        let not_do = this.dp(root.left) + this.dp(root.right);
+        let not_do = dp(root.left) + dp(root.right);
 
         let res = Math.max(do_it, not_do);
         // console.log(res);
 
-        map.set(root, res);
-        // console.log(map);
+        memo.set(root, res);
+        // console.log(memo);
         return res;
     }
     // console.log(this.dp(root));
@@ -60,13 +63,15 @@ let node2 = new TreeNode(3);
 root.left = node1;
 root.right = node2;
 node1.left = null;
-node1.right = 3;
+node1.right = new TreeNode(3);
 node2.left = null;
-node2.right = 1;
-
+node2.right = new TreeNode(1);
 console.log(rob1(root)); // 7  因为3 + 3 + 1 = 7
 
-
+/**
+ * 时间复杂度 O(N)，空间复杂度只有递归函数堆栈所需的空间，不需要备忘录的额外空间
+ * @param {*} root 
+ */
 var rob2 = function (root) {
     // 返回⼀个⼤⼩为 2 的数组 arr 
     // arr[0] 表⽰不抢 root 的话，得到的最⼤钱数
