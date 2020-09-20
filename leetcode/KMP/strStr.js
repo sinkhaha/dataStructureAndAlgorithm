@@ -27,3 +27,27 @@ const haystack = 'aaaaa';
 const needle = 'bba';
 console.log(strStr(haystack, needle)); // -1
 
+/**
+ * 暴力解法
+ * 
+ * 时间复杂度 O(MN)
+ * 空间复杂度O(1)
+ * 
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */
+var strStr2 = function(haystack, needle) {
+    let L = needle.length;
+    let n = haystack.length;
+
+    for (let j = 0; j < n - L + 1; ++j) {
+      const sub = haystack.substring(j, j + L);
+      if (sub == needle) {
+        return j;
+      }
+    }
+    return -1;
+};
+
+console.log(strStr2(haystack, needle)); // -1
