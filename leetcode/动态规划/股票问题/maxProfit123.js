@@ -1,7 +1,8 @@
 /**
- * 188. 买卖股票的最佳时机 IV
- * 困难
+ * 123. 买卖股票的最佳时机 III
  * 
+ * 困难
+ * // TODO
  * 动态规划
  * 
  * @param {number} k
@@ -20,34 +21,42 @@ var maxProfit = function (prices) {
     // 3维dp数组 [n][maxK+1][2];
     for (let i = 0; i < n; i++) {
         dp[i] = [];
-        for (let j = 0; j < maxK + 1; j++) {
-            dp[i][j] = [];
-            for (let k = 0; k < 2; k++) {
-                dp[i][j][k] = 0;
+        for (let k = 0; k <= maxK; k++) {
+            dp[i][k] = [];
+            for (let s = 0; s < 2; s++) {
+                dp[i][k][s] = 0;
+                if (i == 0) {
+                    // 处理 base case
+                    dp[0][k][0] = 0;
+                    dp[0][k][1] = -Number.MIN_VALUE;
+                }
+                if (s == 0) {
+                    dp[i][0][0] = 0;
+                    dp[i][0][1] = -Number.MIN_VALUE;
+                }
             }
         }
     }
 
     console.log(dp);
 
-    for (let i = 0; i < n; i++) {
+    for (let i = 1; i < n; i++) {
         for (let k = maxK; k >= 1; k--) {
-            if (i - 1 == -1) {
-                // 处理 base case
-                dp[-1][k][0] = dp[i][0][0] = 0;
-                dp[-1][k][1] = dp[i][0][1] = -Number.MIN_VALUE;
-            }
+            // 今天没有持有股票， max(无操作，卖出)
             dp[i][k][0] = Math.max(dp[i - 1][k][0], dp[i - 1][k][1] + prices[i]);
+            // 今天有持有股票，max(无操作，买入)
             dp[i][k][1] = Math.max(dp[i - 1][k][1], dp[i - 1][k - 1][0] - prices[i]);
         }
     }
 
-    // 穷举了 n × maxK × 2 个状态，正确。
+    console.log(dp);
+
+    // 穷举了 n × maxK × 2 个状态，正确
     return dp[n - 1][maxK][0];
 };
 
 const prices = [3, 3, 5, 0, 0, 3, 1, 4];
-// console.log(maxProfit(prices));
+console.log(maxProfit(prices)); // 6
 
 var maxProfit2 = function (prices) {
     let n = prices.length;
@@ -69,5 +78,6 @@ var maxProfit2 = function (prices) {
     return dp_i20;
 }
 
-const prices2 = [1, 2, 3, 4, 5];
-console.log(maxProfit2(prices2));
+const prices2 = [1,2,3,4,5];
+console.log(maxProfit2(prices2)); // 4
+
