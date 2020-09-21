@@ -1,6 +1,7 @@
 /**
  * 1312 让字符串成为回文串的最少插入次数
- * 
+ * 困难
+ *
  * 1、dp数组的定义
  * dp[i][j]，表示字符串[i....j]，最少要变成回文串时需要dp[i][j]次插入
  * 根据dp数组可知所求结果为dp[0][n-1]（n为s的长度）
@@ -29,7 +30,9 @@
  * 当i == j时，dp[i][j] = 0
  * （当i == j时，s[i..j]就是一个字符，本身就是回文串，不需要进行任何插入操作）
  * 
- *
+ * 时间复杂度 O(N^2), N为s的长度
+ * 空间复杂度 O(N^2)
+ * 
  * @param {string} s
  * @return {number}
  */
@@ -63,4 +66,33 @@ var minInsertions1 = function (s) {
 };
 
 const s = 'mbadm';
-console.log(minInsertions(s)); // 2 字符串可变为 "mbdadbm" 或者 "mdbabdm" 
+console.log(minInsertions1(s)); // 2 字符串可变为 "mbdadbm" 或者 "mdbabdm" 
+
+// 状态压缩, dp数组的状态之和它相邻的状态有关，所以可以压缩成一维
+var minInsertions2 = function (s) {
+    let n = s.length;
+
+    let dp = Array(n).fill(0);
+
+    let temp = 0;
+    for (let i = n - 2; i >= 0; i--) {
+        // 记录 dp[i+1][j-1]
+        let pre = 0;
+        for (let j = i + 1; j < n; j++) {
+            temp = dp[j];
+            if (s[i] === s[j]) {
+                // dp[i][j] = dp[i + 1][j - 1];
+                dp[j] = pre;
+            } else {
+                // dp[i][j] = Math.min(dp[i + 1][j], dp[i][j - 1]) + 1;
+                dp[j] = Math.min(dp[j], dp[j - 1]) + 1;
+            }
+            pre = temp;
+        }
+    }
+
+    // 所求结果
+    return dp[n - 1];
+};
+
+console.log(minInsertions2(s)); 
