@@ -10,7 +10,7 @@ var subsets = function (nums) {
     let res = [];
     this.backtrack = function(nums, start, track) {
         // 不能直接res.push(track)
-        res.push(JSON.parse(JSON.stringify(track)));
+        res.push(track.slice());
 
         for (let i = start; i < nums.length; i++) {
             // 做选择
