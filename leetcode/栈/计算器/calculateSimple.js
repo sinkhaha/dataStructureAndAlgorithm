@@ -1,6 +1,3 @@
-const { is } = require("bluebird");
-const { OPENSSL_VERSION_NUMBER } = require("constants");
-
 /**
  * 面试题 16.26. 计算器(没有括号)
  * 
@@ -82,4 +79,71 @@ function isdigit(str) {
 // TODO
 const s = '2-3/4'; // '14-3/2';
 console.log(calculate1(s));
+
+/** ==================================================== */
+
+function calculate2(s) {
+    let numStack = [];
+    let charStack = [];
+    
+    let num = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        const curChar = s[i];
+        if (isdigit(+curChar)) {
+            num = 10 * num + (curChar - '0');
+            if (i === s.length-1) {
+                numStack.push(num);
+            }
+        } else {
+            console.log('num', num);
+            numStack.push(num);
+            while (charStack.length && prof(charStack[charStack.length -1], curChar)) {
+                const num1 = numStack.pop();
+                const sign = charStack.pop();
+                const num2 = numStack.pop();
+                const result = cal(num2, num1, sign);
+                numStack.push(result);
+            }
+            charStack.push(curChar);
+            num = 0;
+        }
+    }
+
+    console.log(numStack);
+    console.log(charStack);
+    
+    let result = 0;
+    while (numStack.length && charStack.length) {
+        const num1 = numStack.pop();
+        const sign = charStack.pop();
+        const num2 = numStack.pop();
+        const rst = cal(num2, num1, sign);
+        numStack.push(rst);
+        result = rst;
+    }
+    return result;
+}
+
+function cal(a, b, sign) {
+    let result = 0;
+    switch(sign) {
+        case '+': result = a + b; break;
+        case '-': result = a - b; break;
+        case '*': result = a * b; break;
+        case '/': result = a / b; break;
+    }
+    return result;
+}
+
+function prof(c1, c2) {
+    if (['*', '/'].includes(c1)) {
+        return true;
+    } else if (['+', '-'].includes(c2)) {
+        return true;
+    }
+    return false;
+}
+
+console.log(calculate2('3+2*2'))
 
