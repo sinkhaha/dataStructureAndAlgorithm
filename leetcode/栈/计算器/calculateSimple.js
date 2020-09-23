@@ -43,13 +43,8 @@ var calculate1 = function (s) {
                     stack.push(stack.pop() * num);
                     break;
                 case '/':
-                    let rst = stack.pop() / num;
-                    // 注意：正数向下取整，负数向上取整
-                    if (rst < 0) {
-                        rst = Math.ceil(rst);
-                    } else {
-                        rst = Math.floor(rst);
-                    }
+                    // 直接舍弃小数部分，即向0取整 如：-1.5 => -1
+                    let rst = parseInt(stack.pop() / num);
                     stack.push(rst); 
                 break;
             }
