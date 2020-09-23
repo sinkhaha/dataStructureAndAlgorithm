@@ -118,7 +118,7 @@ function evaluateExpr(stack) {
 }
 
 function isInteger(obj) {
-    return typeof obj === 'number' && obj % 1 === 0
+    return typeof obj === 'number' && obj % 1 === 0;
 }
 
 console.log(calculate("(1+(4+2)-1)")); // 6
