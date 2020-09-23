@@ -18,3 +18,4 @@ function test2(a, b) {
     return { a, b };
 }
 console.log(test2(1, 2));
+
