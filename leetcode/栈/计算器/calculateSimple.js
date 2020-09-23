@@ -11,7 +11,7 @@
 var calculate1 = function (s) {
     // 去掉空格
     // s = s.replace(/\s+/g, '');
-    console.log(s);
+    // console.log(s);
 
     let stack = [];
 
@@ -28,13 +28,10 @@ var calculate1 = function (s) {
         if (isdigit(curChar)) {
             // 把字符数字转成数字
             num = 10 * num + (curChar - '0');
-            console.log(`num=${num}`);
         }
 
-        // 如果不是数字，而是运算符号，把前面的数字和符号都存进栈中 
+        // 如果不是数字(空格不处理)，而是运算符号，把前面的数字和符号都存进栈中 
         if ((!isdigit(curChar) && curChar != ' ') || i == s.length - 1) {
-            console.log(`curChar1=${curChar} sign=${sign} num=${num}`);
-
             switch (sign) {
                 case '+': 
                     stack.push(num); 
@@ -46,18 +43,22 @@ var calculate1 = function (s) {
                     stack.push(stack.pop() * num);
                     break;
                 case '/':
-                    console.log(`stack===== `, stack);
-                    stack.push(Math.floor(stack.pop() / num)); 
+                    let rst = stack.pop() / num;
+                    // 注意：正数向下取整，负数向上取整
+                    if (rst < 0) {
+                        rst = Math.ceil(rst);
+                    } else {
+                        rst = Math.floor(rst);
+                    }
+                    stack.push(rst); 
                 break;
             }
-            console.log(`curChar2=${curChar} sign=${sign} num=${num}`);
             // 更新符号为当前符号，数字清零
-            sign = curChar; 
+            sign = curChar;
             num = 0; 
         }
     }
     
-    console.log(stack);
     // 栈中所有结果求和即可
     let res = 0;
     while (stack.length) {
@@ -76,8 +77,7 @@ function isdigit(str) {
     return !isNaN(n);
 }
 
-// TODO
-const s = '2-3/4'; // '14-3/2';
+const s = '14-3/2'; // 13
 console.log(calculate1(s));
 
 /** ==================================================== */
@@ -145,5 +145,6 @@ function prof(c1, c2) {
     return false;
 }
 
-console.log(calculate2('3+2*2'))
+// TODO
+console.log(calculate2('3+2*2'));
 
