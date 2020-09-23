@@ -22,7 +22,7 @@ var hammingDistance = function(x, y) {
     
     let countOne = 0;
     while (result !== 0 ) {
-        // （n & (n-1)）可以消除n最后一个1
+        // （n & (n-1)）可以消除n最后一个1，一直到n为0为止
         result = result & (result - 1);
         countOne++;
     }
