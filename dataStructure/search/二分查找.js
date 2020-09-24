@@ -12,7 +12,7 @@ const binarySearch1 = (arr, target) => {
     }
 
     let low = 0;
-    let high = arr.length - 1;
+    let high = arr.length - 1; // 注意:这里是最后一个元素的索引，所以下面是用<=
     // 循环退出条件,注意是low<=high，而不是low<high
     while (low <= high) {
         // mid=(low+high)/2 这种写法取两数的平均值是有问题的
