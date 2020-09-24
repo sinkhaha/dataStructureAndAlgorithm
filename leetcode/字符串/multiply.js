@@ -38,7 +38,9 @@ var multiply = function(num1, num2) {
     }
     
     // 转成字符串，去掉前面的0
-    return result.join('').replace(/^0*/g, '');
+    const str = result.join('').replace(/^0*/g, '');
+    // 当str为空，即result都为0时(num1和num2都是0)，返回0
+    return str.length === 0 ? '0' : str;
 };
 
 const num1 = '123';
