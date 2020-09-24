@@ -37,7 +37,7 @@ var subarraySum = function(nums, k) {
     let count = 0;
     for (let j = 1; j <= n; j++) {
         for (let i = 0; i < j; i++) {
-            // 前缀和相减代表区间[i,j]的和等于k
+            // preSum[j] - preSum[i] 表示区间[i,j-1]的和
             if (preSum[j] - preSum[i] === k) {
                 count++;
             }
