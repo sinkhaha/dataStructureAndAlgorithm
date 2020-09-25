@@ -21,7 +21,7 @@
 //             start = cur[0];
 //             end = cur[1];
 //         } else {
-//             end = cur[1];
+//             end = Math.max(end, cur[1]);
 //         }
 //     }
 //     result.push([start, end]);
