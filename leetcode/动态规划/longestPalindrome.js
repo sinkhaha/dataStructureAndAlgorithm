@@ -17,6 +17,9 @@
  * 3、base case基本情况
  * 如果s只有一个字符,只能构成一个回文子序列，即最长长度为1，也就是dp[i][j] = true (i==j)，即dp二维数组对角线都为true
  * 
+ * 时间复杂度 O(N^2)
+ * 空间复杂度 O(N^2)
+ * 
  * @param {*} s 
  */
 function longestPalindrome(s) {
@@ -66,9 +69,58 @@ function longestPalindrome(s) {
             }
         }
     }
-    
+
     return s.substring(start, start + maxLength);
 }
 
-const s = 'babad';
-console.log(longestPalindrome(s));
+/** =================================================================*/
+
+/**
+ * 解法二
+ * 
+ * 思路：从中间开始向两边扩散来判断回文串
+ * 
+ * 时间复杂度 O(N^2)
+ * 空间复杂度 O(1)
+ * 
+ * @param {*} s 
+ */
+function longestPalindrome2(s) {
+    let res = '';
+    for (let i = 0; i < s.length; i++) {
+        // 以s[i]为中心的最长回文串
+        let s1 = palindrome(s, i, i);
+        // 以s[i] 和 s[i+1] 为中心的最长回文串
+        let s2 = palindrome(s, i, i + 1);
+        // 找s1、s2和res的最长的回文串
+        res = res.length > s1.length ? res : s1;
+        res = res.length > s2.length ? res : s2;
+    }
+    return res;
+}
+
+/**
+ * 寻找最长回文串
+ * @param {*} s 
+ * @param {*} l 
+ * @param {*} r 
+ */
+function palindrome(s, l, r) {
+    // 越界处理
+    while (l >= 0 && r < s.length && s[l] === s[r]) {
+        // 向两边扩散
+        l--;
+        r++;
+    }
+    // 返回以s[l]和s[r]为中心的最长回文串
+    return s.substr(l + 1, r - l - 1);
+}
+
+function test() {
+    const s = 'babad';
+    console.log(longestPalindrome(s)); // aba
+    console.log(longestPalindrome2(s));
+
+}
+test();
+
