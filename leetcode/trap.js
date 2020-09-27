@@ -13,12 +13,12 @@ var trap = function (height) {
 
     for (let i = 1; i < n - 1; i++) {
         // 找到左边最高的
-        let left_max = height[i];
+        let left_max = 0;
         for (let j = i; j >= 0; j--) {
             left_max = Math.max(height[j], left_max);
         }
         // 找到右边最高的
-        let right_max = height[i];
+        let right_max = 0;
         for (let j = i; j < n; j++) {
             right_max = Math.max(height[j], right_max);
         }
