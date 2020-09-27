@@ -51,7 +51,8 @@ var trap1 = function (height) {
  * right_max存当前柱子右边的最高高度
  * 
  * 
- * 
+ * 时间复杂度降 O(N)
+ * 空间复杂度是 O(N)
  * 
  * @param {*} height 
  */
