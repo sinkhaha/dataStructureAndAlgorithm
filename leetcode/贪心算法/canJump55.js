@@ -18,7 +18,7 @@ var canJump = function (nums) {
     }
 
     let fast = 0;
-    // 每次计算能跳的最远距离
+    // 计算当前位置能跳的最远距离
     for (let i = 0; i < n - 1; i++) {
         // i + nums[i] 表示当前在i位置的距离，加上在该位置可以跳的距离
         fast = Math.max(fast, i + nums[i]);
