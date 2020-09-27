@@ -50,7 +50,6 @@ var trap1 = function (height) {
  * left_max存当前柱子左边的最高高度,left_max[i]即为位置i左边的最高的柱子的高度
  * right_max存当前柱子右边的最高高度
  * 
- * 
  * 时间复杂度降 O(N)
  * 空间复杂度是 O(N)
  * 
@@ -86,10 +85,50 @@ var trap2 = function (height) {
     return result;
 };
 
+/**
+ * 双指针解法
+ * 
+ * 时间复杂度O(n)
+ * 空间复杂度O(1)
+ * 
+ * @param {*} height 
+ */
+var trap3 = function (height) {
+    let n = height.length;
+    if (n === 0) {
+        return 0;
+    }
+
+    // 双指针
+    let left = 0;
+    let right = n - 1;
+
+    // left_max表示[0...left]中最高柱子的高度
+    // right_max表示[left...结束]中最高柱子的高度
+    let left_max = height[0];
+    let right_max = height[n - 1];
+
+    let result = 0;
+    while (left <= right) {
+        left_max = Math.max(height[left], left_max);
+        right_max = Math.max(height[right], right_max);
+
+        if (left_max < right_max) {
+            result += left_max - height[left];
+            left++;
+        } else {
+            result += right_max - height[right];
+            right--;
+        }
+    }
+
+    return result;
+}
 
 function test() {
     const height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
     console.log(trap1(height)); // 6
     console.log(trap2(height)); // 6
+    console.log(trap3(height)); // 6
 }
 test();
