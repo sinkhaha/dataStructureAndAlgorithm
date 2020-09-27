@@ -17,13 +17,13 @@ var canJump = function (nums) {
         return false;
     }
 
-    let fast = 0;
+    let farthest = 0;
     // 计算当前位置能跳的最远距离
     for (let i = 0; i < n - 1; i++) {
         // i + nums[i] 表示当前在i位置的距离，加上在该位置可以跳的距离
-        fast = Math.max(fast, i + nums[i]);
+        farthest = Math.max(farthest, i + nums[i]);
         // 该位置的最远距离 <= i, 说明nums[i]可能是0，永远无法跳到最后
-        if (fast <= i) {
+        if (farthest <= i) {
             return false;
         }
     }

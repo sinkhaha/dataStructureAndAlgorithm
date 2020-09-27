@@ -16,6 +16,8 @@
  * 
  * 时间复杂度：O(N^2) 递归深度 × 每次递归需要的时间复杂度
  * 
+ * 超出时间限制
+ * 
  * @param {number[]} nums
  * @return {number}
  */
@@ -49,9 +51,39 @@ var jump = function (nums) {
     return this.dp(nums, 0);
 };
 
+/**
+ * 贪心算法（推荐）
+ * 
+ * 时间复杂度 O(N)
+ * 空间复杂度 O(1)
+ * 
+ * @param {*} nums 
+ */
+function jump2(nums) {
+    let n = nums.length;
+
+    let end = 0;
+    // 当前位置能跳的最远距离
+    let farthest = 0;
+
+    let jumpCount = 0;
+    for (let i = 0; i < n - 1; i ++) {
+        // 当前i位置能跳的最远距离
+        farthest = Math.max(nums[i] + i, farthest);
+
+        // 选择跳到能跳距离中最大的
+        if (end === i) {
+            jumpCount++;
+            end = farthest;
+        }
+    }
+
+    return jumpCount;
+}
+
 function test() {
     const nums = [2, 3, 1, 1, 4];
     console.log(jump(nums)); // 2
-
+    console.log(jump2(nums)); // 2
 }
 test();
