@@ -19,9 +19,12 @@ var superPow = function (a, b) {
     }
     const last = b.pop();
 
-    const part1 = myPow(a, last);
+    // const part1 = myPow(a, last);
+    // // 递归
+    // const part2 = myPow(superPow(a, b), 10);
+    const part1 = myPow2(a, last);
     // 递归
-    const part2 = myPow(superPow(a, b), 10);
+    const part2 = myPow2(superPow(a, b), 10);
 
     return part1 * part2;
 };
@@ -50,6 +53,36 @@ function myPow(a, k) {
         res %= base;
     }
     return res;
+}
+
+/**
+ * 
+ * 高效求幂算法
+ * 
+ * 如求a^b
+ * 当b为奇数，a^b = a * a^(b-1)
+ * 
+ * 当b为偶数，a^b = (a^(b/2))^2
+ * 
+ * @param {*} a 
+ * @param {*} k 
+ */
+function myPow2(a, k) {
+    const base = 1337;
+    if (k == 0) {
+        return 1;
+    }
+    
+    a %= base;
+
+    // k 是奇数
+    if (k % 2 == 1) { 
+        return (a * myPow2(a, k - 1)) % base;
+    // k 是偶数
+    } else {
+        let sub = myPow2(a, k / 2);
+        return (sub * sub) % base;
+    }
 }
 
 const a = 2, b = [1, 0];
