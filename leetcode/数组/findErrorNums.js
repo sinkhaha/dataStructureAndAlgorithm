@@ -37,4 +37,4 @@ var findErrorNums = function(nums) {
 };
 
 const nums = [2, 2];
-console.log(findErrorNums(nums)); // [2, 3]
+console.log(findErrorNums(nums)); // [2, 1]
