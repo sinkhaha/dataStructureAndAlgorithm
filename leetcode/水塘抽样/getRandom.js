@@ -39,10 +39,10 @@ Solution.prototype.getRandom = function () {
 
     while (p != null) {
         // 生成一个 [0, i) 之间的整数，这个整数等于 0 的概率就是 1/i
-        if (Math.random() * i == 0) {
+        i++;
+        if (parseInt(Math.random() * i) == 0) {
             res = p.val;
         }
-        i++;
         p = p.next;
     }
     return res;
@@ -66,12 +66,12 @@ Solution.prototype.getRandomK = function (k) {
     let i = k;
     while (p != null) {
         // 生成一个 [0, i) 之间的整数，这个整数等于 0 的概率就是 1/i
-        let j = Math.random() * i;
+        i++;
+        let j = parseInt(Math.random() * i);
         // 这个整数小于 k 的概率就是 k/i
         if (j < k) {
             res[j] = p.val;
         }
-        i++;
         p = p.next;
     }
     return res;
