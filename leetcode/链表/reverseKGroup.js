@@ -1,5 +1,6 @@
 /**
- * 25
+ * 25 K 个一组翻转链表
+ * 困难
  */
 function ListNode(val) {
     this.val = val;
@@ -18,13 +19,13 @@ function ListNode(val) {
  * @return {ListNode}
  */
 var reverseKGroup = function (head, k) {
-    if (head === null) {
+    if (head == null) {
         return null;
     }
     
     // 区间 [a, b) 包含 k 个待反转元素
-    let a = head;
-    let b = head;
+    let a, b;
+    a = b = head;
     for (let i = 0; i < k; i++) {
         // 不足 k 个，不需要反转，base case
         if (b == null) {
@@ -33,10 +34,17 @@ var reverseKGroup = function (head, k) {
         b = b.next;
     }
 
+    console.log('a', a);
+    console.log('b', b);
+
     // 反转前 k 个元素
     let newHead = reverse(a, b);
+    console.log('newHead', newHead);
+
     // 递归反转后续链表并连接起来
     a.next = reverseKGroup(b, k);
+    console.log('aa', a);
+
     return newHead;
 };
 
@@ -76,9 +84,8 @@ function test() {
     node2.next = node3;
     node3.next = node4;
 
-    console.log(head);
+    // console.log(head);
 
-    console.log(reverseKGroup(head), 2);
+    console.log(reverseKGroup(head, 2));
 }
 test();
-
