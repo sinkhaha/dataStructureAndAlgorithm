@@ -36,11 +36,11 @@ class UF {
             this.parent[rootQ] = rootP;
             this.size[rootP] += this.size[rootQ];
         } else {
-            this.parent[rootP] = this.rootQ;
+            this.parent[rootP] = rootQ;
             this.size[rootQ] += this.size[rootP];
         }
         
-        count--;
+        this.count--;
     }
 
     /**
@@ -70,11 +70,13 @@ class UF {
      * @param {*} x 
      */
     find(x) {
-        while(parent[x] != x) {
+        while(this.parent[x] != x) {
             // 进行路径压缩
-            parent[x] = parent[parent[x]];
-            x = parent[x];
+            this.parent[x] = this.parent[this.parent[x]];
+            x = this.parent[x];
         }
         return x;
     }
 }
+
+module.exports = UF;
