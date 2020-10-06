@@ -27,5 +27,3 @@ var invertTree = function(root) {
     return root;
 };
 
-[4,2,7,1,3,6,9];
-
