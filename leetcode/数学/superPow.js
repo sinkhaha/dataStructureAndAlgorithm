@@ -26,7 +26,8 @@ var superPow = function (a, b) {
     // 递归
     const part2 = myPow2(superPow(a, b), 10);
 
-    return part1 * part2;
+    let base = 1337;
+    return (part1 * part2) % base;
 };
 
 
