@@ -17,6 +17,7 @@ function TreeNode(val) {
 }
 
 /**
+ * 广度优先
  * @param {TreeNode} root
  * @return {number}
  */
@@ -26,8 +27,7 @@ var minDepth = function(root) {
     }
 
     // 队列
-    const q = [];
-    q.push(root);
+    const q = [root];
 
     // root本身是一层，depth 初始化为 1
     let depth = 1;
@@ -56,6 +56,24 @@ var minDepth = function(root) {
     return depth;
 };
 
+/**
+ * 递归解法
+ * @param {*} root 
+ */
+var minDepth2 = function(root) {
+    if (root == null) {
+        return 0;
+    }
+
+    // 分别递归求左右子树的深度
+    let left = minDepth2(root.left);
+    let right = minDepth2(root.right);
+    // left为0表示左子树为空，此时不需要和右子树比较大小，
+    return (left == 0 || right == 0)
+        ? left + right + 1
+        : Math.min(left, right) + 1;
+}
+
 const root = new TreeNode(1);
 const node2 = new TreeNode(2);
 const node3 = new TreeNode(3);
@@ -66,3 +84,4 @@ root.right = node3;
 node2.left = node4;
 node3.right = node5;
 console.log(minDepth(root)); // 3
+console.log(minDepth2(root)); // 3
