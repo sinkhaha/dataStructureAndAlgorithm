@@ -43,3 +43,32 @@ var levelOrder = function (root) {
 
     return result;
 };
+
+/**
+ * 深度优先解法
+ * @param {*} root 
+ */
+var levelOrder1 = function (root) {
+    if (root == null) {
+        return [];
+    }
+    
+    let result = [];
+    this.dfs = function(node, level) {
+        if (node == null) {
+            return;
+        }
+
+        // 当前行没有结果，则初始化空数据，即行
+        const n = result.length;
+        if (n < level + 1) {
+            result.push([]);
+        }
+
+        result[level].push(node.val);
+        this.dfs(node.left, level + 1);
+        this.dfs(node.right, level + 1);
+    }
+    this.dfs(root, 0);
+    return result;
+}
