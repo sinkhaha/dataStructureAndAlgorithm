@@ -44,6 +44,7 @@ const n = 10;
 console.log(myPow(x, n));
 
 /**
+ * 
  * 不用递归，利用位运算解法
  * 
  * @param {*} x 
@@ -55,6 +56,7 @@ var myPow2 = function(x, n) {
         n = -n;
     }
 
+    // TODO
     let pow = 1;
     while(n) {
         // 相同位的两个数字都为1，则为1；若有一个不为1，则为0
