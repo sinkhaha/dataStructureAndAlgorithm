@@ -11,7 +11,7 @@
  * rose -> ros (删除 'e')
  * 
  * dp数组的定义
- * dp[i][j]:返回 s1[0..i] 和 s2[0..j] 的最小编辑距离
+ * dp[i][j]:返回 word1[0..i] 和 word2[0..j] 的最小编辑距离(即word1的前i个字符 变成 word2的前j个字符 的最小步数)
  * 
  * 选择：
  * word1[i]==word2[j]时，跳过
@@ -59,8 +59,8 @@ console.log(minDistance(word1, word2)); // 3
  * 解法一的优化，使用dp表格存储结果(自底向上)
  * 
  * dp数组含义:
- * dp[i][j]返回 s1[0..i] 和 s2[0..j] 的最小编辑距离
- * (dp[i-1][j-1]存储 s1[0..i] 和 s2[0..j] 的最小编辑距离)
+ * dp[i][j]返回 word1[0..i] 和 word2[0..j] 的最小编辑距离
+ * (dp[i-1][j-1]存储 word1[0..i] 和 word2[0..j] 的最小编辑距离)
  *
  * base case:
  * dp[i][0]==i和dp[0][j]==j
