@@ -99,6 +99,8 @@ var lengthOfLIS2 = function(nums) {
             }
         }
 
+        console.log(top);
+
         // 没找到合适的堆，新建一个
         if (left === piles) {
             piles++;
@@ -106,6 +108,10 @@ var lengthOfLIS2 = function(nums) {
         // 把当前值放入该堆
         top[left] = poker;
     }
+
+    // 新进来的数小于top最后一个有值的数，则替换，大于则拼在后面，最后top前面的元素即为最长上升子序列
+    // [ 2, 3, 7, 18, 0, 0, 0, 0 ]
+    console.log('top==', top);
     return piles;
 }
 
