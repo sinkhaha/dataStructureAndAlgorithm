@@ -4,7 +4,7 @@
  * 简单
  */
 /**
- * 利用左移右移
+ * 利用左移右移 和 异或
  * 
  * <<左移，乘以2的b次方    >>右移，除以2的b次方
  * 
@@ -12,19 +12,17 @@
  * @return {number}
  */
 var findComplement = function(num) {
-    // TODO
-    let flag = false;
-    for (let i = 31; i >= 0; i--) {
-        // 从最高位开始找到不为0的第一个
-        if (num & (1 << i) != 0) {
-            flag = true;
-        }
-        // 对该位跟1进行异或
-        if (flag) {
-            num ^= (1 << i)
-        }
+    // num在二进制下右多少位为0
+    let count = 0;
+    let tmpNum = num;
+
+    while(tmpNum != 0) {
+        count += 1;
+        tmpNum >>= 1;
     }
-    return num;
+
+    // 异或运算取反
+    return num ^ ((1 << count) - 1);
 };
 
 const num = 5;
