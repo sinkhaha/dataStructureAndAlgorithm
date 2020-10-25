@@ -45,11 +45,11 @@ console.log(maxProfit1(prices)); // 5
  * 动态规划的解法
  *
  * 状态转移方程：
- * dp[i][1][0] = Max(dp[i-1][1][0], dp[i-1][0][1] + prices[i])
+ * dp[i][1][0] = Max(dp[i-1][1][0], dp[i-1][1][1] + prices[i])
  * dp[i][1][1] = Max(dp[i-1][1][1], dp[i-1][0][0] - prices[i])
  * 
  * 根据base case，当k=0时，dp[i-1][0][0]=0所以
- * dp[i][1][0] = Max(dp[i-1][1][0], dp[i-1][0][1] + prices[i])
+ * dp[i][1][0] = Max(dp[i-1][1][0], dp[i-1][1][1] + prices[i])
  * dp[i][1][1] = Max(dp[i-1][1][1], -prices[i])
  * 
  * 因为k固定为1，所以可以简化为
