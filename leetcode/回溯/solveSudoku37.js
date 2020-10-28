@@ -2,6 +2,12 @@
  * leetcode 37 解数独
  * 困难
  * 
+ * 数独：
+ * 行只有1-9，不会重复
+ * 列只有1-9，不会重复
+ * 3乘3的小块也是只有1-9，不会重复
+ * 
+ * 
  * @param {character[][]} board
  * @return {void} Do not return anything, modify board in-place instead.
  */
@@ -10,8 +16,6 @@ var solveSudoku = function (board) {
         return [board];
     }
 
-    let i = board.length;
-    let j = board[1].length;
     this.backtrack = function (board, i, j) {
         let m = 9;
         let n = 9;
@@ -32,7 +36,7 @@ var solveSudoku = function (board) {
             return this.backtrack(board, i, j + 1);
         }
 
-        for (let ch = '1'; ch <= '9'; ch++) {
+        for (let ch = 1; ch <= 9; ch++) {
             // 如果遇到不合法的数字，就跳过
             if (!isValid(board, i, j, ch)) {
                 continue;
