@@ -48,8 +48,8 @@ function detectCycle1(head) {
 console.log('入环节点值是：' + detectCycle1(node1).val);
 
 /**
- * 解法2:
- * 使用快慢指针找出环的入环节点
+ * 
+ * 使用快慢指针方式找出环的入环节点
  * 
  * 通过推导可以得出公式： 
  *    环外链表的长度 = 快慢指针第一次相遇点 + n-1次环的长度 (前提条件是快慢指针必须是在同个起点开始走)
@@ -58,6 +58,11 @@ console.log('入环节点值是：' + detectCycle1(node1).val);
  * 只需要将其中一个指针移动到链表头部，另一个指针保持在第一次相遇位置，
  * 两个指针同时出发，且行进速度为一个节点，再次相遇点则为环的入口
  * 
+ */
+/**
+ * 解法2:快慢指针的解法
+ * 
+ * 注意：此时慢指针指向头节点，快指针指向下一个节点（和解法3的区别）
  * 
  * 时间复杂度O(n)
  * 空间复杂度O(1)
@@ -70,7 +75,7 @@ function detectCycle2(head) {
     }
 
     let slow = head;
-    let fast = head.next; // 指向下一个节点，注意这里快慢指针的起始点相差了1，和detectCycle3的区别
+    let fast = head.next; // 指向下一个节点，注意这里快慢指针的起始点相差了1，和解法3的区别
 
     while (slow !== fast) {
         if (fast === null || fast.next === null) {
@@ -97,7 +102,12 @@ function detectCycle2(head) {
 console.log('入环节点：' + detectCycle2(node1).val);
 
 /**
- * 解法2的另一种代码实现
+ * 解法3:快慢指针的另一种代码实现
+ * 
+ * 此时快慢指针开始时都是指向头节点(和解法2的区别)
+ * 
+ * 时间复杂度O(n)
+ * 空间复杂度O(1)
  * 
  * @param {*} head 
  */
