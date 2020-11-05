@@ -37,7 +37,7 @@ var maxChunksToSorted = function(arr) {
 };
 
 const arr = [2,1,3,4,4];
-console.log(maxChunksToSorted(arr));
+// console.log(maxChunksToSorted(arr));
 
 // 比较两个map是否相等
 function compareTwoMap(map1, map2) {
@@ -55,3 +55,40 @@ function compareTwoMap(map1, map2) {
 }
 /**=================================== */
 
+/**
+ * 单调递增栈
+ * 
+ * 结果：栈有多少个元素就有多少个块 
+ * 栈中每个元素即每个块的最大值
+ * 
+ * 当前值比栈顶元素大或等于的值，直接入栈(相当于当前元素算做一个块)
+ * 当前值比栈顶元素小时，出栈，此时是栈的最大值max，循环，如果当前值依然小于栈顶元素，一直出栈，最后把max压入栈(相当于当前元素和前面的元素算一个块)
+ * 
+ * 时间O(n)
+ * 空间O(n)
+ * 
+ * @param {number[]} arr
+ * @return {number}
+ */
+var maxChunksToSorted2 = function(arr) {
+    let stack = [];
+
+    for (let val of arr) {
+        // 小于栈顶元素，直接入栈，算一个块
+        if (!stack.length || stack[stack.length - 1] <= val) {
+            stack.push(val);
+        } else {
+            let curMax = stack.pop();
+            // val和这些弹出的元素算一个块
+            while (stack.length && stack[stack.length - 1] > val) {
+                stack.pop();      
+            }
+            stack.push(curMax);
+        }
+    }
+    return stack.length;
+}
+
+console.log(maxChunksToSorted2(arr));
+
+/**=============================== */
