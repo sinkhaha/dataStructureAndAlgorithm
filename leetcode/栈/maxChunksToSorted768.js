@@ -92,3 +92,36 @@ var maxChunksToSorted2 = function(arr) {
 console.log(maxChunksToSorted2(arr));
 
 /**=============================== */
+/**
+ * 贪心算法
+ * 
+ * 对于当前位置，其左边（包括该数）的最大值<=其右侧的最小值，就可以在此分块
+ *
+ * @param {*} arr 
+ */
+var maxChunksToSorted3 = function(arr) {
+    let n = arr.length;
+    let lMax = Array(n).fill(Number.MIN_SAFE_INTEGER);
+    let rMin = Array(n).fill(Number.MAX_SAFE_INTEGER);
+
+    lMax[0] = arr[0];
+    rMin[n - 1] = arr[n - 1];
+
+    // 
+    for (let i = 1; i < n; i++) {
+        lMax[i] = Math.max(lMax[i - 1], arr[i]);
+        rMin[n-1-i] = Math.min(rMin[n-i], arr[n-1-i]);
+    }
+
+    console.log('lMax=', lMax);
+    console.log('rMin=', rMin);
+
+    let result = 1;
+    for (let i = 0; i < n - 1; ++i) {
+        if (lMax[i] <= rMin[i + 1]) {
+            result += 1;
+        }
+    }
+    return result;
+}
+console.log(maxChunksToSorted3(arr));
