@@ -1,3 +1,4 @@
+const { count } = require("console");
 
 /**
  * 滑动窗口解法
@@ -8,7 +9,7 @@
  * @param {number[]} arr
  * @return {number}
  */
-var maxChunksToSorted = function(arr) {
+var maxChunksToSorted = function (arr) {
     let count = 0;
 
     let sortArr = [...arr].sort();
@@ -20,10 +21,10 @@ var maxChunksToSorted = function(arr) {
     for (let i = 0; i < arr.length; i++) {
         let a = arrMap.get(arr[i]) == undefined ? 1 : +arrMap.get(arr[i]) + 1;
         arrMap.set(arr[i], a);
-        
+
         let b = sortArrMap.get(sortArr[i]) == undefined ? 1 : +sortArrMap.get(sortArr[i]) + 1;
         sortArrMap.set(sortArr[i], b);
-        
+
         console.log(compareTwoMap(arrMap, sortArrMap));
 
         if (compareTwoMap(arrMap, sortArrMap)) {
@@ -36,7 +37,7 @@ var maxChunksToSorted = function(arr) {
     return count;
 };
 
-const arr = [2,1,3,4,4];
+const arr = [2, 1, 3, 4, 4];
 // console.log(maxChunksToSorted(arr));
 
 // 比较两个map是否相等
@@ -70,7 +71,7 @@ function compareTwoMap(map1, map2) {
  * @param {number[]} arr
  * @return {number}
  */
-var maxChunksToSorted2 = function(arr) {
+var maxChunksToSorted2 = function (arr) {
     let stack = [];
 
     for (let val of arr) {
@@ -81,7 +82,7 @@ var maxChunksToSorted2 = function(arr) {
             let curMax = stack.pop();
             // val和这些弹出的元素算一个块
             while (stack.length && stack[stack.length - 1] > val) {
-                stack.pop();      
+                stack.pop();
             }
             stack.push(curMax);
         }
@@ -99,7 +100,7 @@ console.log(maxChunksToSorted2(arr));
  *
  * @param {*} arr 
  */
-var maxChunksToSorted3 = function(arr) {
+var maxChunksToSorted3 = function (arr) {
     let n = arr.length;
     let lMax = Array(n).fill(Number.MIN_SAFE_INTEGER);
     let rMin = Array(n).fill(Number.MAX_SAFE_INTEGER);
@@ -110,7 +111,7 @@ var maxChunksToSorted3 = function(arr) {
     // 
     for (let i = 1; i < n; i++) {
         lMax[i] = Math.max(lMax[i - 1], arr[i]);
-        rMin[n-1-i] = Math.min(rMin[n-i], arr[n-1-i]);
+        rMin[n - 1 - i] = Math.min(rMin[n - i], arr[n - 1 - i]);
     }
 
     console.log('lMax=', lMax);
@@ -125,3 +126,46 @@ var maxChunksToSorted3 = function(arr) {
     return result;
 }
 console.log(maxChunksToSorted3(arr));
+
+/**========================================= */
+/**
+ * 
+ * 排序解法：
+ * 数组和其排序后的数组的前i项和相等时，则认为[0...i]这些元素都是相等的,
+ * 可以分成一个块，如果说不相等，则需要继续遍历，遍历到相等j，
+ * 则i到j即[i..j]中可以分成一个块
+ * 
+ * 
+ * 时间O(nlogn)，取决于sort的时间复杂度和O(n)的最大值
+ * 空间O(n)
+ * 
+ * 
+ * 相似的解法有计数排序：
+ *  两个一样的数组，最终得到的计数数组一定是一样的，当遍历到i时，只需要
+ * 判断当前计数是否一样，是的话可以分成一个块
+ * 1.先升序排序arr，得到sortArr数组
+ * 2.从左往右遍历arr，如果arr[0...i]的计数信息和sortArr[0...i]的计数
+ * 信息一致，那么可以分成一个块，否则不可以
+ * 
+ * @param {*} arr 
+ */
+var maxChunksToSorted3 = function (arr) {
+    let count = 0;
+
+    let sum1 = 0;
+    let sum2 = 0;
+    const arrSort = [...arr].sort((a, b) => {
+        return a - b;
+    });
+
+    for (let i = 0; i < arr.length; i++) {
+        sum1 += arr[i];
+        sum2 += arrSort[i];
+        if (sum1 === sum2) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
