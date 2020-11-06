@@ -1,77 +1,24 @@
-const { count } = require("console");
 
 /**
- * 滑动窗口解法
+ * 解法1:
  * 
- * 维护两个map，表示块中的值，key是数字，value是该数字出现的次数
- * 如果两个map相等，则计数加1，滑动窗口，即清空map
+ * 单调递增栈(栈中每个元素即每个块的最大值)
+ * 
+ * 所求结果：栈元素的个数（栈有多少个元素就有多少个块 ）
+ * 
+ * 思路：
+ * 1. 从左往右遍历数组arr，当前值arr[i]>=栈顶元素的值，arr[i]直接入栈(相当于当前元素arr[i]算是一个单独的块)
+ * 2. 当前值arr[i]<栈顶元素小时，栈顶元素出栈后，先临时保存为栈的最大值max，循环继续比较arr[i]和栈顶元素的大小，
+ * 如果当前值依然小于栈顶元素，一直出栈，直到当前值大于等于栈顶元素，
+ * 最后把max压入栈(相当于当前元素arr[i] 和 前面出栈的的元素 和 当前栈顶的元素max 组合成一个块)
+ * 
+ * 时间复杂度O(n)
+ * 空间复杂度O(n)
  * 
  * @param {number[]} arr
  * @return {number}
  */
-var maxChunksToSorted = function (arr) {
-    let count = 0;
-
-    let sortArr = [...arr].sort();
-    console.log(sortArr);
-
-    let arrMap = new Map();
-    let sortArrMap = new Map();
-
-    for (let i = 0; i < arr.length; i++) {
-        let a = arrMap.get(arr[i]) == undefined ? 1 : +arrMap.get(arr[i]) + 1;
-        arrMap.set(arr[i], a);
-
-        let b = sortArrMap.get(sortArr[i]) == undefined ? 1 : +sortArrMap.get(sortArr[i]) + 1;
-        sortArrMap.set(sortArr[i], b);
-
-        console.log(compareTwoMap(arrMap, sortArrMap));
-
-        if (compareTwoMap(arrMap, sortArrMap)) {
-            count++;
-            arrMap = new Map();
-            sortArrMap = new Map();
-        }
-    }
-
-    return count;
-};
-
-const arr = [2, 1, 3, 4, 4];
-// console.log(maxChunksToSorted(arr));
-
-// 比较两个map是否相等
-function compareTwoMap(map1, map2) {
-    if (map1.size !== map2.size) {
-        return false;
-    }
-
-    for (let [key, val] of map1) {
-        let tmpValue = map2.get(key);
-        if (tmpValue !== val || (tmpValue === undefined && !map2.has(key))) {
-            return false;
-        }
-    }
-    return true;
-}
-/**=================================== */
-
-/**
- * 单调递增栈
- * 
- * 结果：栈有多少个元素就有多少个块 
- * 栈中每个元素即每个块的最大值
- * 
- * 当前值比栈顶元素大或等于的值，直接入栈(相当于当前元素算做一个块)
- * 当前值比栈顶元素小时，出栈，此时是栈的最大值max，循环，如果当前值依然小于栈顶元素，一直出栈，最后把max压入栈(相当于当前元素和前面的元素算一个块)
- * 
- * 时间O(n)
- * 空间O(n)
- * 
- * @param {number[]} arr
- * @return {number}
- */
-var maxChunksToSorted2 = function (arr) {
+var maxChunksToSorted1 = function (arr) {
     let stack = [];
 
     for (let val of arr) {
@@ -90,9 +37,61 @@ var maxChunksToSorted2 = function (arr) {
     return stack.length;
 }
 
-console.log(maxChunksToSorted2(arr));
+const arr1 = [2, 1, 3, 4, 4];
+console.log(maxChunksToSorted1(arr1)); // 4
 
-/**=============================== */
+
+/**
+ * 解法2:
+ * 
+ * 排序和解法
+ * 
+ * 如果一个数组arr 和 其排序后的数组sortArr 的前i项和相等时，
+ * 则[0...i]这些元素都是相等的(可能就只有顺序不同)
+ * 
+ * 思路：
+ * 1. 得到arr一个升序排序后的数组sortArr
+ * 2. 从左往右遍历arr，计算当前i时，arr的前i项和 ，计算sortArr的前i项和
+ * 3. 如果“arr的前i项和 == sortArr的前i项和”，则算一个计算数，因为他们可以组成一个块，
+ * 如果不相等，继续遍历到相等的位置j，则i到j这些元素也可以组成一个块，增加计数
+ * 
+ * 
+ * 时间复杂度O(nlogn)， Max(sort的时间复杂度nlogn, for循环的时间复杂度n)
+ * 空间复杂度O(n)
+ * 
+ * 
+ * 相似的解法还有计数排序解法：
+ * 如果两个元素一样的数组，不管元素顺序怎样，两个数组的计数排序数组一定是一样的。
+ * (计算排序数组即索引值为元素，值为在原数组出现的个数)
+ * 思路：
+ * 1. 得到arr一个升序排序后的数组sortArr
+ * 2. 从左往右遍历arr，如果arr的前i项的计数信息和sortArr的前i项的计数
+ * 信息一致，那么可以分成一个块，此时分块计数加1，否则继续遍历
+ * 
+ * @param {*} arr 
+ */
+var maxChunksToSorted2 = function (arr) {
+    let count = 0;
+
+    let sum1 = 0;
+    let sum2 = 0;
+    const arrSort = [...arr].sort((a, b) => a - b);
+
+    for (let i = 0; i < arr.length; i++) {
+        sum1 += arr[i];
+        sum2 += arrSort[i];
+        if (sum1 === sum2) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+const arr2 = [2, 1, 3, 4, 4];
+console.log(maxChunksToSorted2(arr2));
+
+
 /**
  * 贪心算法
  * 
@@ -108,14 +107,13 @@ var maxChunksToSorted3 = function (arr) {
     lMax[0] = arr[0];
     rMin[n - 1] = arr[n - 1];
 
-    // 
     for (let i = 1; i < n; i++) {
         lMax[i] = Math.max(lMax[i - 1], arr[i]);
         rMin[n - 1 - i] = Math.min(rMin[n - i], arr[n - 1 - i]);
     }
 
-    console.log('lMax=', lMax);
-    console.log('rMin=', rMin);
+    // console.log('lMax=', lMax);
+    // console.log('rMin=', rMin);
 
     let result = 1;
     for (let i = 0; i < n - 1; ++i) {
@@ -125,47 +123,5 @@ var maxChunksToSorted3 = function (arr) {
     }
     return result;
 }
-console.log(maxChunksToSorted3(arr));
-
-/**========================================= */
-/**
- * 
- * 排序解法：
- * 数组和其排序后的数组的前i项和相等时，则认为[0...i]这些元素都是相等的,
- * 可以分成一个块，如果说不相等，则需要继续遍历，遍历到相等j，
- * 则i到j即[i..j]中可以分成一个块
- * 
- * 
- * 时间O(nlogn)，取决于sort的时间复杂度和O(n)的最大值
- * 空间O(n)
- * 
- * 
- * 相似的解法有计数排序：
- *  两个一样的数组，最终得到的计数数组一定是一样的，当遍历到i时，只需要
- * 判断当前计数是否一样，是的话可以分成一个块
- * 1.先升序排序arr，得到sortArr数组
- * 2.从左往右遍历arr，如果arr[0...i]的计数信息和sortArr[0...i]的计数
- * 信息一致，那么可以分成一个块，否则不可以
- * 
- * @param {*} arr 
- */
-var maxChunksToSorted3 = function (arr) {
-    let count = 0;
-
-    let sum1 = 0;
-    let sum2 = 0;
-    const arrSort = [...arr].sort((a, b) => {
-        return a - b;
-    });
-
-    for (let i = 0; i < arr.length; i++) {
-        sum1 += arr[i];
-        sum2 += arrSort[i];
-        if (sum1 === sum2) {
-            count++;
-        }
-    }
-
-    return count;
-}
-
+const arr3 = [2, 1, 3, 4, 4];
+console.log(maxChunksToSorted3(arr3));
