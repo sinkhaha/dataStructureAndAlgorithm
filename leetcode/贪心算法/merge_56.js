@@ -1,37 +1,44 @@
-// 56
+//  56. 合并区间 中等
 
-// function merge(intervals) {
-//     let n = intervals.length;
-//     if (n <= 1) {
-//         return intervals;
-//     }
+/**
+ * 解法1
+ * @param {*} intervals 
+ */
+function merge(intervals) {
+    let n = intervals.length;
+    if (n <= 1) {
+        return intervals;
+    }
 
-//     // 根据区间第一个元素升序排序
-//     intervals.sort(function(a, b) {
-//         return a[0] - b[0];
-//     });
+    // 根据区间第一个元素升序排序
+    intervals.sort(function(a, b) {
+        return a[0] - b[0];
+    });
 
-//     let result = [];
-//     let start = intervals[0][0];
-//     let end = intervals[0][1];
-//     for (let i = 1; i < n; i++) {
-//         const cur = intervals[i];
-//         if (end < cur[0]) {
-//             result.push([start, end]);
-//             start = cur[0];
-//             end = cur[1];
-//         } else {
-//             end = Math.max(end, cur[1]);
-//         }
-//     }
-//     result.push([start, end]);
-//     return result;
-// }
+    let result = [];
+    let start = intervals[0][0];
+    let end = intervals[0][1];
+    for (let i = 1; i < n; i++) {
+        const cur = intervals[i];
+        if (end < cur[0]) {
+            result.push([start, end]);
+            start = cur[0];
+            end = cur[1];
+        } else {
+            end = Math.max(end, cur[1]);
+        }
+    }
+    result.push([start, end]);
+    return result;
+}
 
 const intervals1 = [[1,4],[4,5]];
-// console.log(merge(intervals1)); // [[1,4]]
+console.log(merge(intervals1)); // [[1,4]]
 
-
+/**
+ * 解法2
+ * @param {*} intervals 
+ */
 function merge2(intervals) {
     let n = intervals.length;
     if (n <= 1) {

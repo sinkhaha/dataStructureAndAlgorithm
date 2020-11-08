@@ -1,6 +1,6 @@
 /**
  * leetcode 560 
- * Medium
+ * 中等
  * 
  * 前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。
  * 
@@ -26,6 +26,7 @@
  */
 var subarraySum = function(nums, k) {
     let n = nums.length;
+    
     // 前缀和数组
     let preSum = [];
     preSum[0] = 0;

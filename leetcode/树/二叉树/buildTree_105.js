@@ -48,7 +48,7 @@ function build(preorder, preStart, preEnd, inorder, inStart, inEnd) {
     return tree;
 }
 
-// TODO
+// FIXME
 const preorder = [3,9,20,15,7];
 const inorder = [9,3,15,20,7];
 console.log(buildTree(preorder, inorder));

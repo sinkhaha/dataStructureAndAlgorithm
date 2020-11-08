@@ -1,4 +1,4 @@
-const UF = require('./UF');
+const UF = require('./UF算法');
 
 /**
  * 990 等式方程的可满足性

@@ -1,4 +1,11 @@
-// 986
+/**
+ * 986. 区间列表的交集
+ * 
+ * 中等
+ * 
+ * @param {*} A 
+ * @param {*} B 
+ */
 function intervalIntersection(A, B) {
     // 双指针
     let i = 0;

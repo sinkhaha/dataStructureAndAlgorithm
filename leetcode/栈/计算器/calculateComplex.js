@@ -1,4 +1,8 @@
-// 带括号和加减乘除的计算器
+/**
+ * 带括号和加减乘除的计算器
+ * 
+ * @param {*} s 
+ */
 var calculate = function (s) {
 
     this.cal = function (s) {

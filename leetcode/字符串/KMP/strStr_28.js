@@ -1,4 +1,4 @@
-const KMP = require('./kmp');
+const KMP = require('./kmp算法');
 
 /**
  * 28. 实现 strStr()

@@ -30,7 +30,7 @@ class KMP {
             // 更新影⼦状态 
             X = this.dp[X][pat.charCodeAt(j)];
         }
-        console.log(this.dp);
+        // console.log(this.dp);
     }
 
     /**

@@ -1,5 +1,5 @@
 /**
- * 114
+ * 114  二叉树展开为链表
  * 中等
  */
 /**
@@ -44,4 +44,4 @@ var flatten = function (root) {
     p.right = right;
 };
 
-// TODO
+// FIXME

@@ -1,5 +1,5 @@
 /**
- * 116
+ * 116 填充每个节点的下一个右侧节点指针
  * 
  * 中等
  */
@@ -48,4 +48,4 @@ function connectTwoNode(node1, node2) {
     connectTwoNode(node1.right, node2.left);
 }
 
-// TODO
+// FIXME
