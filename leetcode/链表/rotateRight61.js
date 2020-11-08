@@ -29,16 +29,17 @@ function ListNode(val) {
  * 
  * 
  * 具体算法：
- * 1. 遍历原链表，找到尾节点，尾节点的下一个节点指向原链表的头节点连成环，
- * 即tailNode.next = head，同时计算出节点总数n
+ * 1. 遍历原链表，找到原链表的尾节点，同时计算出节点总数n，
+ * 尾节点的下一个节点指向原链表的头节点连成环，即tailNode.next = head
  * 
- * 2. 遍历原链表，新的链表头是第 (n - k % n) 个节点，
- * 所以遍历到cur < (n - k % n)停止，此时的节点是新的尾节点newTailNode，
- * 此时新的头节点为newHead = newTailNode.next;
- * 
+ * 2. 遍历原链表，找到新链表的尾节点，新的链表头是第 (n - k % n) 个节点，
+ * 所以遍历到cur < (n - k % n)停止j即找到新的尾节点，
+ * 此时的节点是新的尾节点newTailNode，
+ * 此时新的头节点为newHead = newTailNode.next
+ *
  * 3. 断开环 newTailNode.next = null，返回新的链表头即可newHead
- * 
- * 
+ *
+ *
  * 时间复杂度：O(N)，N 是链表节点的个数
  * 空间复杂度：O(1)
  * 
