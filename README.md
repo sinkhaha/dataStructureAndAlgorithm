@@ -1,4 +1,5 @@
 # dataStructureAndAlgorithm
 * [排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/sort)
   
-* [leetcode](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/leetcode)
+* [leetcode相关题解-js](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/leetcode)
+
