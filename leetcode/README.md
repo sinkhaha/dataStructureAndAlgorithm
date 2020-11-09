@@ -18,6 +18,7 @@
 * [61. 旋转链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/rotateRight_61.js)
 
 * [142. 环形链表 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/detectCycle_142.js)
+* [160. 相交链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/getIntersectionNode_106.js)
 * [206. 反转链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/reverseList_206.js)
 
 * [234. 回文链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/isPalindrome_234.js)
