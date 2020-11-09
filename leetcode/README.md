@@ -62,6 +62,7 @@
 
 * [105. 从前序与中序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/buildTree_105.js)
 * [106. 从中序与后序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/buildTree_106.js)
+* [109. 有序链表转换二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/sortedListToBST_109.js)
 * [111. 二叉树的最小深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/minDepth_111.js)
 
 * [114.  二叉树展开为链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/flatten_114.js)
