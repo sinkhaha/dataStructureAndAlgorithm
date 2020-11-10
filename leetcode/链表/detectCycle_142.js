@@ -25,20 +25,21 @@ node3.next = node4;
 node4.next = node2;
 
 /**
- * 解法1:用哈希表判断链表是否有环，入环节点即相遇节点
+ * 解法1:哈希法
+ * 遍历链表中的每个节点，并将保存到set，如果下次遇到了遍历过的节点，说明链表中存在环，此时的节点为入环节点
  * 
  * 时间复杂度O(n)
  * 空间复杂度O(n)
  * @param {*} head 
  */
 function detectCycle1(head) {
-    const map = new Map();
+    const visited = new Set();
 
     while (head !== null) {
-        if (map.has(head)) {
+        if (visited.has(head)) {
             return head; // 有环，此时的节点为入环节点
         } else {
-            map.set(head);
+            visited.add(head);
             head = head.next;
         }
     }
@@ -102,7 +103,7 @@ function detectCycle2(head) {
 console.log('入环节点：' + detectCycle2(node1).val);
 
 /**
- * 解法3:快慢指针的另一种代码实现
+ * 解法3:快慢指针的另一种代码实现(相比解法2简单易懂)
  * 
  * 此时快慢指针开始时都是指向头节点(和解法2的区别)
  * 
