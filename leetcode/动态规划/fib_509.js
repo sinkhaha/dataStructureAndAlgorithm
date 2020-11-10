@@ -35,17 +35,21 @@ function fib(n) {
  * @param {*} n 
  */
 function fib2(n) {
+    let sumMap = {};
+    return myFib(n, sumMap); 
+}
+
+function myFib(n, sumMap) {
     if (n === 0) {
         return 0;
     }
-    const sumMap = {};
     if (n === 1 || n === 2) {
         return 1;
     }
     if (sumMap[n]) {
         return sumMap[n];
     }
-    const rst = fib2(n-2) + fib2(n-1);
+    const rst = myFib(n-2, sumMap) + myFib(n-1, sumMap);
     sumMap[n] = rst;
     return rst;
 }
