@@ -3,6 +3,8 @@
  * 
  * 简单
  * 
+ * https://github.com/sinkhaha/my91algo/blob/master/13_maxDepth_104.md
+ * 
  * 对应相反的题目是111题
  * 
  */
@@ -17,7 +19,7 @@
  * 广度优先解法
  * 
  * 时间复杂度O(N),N为节点数
- * 
+ * 空间复杂度：取决于队列存储的元素数量，最坏会达到 O(N)
  * @param {TreeNode} root
  * @return {number}
  */
@@ -45,6 +47,10 @@ var maxDepth = function(root) {
 
 /**
  * 递归解法
+ * 
+ * 时间复杂度：O(N)
+ * 空间复杂度：O(N) 递归栈空间
+ * 
  * @param {*} root 
  */
 var maxDepth2 = function(root) {
