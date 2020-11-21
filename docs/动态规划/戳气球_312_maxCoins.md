@@ -4,7 +4,40 @@
 
 https://leetcode-cn.com/problems/burst-balloons/
 
-## 解法: 动态规划
+## 解法1: 回溯(会超时)
+### 思路
+暴力回溯，列举所有的状态，如果数组数量多，肯定会超时
+### 代码
+```javascript
+// 最高得分
+let res = Number.MIN_VALUE;
+
+var maxCoins = function (nums) {
+    backtrack(nums, 0);
+    return res;
+};
+
+// 回溯法
+function backtrack(nums, score) {
+    if (nums.length == 0) {
+        res = Math.max(res, score);
+        return;
+    }
+    for (let i = 0, n = nums.length; i < n; i++) {
+        let point = (i - 1 < 0 ? 1 : nums[i - 1]) * nums[i] * (i + 1 >= n ? 1 : nums[i + 1]);
+    
+        let tempNums = [].concat(nums);
+        // 做选择，在nums中删除元素 nums[i]
+        nums.splice(i, 1);
+        // 递归回溯
+        backtrack(nums, score + point);
+        // 撤销选择
+        nums = [...tempNums];
+    }
+}
+
+```
+## 解法2: 动态规划
 
 ### 思路
 由于戳气球的顺序不同，得到的分数不同，所以要穷举所有戳法，找出分数最高
@@ -61,21 +94,12 @@ var maxCoins = function (nums) {
     let n = nums.length;
 
     // 根据题意，数组的首尾加2个虚拟气球，形成一个新的数组points
-    // 原先气球的索引是1到n，索引0和n+1的位置是两个虚拟气球
-    const points = new Array(n + 2);
-    points[0] = points[n + 1] = 1;
-    for (let i = 1; i <= n; i++) {
-        points[i] = nums[i - 1];
-    }
+    // 原先气球的索引是1到n，索引0和n+1的位置是两个虚拟气球，值为1
+    const points = [1, ...nums, 1];
 
-    // dp数组初始化为0，此时base case dp[i][j]也被初始化为0
-    const dp = new Array(n + 2);
-    for (let i = 0; i <= n + 1; i++) {
-        dp[i] = new Array(n + 2);
-        for (let j = 0; j <= n + 1; j++) {
-            dp[i][j] = 0;
-        }
-    }
+    // dp二维数组初始化为0，n+2行，n+2列，此时base case dp[i][j]也被初始化为0
+    let dp = Array.from(Array(n + 2), () => Array(n + 2).fill(0));
+
     console.log(dp);
     
     // 从下往上，从左往右遍历
