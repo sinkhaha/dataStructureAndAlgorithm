@@ -6,7 +6,7 @@ https://leetcode-cn.com/problems/longest-palindromic-substring/
 
 ## 解法：动态规划
 ### 思路
-1. 状态：`i`和`j`即状态
+1. 状态：`i`和`j`不同时，`dp[i][j]`状态随之改变
 2. 选择：当选择`s[i]`和`s[j]`字符时，影响到`s[i]`到`s[j]`之间是否是回文串
 3. dp数组定义：
 `dp[i][j]`表示`s[i..j]`的字符串是回文串，即`s[i]`到`s[j]`是回文串
