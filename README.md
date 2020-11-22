@@ -1,5 +1,6 @@
 # dataStructureAndAlgorithm
-* [排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/sort)
+* [排序算法](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/sort)
   
-* [leetcode相关题解-js](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/leetcode)
+* [leetcode-js代码实现](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/leetcode)
 
+* [详细题解](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/docs)
