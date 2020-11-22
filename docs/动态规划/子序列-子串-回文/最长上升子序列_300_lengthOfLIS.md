@@ -32,25 +32,24 @@ var lengthOfLIS = function(nums) {
         return n; 
     }
 
-    // 初始化为1，即base case，因为最短的子序列包含自己，即1
+    // 初始化为1，因为子序列最少包含自己，即1
     let dp = Array(n).fill(1);
+    // dp数组的最大值
+    let maxResult = 0;
     // 做选择
     for (let i = 0; i < n; i++) {
-        // 选择0到i的数字
         for (let j = 0; j < i; j++) {
             // 因为求的是递增子序列，所以前面的数nums[j]必须小于nums[i]才算递增子序列，才可以计算最大值
+            // 加1为在nums[j]的最长递增子序列dp[j]基础上加上当前元素nums[i]所得的最长递增子序列
             if (nums[i] > nums[j]) {
                 dp[i] = Math.max(dp[i], dp[j] + 1);
             }
         }
+        // 找dp数组的最大值
+        maxResult = Math.max(maxResult, dp[i]);
     }
 
-    // 此时dp数组的元素为i下标对应的最长子序列长度，遍历找出dp数组的最大元素即可
-    let maxRestult = 0;
-    for (let i = 0; i < n; i++) {
-        maxRestult = Math.max(maxRestult, dp[i]);
-    }
-    return maxRestult;
+    return maxResult;
 };
 
 ```
