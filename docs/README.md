@@ -12,6 +12,8 @@
 
 * [312. 戳气球](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%88%B3%E6%B0%94%E7%90%83_312_maxCoins.md)
 
+* [651. 四字键盘](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%9B%9B%E5%AD%97%E9%94%AE%E7%9B%98_651_maxA.md)
+
 ### 子序列-子串-回文
 * [子序列问题模板](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97-%E5%AD%90%E4%B8%B2-%E5%9B%9E%E6%96%87/%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98%E6%A8%A1%E6%9D%BF.md)  
 
