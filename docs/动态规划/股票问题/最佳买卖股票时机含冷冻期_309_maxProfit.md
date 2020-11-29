@@ -4,7 +4,7 @@
 
 https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 
-## 解法
+## 解法：动态规划
 ### 思路
 每次 sell卖出 之后要等一天才能继续交易(跟122的动态规划解法类似)
 
