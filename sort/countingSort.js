@@ -21,16 +21,17 @@ function countingSort(array) {
     });
 
     // i是下标即元素, count是元素个数
+    let newArray = [];
     let sortedIndex = 0;
     arrCounts.forEach((count, i) => {
         while (count > 0) {
-            array[sortedIndex] = i;
+            newArray[sortedIndex] = i;
             sortedIndex++;
             count--;
         }
     });
 
-    return array;
+    return newArray;
 }
 
 /**
