@@ -114,10 +114,11 @@ console.log('解法一结果是：', corpFlightBookings1(bookings, n)); // [ 10,
  * @param {*} n 
  */
 var corpFlightBookings2 = function(bookings, n) {
-    // 类似差分数组
+    // 有点类似差分数组，counters表示增量数组
     const counters = Array(n).fill(0);
 
     // 利用差分值数组给原数组闭区间nums[i, j]增加 val值
+    // counters[i]存i位置到j的座位增量
     for (let booking of bookings) {
         counters[booking[0] - 1] += booking[2];
         if (booking[1] < n) {
@@ -125,7 +126,7 @@ var corpFlightBookings2 = function(bookings, n) {
         }
     }
 
-    // 通过差分值数组反推得到原数组
+    // 后一个数的值为加上前面所有的增量的值
     for (let i = 1; i < n; i++) {
         counters[i] += counters[i - 1];
     }

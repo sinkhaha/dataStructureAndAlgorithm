@@ -35,7 +35,7 @@ var combine = function(n, k) {
     
     // 所选的路径
     let track = [];
-    // 从1开始，因为题目是要哭返回1到n
+    // 从1开始，因为题目是要求返回1到n
     this.backtrack(n, k, 1, track);
     return res;
 };

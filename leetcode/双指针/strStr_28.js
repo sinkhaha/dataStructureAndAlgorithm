@@ -16,7 +16,7 @@
  * @param {string} pat
  * @return {number}
  */
-var strStr1 = function(txt, pat) {
+var strStr1 = function (txt, pat) {
     let N = txt.length;
     let M = pat.length;
 
@@ -29,7 +29,7 @@ var strStr1 = function(txt, pat) {
         let j;
         for (j = 0; j < M; j++) {
             // 模式串有一位不等于文本串的值，则跳过
-            if (pat[j] !== txt[i + j] ) {
+            if (pat[j] !== txt[i + j]) {
                 break;
             }
         }
@@ -63,20 +63,20 @@ console.log(strStr1(txt4, pat4)); // 0
  * 时间复杂度：O((N - L)L)，其中 N 为 txt 字符串的长度，L 为 pat 字符串的长度。
  * 内循环中比较字符串的复杂度为 L，总共需要比较 (N - L) 次
  *
- * 空间复杂度：O(1)O(1)
+ * 空间复杂度：O(1)
  *
  * @param {*} txt 
  * @param {*} pat 
  */
-var strStr2 = function(txt, pat) {
+var strStr2 = function (txt, pat) {
     let L = pat.length;
     let n = txt.length;
 
     for (let j = 0; j < n - L + 1; ++j) {
-      const sub = txt.substring(j, j + L);
-      if (sub == pat) {
-        return j;
-      }
+        const sub = txt.substring(j, j + L);
+        if (sub == pat) {
+            return j;
+        }
     }
     return -1;
 }

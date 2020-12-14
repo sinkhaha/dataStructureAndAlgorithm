@@ -1,6 +1,8 @@
 /**
  * 面试题 16.26. 计算器(没有括号)
  * 
+ * https://leetcode-cn.com/problems/calculator-lcci/
+ * 
  * 题目：
  * 给定一个包含正整数、加(+)、减(-)、乘(*)、除(/)的算数表达式(括号除外)，计算其结果。
  * 表达式仅包含非负整数，+， - ，*，/ 四种运算符和空格。 整数除法仅保留整数部分。
@@ -30,7 +32,7 @@ var calculate1 = function (s) {
             num = 10 * num + (curChar - '0');
         }
 
-        // 如果不是数字(空格不处理)，而是运算符号，把前面的数字和符号都存进栈中 
+        // 如果不是数字(空格不处理)，而是运算符号，把前面的数字和符号运算后存进栈中 
         if ((!isdigit(curChar) && curChar != ' ') || i == s.length - 1) {
             switch (sign) {
                 case '+': 
@@ -39,6 +41,7 @@ var calculate1 = function (s) {
                 case '-': 
                     stack.push(-num); 
                     break; 
+                // 乘除需要计算后再存入    
                 case '*':
                     stack.push(stack.pop() * num);
                     break;
