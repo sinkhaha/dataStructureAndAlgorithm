@@ -192,6 +192,7 @@
 * [141. 环形链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/linkHasCycle_141.js)
 * [392. 判断子序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/isSubsequence_392.js)
 
+* [88. 合并两个有序数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/merge_88.js)
 ### 计数法
 
 * [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid.js)
