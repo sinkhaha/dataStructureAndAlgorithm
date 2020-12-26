@@ -1,6 +1,9 @@
 /**
  * https://leetcode-cn.com/problems/merge-two-sorted-lists/
  * 21. 合并两个有序链表
+ * 
+ * 其他题意相关题目 23. 合并K个升序链表
+ * 
  * @param {*} list1 
  * @param {*} list2 
  */

@@ -24,7 +24,7 @@
 * [234. 回文链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/isPalindrome_234.js)
 * [876. 链表的中间结点](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/middleNode_876.js)
 
-
+* [21. 合并两个有序链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%93%BE%E8%A1%A8/mergeTwoLists_21.js)
 
 ### 队列
 * [239 滑动窗口最大值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E9%98%9F%E5%88%97/maxSlidingWindow_239.js)
