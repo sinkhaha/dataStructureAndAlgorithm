@@ -137,5 +137,5 @@ function coinChange(coins, amount) {
 }
 ```
 ### 复杂度
-* 时间复杂度O(n*amount)，n为coins的长度
-* 空间复杂度O(1)
+* 时间复杂度O(n*m)，n为coins的长度,m为amount大小
+* 空间复杂度O(m)
