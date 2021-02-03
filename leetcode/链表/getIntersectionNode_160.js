@@ -3,7 +3,7 @@
  * 
  * 简单
  * 
- * 参考 https://github.com/sinkhaha/my91algo/blob/master/10_getIntersectionNode_106.md
+ * 参考 https://github.com/sinkhaha/my91algo/blob/master/solution/10_getIntersectionNode_160.md
  */
 /**
  * 链表节点类
