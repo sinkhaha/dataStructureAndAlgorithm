@@ -104,7 +104,7 @@ var minWindow = function(source, target) {
 
             let l = source[left];
             if (needs.has(l)) {
-                // 4.即将窗口左移动后，窗口已经不包含需要的字符了，有效计数需要减一
+                // 4.即将窗口左边移动后，窗口已经不包含需要的字符了，有效计数需要减一
                 if (window.get(l) === needs.get(l)) {
                     isValidCount--;
                 }

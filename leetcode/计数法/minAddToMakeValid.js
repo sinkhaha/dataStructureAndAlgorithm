@@ -11,7 +11,7 @@
  * @param {*} S
  */
 function minAddToMakeValid(S) {
-    // 记录做括号插入次数
+    // 记录左括号插入次数
     let leftCount = 0;
     // 记录右括号的需求量
     let needRight = 0;

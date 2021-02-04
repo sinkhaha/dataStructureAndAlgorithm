@@ -68,13 +68,13 @@ function jump2(nums) {
 
     let jumpCount = 0;
     for (let i = 0; i < n - 1; i ++) {
-        // 当前i位置能跳的最远距离
+        // 从0到i位置中能跳到的最远距离
         farthest = Math.max(nums[i] + i, farthest);
-
-        // 选择跳到能跳距离中最大的
+        
+        // 刚开始end和i都是0，此时end为nums[0]的值
         if (end === i) {
             jumpCount++;
-            end = farthest;
+            end = farthest; // 选择0到i中，跳到能跳距离中最大的
         }
     }
 

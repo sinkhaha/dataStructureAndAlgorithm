@@ -1,6 +1,8 @@
 /**
  * leetcode 剑指 Offer 04. 二维数组中的查找
- * easy
+ * 中等
+ * 
+ * https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/
  * 
  * 题目：
  * 在一个 n * m 的二维数组中，每一行都按照从左到右递增的顺序排序，
@@ -20,8 +22,8 @@
  *
  * 
  * 思路：
- *   因为数据有序，从二维数据的右上角元素开始查找，
- *   （1）当前元素大于target时，则下边行的元素肯定大于target，所以往左边查找，列减一
+ *   因为数据有序，从二维数据的“右上角”元素开始查找，
+ *    (1) 当前元素大于target时，则下边行的元素肯定大于target，所以往左边查找，列减一
  *    (2) 当前元素小于target时，则左边列的元素肯定下小于target，所以往下边查找，行加一
  *   一直到所有元素遍历结束
  * 
@@ -35,10 +37,11 @@
 var findNumberIn2DArray = function(matrix, target) {
     if (!matrix || matrix.length === 0 || matrix[0].length === 0) {
         return false;
-    } 
+    }
 
+    // 开始时指向右上角元素
     let row = 0; // 行指针
-    let col = matrix[0].length - 1; // 列指针，开始时指向右上角元素
+    let col = matrix[0].length - 1; // 列指针
 
     // 总行数
     let rowCount = matrix.length - 1;

@@ -16,15 +16,18 @@ function merge(intervals) {
     });
 
     let result = [];
+    // 取第1个区间的值为标准
     let start = intervals[0][0];
     let end = intervals[0][1];
     for (let i = 1; i < n; i++) {
         const cur = intervals[i];
+        // 第2个区间跟第1个区间不重叠
         if (end < cur[0]) {
             result.push([start, end]);
             start = cur[0];
             end = cur[1];
         } else {
+            // 重叠了，取长的那个区间
             end = Math.max(end, cur[1]);
         }
     }

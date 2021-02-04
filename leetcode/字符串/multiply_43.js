@@ -14,29 +14,29 @@
  * @param {string} num2
  * @return {string}
  */
-var multiply = function(num1, num2) {
+var multiply = function (num1, num2) {
     let n1 = num1.length;
     let n2 = num2.length;
 
     // 结果最多为n1+n2位
-    let result = Array(n1+n2).fill(0);
+    let result = Array(n1 + n2).fill(0);
 
     // 从后往前，即从个位开始相乘
     for (let i = n1 - 1; i >= 0; i--) {
-        for (let j = n2 - 1;j >= 0; j--) {
-            let mul = (num1[i]-'0') * (num2[j]-'0');
+        for (let j = n2 - 1; j >= 0; j--) {
+            let mul = (num1[i] - '0') * (num2[j] - '0');
 
             // 乘积在 result 对应的索引位置 
             let p1 = i + j;
-            let p2 = i + j + 1; 
+            let p2 = i + j + 1;
 
             // 叠加到 result 上 
-            let sum = mul + result[p2]; 
+            let sum = mul + result[p2];
             result[p2] = Math.floor(sum % 10);
             result[p1] += Math.floor(sum / 10);
         }
     }
-    
+
     // 转成字符串，去掉前面的0
     const str = result.join('').replace(/^0*/g, '');
     // 当str为空，即result都为0时(num1和num2都是0)，返回0
