@@ -33,7 +33,7 @@ function maxPathSum(root) {
         res = Math.max(res, root.val + left + right);
 
         // 返回某个节点左或右最大的路径和
-        return root + Math.max(left, right);
+        return root.val + Math.max(left, right);
     }
 
     getMax(root);
