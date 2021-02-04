@@ -3,7 +3,7 @@
  * 
  * 中等
  * 
- * 详细解法见 https://github.com/sinkhaha/my91algo/blob/master/9_sortedListToBST_109.md
+ * 详细解法见 https://github.com/sinkhaha/my91algo/blob/master/solution/9_sortedListToBST_109.md
  */
 /**
  * Definition for singly-linked list.

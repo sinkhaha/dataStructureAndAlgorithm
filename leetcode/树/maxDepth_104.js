@@ -3,7 +3,7 @@
  * 
  * 简单
  * 
- * https://github.com/sinkhaha/my91algo/blob/master/13_maxDepth_104.md
+ * https://github.com/sinkhaha/my91algo/blob/master/solution/13_maxDepth_104.md
  * 
  * 对应相反的题目是111题
  * 
