@@ -31,7 +31,7 @@ var lengthOfLIS = function(nums) {
     if (n <= 0) {
         return n; 
     }
-/
+
     // 初始化为1，因为子序列最少包含自己，即1
     let dp = Array(n).fill(1);
     // dp数组的最大值
