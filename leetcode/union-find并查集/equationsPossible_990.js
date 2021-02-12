@@ -9,6 +9,7 @@ const UF = require('./UF算法');
 var equationsPossible = function (equations) {
     // 26个字母
     const uf = new UF(26);
+    
     // 让相等的字母形成连通分量
     for (let eq of equations) {
         if (eq.charAt(1) == '=') {

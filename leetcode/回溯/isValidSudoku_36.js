@@ -3,6 +3,17 @@
  * 中等
  * 
  * 哈希表解法
+ * 
+ * 遍历数独，检查看到每个单元格值是否已经在当前的行 / 列 / 子数独中出现过，
+ * 如果出现重复，返回 false
+ * 
+ * 可参考 https://leetcode-cn.com/problems/valid-sudoku/solution/ha-xi-biao-jie-fa-shu-zu-jie-fa-by-ac_oi-feac/
+ * 
+ * 本题难点在于如何确定某个数落在哪个小方块中，可以对小方块从左到右依次进行0到8编号，
+ * 此时可推导出小方块编号和行列的关系为： idx = i / 3 * 3 + j / 3
+ * 
+ * 时间复杂度：O(1)
+ * 空间复杂度：O(1)
  */
 /**
  * @param {character[][]} board
@@ -18,6 +29,7 @@ const isValidSudoku = (board) => {
         columns[i] = [];
         boxes[i] = [];
     }
+    
     // 对应的 rows 为 [[], [], [], [], [], [], [], [], []]
 
     // 步骤 2：遍历填充值

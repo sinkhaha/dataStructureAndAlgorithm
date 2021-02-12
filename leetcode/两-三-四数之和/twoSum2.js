@@ -21,12 +21,13 @@ function twoSum(nums, target) {
         } else if(sum < target) {
             low++;
         } else {
-            // 相等,题目要求的是输出第几个，而非数组下标
+            // 相等，题目要求的是输出第几个，而非数组下标
             return [low+1, high+1];
         }
     }
-
-    throw new Error('找不到');
+    
+    // 找不到
+    return [-1, -1];
 };
 
 const nums = [2, 7, 11, 15];

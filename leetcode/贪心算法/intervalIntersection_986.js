@@ -10,6 +10,7 @@ function intervalIntersection(A, B) {
     // 双指针
     let i = 0;
     let j = 0;
+    
     let result = [];
     while (i < A.length && j < B.length) {
         let a1 = A[i][0];

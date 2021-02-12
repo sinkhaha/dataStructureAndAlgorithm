@@ -74,7 +74,7 @@ function jump2(nums) {
         // 刚开始end和i都是0，此时end为nums[0]的值
         if (end === i) {
             jumpCount++;
-            end = farthest; // 选择0到i中，跳到能跳距离中最大的
+            end = farthest; // 表示在0到i中做选择时，选择跳到能跳距离中最大的
         }
     }
 

@@ -201,12 +201,12 @@
 * [36. 有效的数独](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%9B%9E%E6%BA%AF/isValidSudoku_36.js)
   
 * [37. 解数独](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%9B%9E%E6%BA%AF/solveSudoku_37.js)
-  
-* [46. 全排列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%9B%9E%E6%BA%AF/permute_46.js)
-  
+
 * [51. N 皇后](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%9B%9E%E6%BA%AF/solveNQueens_51.js)
   
 * [52. N皇后 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%9B%9E%E6%BA%AF/totalNQueens_52.js)
+  
+* [46. 全排列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%9B%9E%E6%BA%AF/permute_46.js)
   
 * [77. 组合](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%9B%9E%E6%BA%AF/combine_77.js)
   
@@ -241,11 +241,12 @@
   
 * [16. 接近的三数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/threeSumClosest_16.js)
   
-* [26. 删除排序数组中的重复项](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/removeDuplicates_26.js)
-  
+
 * [28. 实现 strStr() 函数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/strStr_28.js)
 
 * [42. 接雨水](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/trap_42.js)
+  
+* [26. 删除排序数组中的重复项](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/removeDuplicates_26.js)
   
 * [80. 删除排序数组中的重复项 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%8F%8C%E6%8C%87%E9%92%88/removeDuplicates_80.js)
   

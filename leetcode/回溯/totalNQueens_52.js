@@ -31,7 +31,7 @@ var totalNQueens = function (n) {
      */
     this.dfs = function (n, row, col, pie, na) {
         // 递归终止条件，行都扫光了说明合法，直接返回
-        if (row >= n) { 
+        if (row >= n) {
             count++; 
             return; 
         }
@@ -44,12 +44,12 @@ var totalNQueens = function (n) {
 
         // bits不为0，则遍历所有为1的二进制位
         while (bits > 0) {
-            // x & -x,得到最后的一个1
+            // x & -x，得到最后的一个1
             // 例如x是10100，-x是x取反后再加1，x取反后是01011，-x=01011+1=01100，所以x&-x=10100&01100=00100，即得到x的最后一个1，即此位置可以放皇后
             let pick = bits & -bits;
             // pick放皇后后，数据都要更新，行row加1，pie和na也都更新
             this.dfs(n, row + 1, col | pick, (pie | pick) << 1, (na | pick) >> 1);
-            // x & (x - 1),去掉最后的1
+            // x & (x - 1)，去掉最后的1
             bits &= bits - 1; 
         }
     }

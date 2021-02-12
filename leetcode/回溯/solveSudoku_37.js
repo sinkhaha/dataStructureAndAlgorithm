@@ -16,6 +16,12 @@ var solveSudoku = function (board) {
         return [board];
     }
 
+    /**
+     * 
+     * @param {*} board 
+     * @param {*} i 行
+     * @param {*} j 列
+     */
     this.backtrack = function (board, i, j) {
         let m = 9;
         let n = 9;
@@ -31,7 +37,7 @@ var solveSudoku = function (board) {
             return true;
         }
 
-        // 如果该位置是预设的数字，则跳过该列
+        // 如果该位置是预设的数字，则跳过该列，进行下一个数的填充
         if (board[i][j] != '.') {
             return this.backtrack(board, i, j + 1);
         }
@@ -45,7 +51,7 @@ var solveSudoku = function (board) {
             // 做选择
             board[i][j] = ch.toString();
 
-            // 如果找到一个可行解，立即结束
+            // 对下一个数进行填充，如果找到一个可行解，立即结束
             if (this.backtrack(board, i, j + 1)) {
                 return true;
             }
@@ -58,13 +64,20 @@ var solveSudoku = function (board) {
         return false;
     }
 
-    // 找到一个结果即返回
+    // 从第一个点开始找，找到一个结果即返回
     if (this.backtrack(board, 0, 0)) {
         return board;
     }
 };
 
-// 判断 board[i][j] 是否可以填入 n
+/**
+ * 判断 board[r][c] 是否可以填入 n
+ * 
+ * @param {*} board 
+ * @param {*} r 行
+ * @param {*} c 列
+ * @param {*} n 要填入的数字
+ */
 function isValid(board, r, c, n) {
     for (let i = 0; i < 9; i++) {
         // 判断行是否存在重复
@@ -75,9 +88,10 @@ function isValid(board, r, c, n) {
         if (board[i][c] == n) {
             return false;
         }
+
         let ii = Math.floor((r / 3)) * 3 + Math.floor(i / 3);
         let jj = Math.floor((c / 3)) * 3 + Math.floor(i % 3);
-        // console.log(`i = ${i} c=${c} ii=${ii}, j=${jj}`);
+        // console.log(`i = ${i} r=${r} c=${c} ii=${ii}, jj=${jj}`);
         
         // 判断 3 x 3 方框是否存在重复
         if (board[ii][jj] == n) {

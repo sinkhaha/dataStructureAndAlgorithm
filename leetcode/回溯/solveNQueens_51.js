@@ -3,8 +3,9 @@
  * 困难
  * 
  * 回溯算法
+ * 此题是返回一种可能的结果
  * 
- * 52题类似
+ * 52题类似，52题是返回可能的结果的数量
  *
  * @param {number} n
  * @return {string[][]}
@@ -12,6 +13,11 @@
 var solveNQueens = function(n) {
     let res = [];
 
+    /**
+     * 
+     * @param {*} board 
+     * @param {*} row 行
+     */
     this.backtrack = function(board, row) {
         // 结束条件，row 超过 board 的最后一行
         if (row === board.length) {
@@ -50,7 +56,13 @@ var solveNQueens = function(n) {
     return res;
 };
 
-// 是否可以在 board[row][col] 放置皇后
+
+/**
+ * 是否可以在 board[row][col] 放置皇后
+ * @param {*} board 
+ * @param {*} row 行
+ * @param {*} col 列
+ */
 const isValid = function(board, row, col) {
     let n = board.length;
 
@@ -61,14 +73,14 @@ const isValid = function(board, row, col) {
         }
     }
 
-    // 检查右上方是否有皇后互相冲突
+    // 检查右斜线是否有皇后互相冲突
     for (let i = row - 1, j = col + 1; i >= 0 && j < n; i--, j++) {
         if (board[i][j] == 'Q') {
             return false;
         }
     }
 
-    // 检查左上方是否有皇后互相冲突
+    // 检查左斜线是否有皇后互相冲突
     for (let i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
         if (board[i][j] == 'Q') {
             return false;

@@ -1,5 +1,5 @@
 /**
- * leetcode 560 
+ * leetcode 560 和为K的子数组
  * 中等
  * 
  * 前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。
@@ -27,7 +27,7 @@
 var subarraySum = function(nums, k) {
     let n = nums.length;
     
-    // 前缀和数组
+    // 构造前缀和数组
     let preSum = [];
     preSum[0] = 0;
     for (let i = 1; i <= n; i++) {
@@ -36,6 +36,7 @@ var subarraySum = function(nums, k) {
     
     // 符合条件的个数
     let count = 0;
+    
     for (let j = 1; j <= n; j++) {
         for (let i = 0; i < j; i++) {
             // preSum[j] - preSum[i] 表示区间[i,j-1]的和

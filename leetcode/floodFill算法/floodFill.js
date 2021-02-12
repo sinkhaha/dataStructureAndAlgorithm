@@ -2,14 +2,16 @@
  * 面试题 08.10. 颜色填充
  * 简单
  * 
+ * https://leetcode-cn.com/problems/color-fill-lcci/
+ * 
  * floodFill算法
  * 适合二维矩阵中的搜索问题
  */
 /**
  * 
  * @param {*} image 
- * @param {*} sr 
- * @param {*} sc 
+ * @param {*} sr 初始坐标点的行坐标
+ * @param {*} sc 初始坐标点的列坐标
  * @param {*} newColor 
  */
 function floodFill(image, sr, sc, newColor) {
@@ -24,17 +26,17 @@ function fill(image, x, y, originColor, newColor) {
         return;
     }
 
-    // 到其他颜色，超出 originColor 区域
+    // 该点是其他的颜色，即超出 originColor 区域，直接返回
     if (image[x][y] != originColor) {
         return;
     }
 
-    // 已探索过的 originColor 区域
+    // 已经是搜索过的区域
     if (image[x][y] == -1) {
         return;
     }
 
-    // 注意点： choose：打标记，以免重复
+    // 注意点： 搜索过的修改标识为-1，以免重复
     image[x][y] = -1;
 
     fill(image, x - 1, y, originColor, newColor);
@@ -42,7 +44,7 @@ function fill(image, x, y, originColor, newColor) {
     fill(image, x, y - 1, originColor, newColor);
     fill(image, x, y + 1, originColor, newColor);
 
-    // unchoose：将标记替换为 newColor
+    // 将标记替换为 newColor
     image[x][y] = newColor;
 }
 

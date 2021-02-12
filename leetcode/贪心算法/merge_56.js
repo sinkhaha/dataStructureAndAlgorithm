@@ -19,6 +19,8 @@ function merge(intervals) {
     // 取第1个区间的值为标准
     let start = intervals[0][0];
     let end = intervals[0][1];
+
+    // 从第2个区间开始
     for (let i = 1; i < n; i++) {
         const cur = intervals[i];
         // 第2个区间跟第1个区间不重叠

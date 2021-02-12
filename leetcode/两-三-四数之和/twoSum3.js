@@ -1,5 +1,5 @@
 /**
- * leetcode 653 两数之和 --- 输入是二叉查找树BST，不是数组
+ * leetcode 653 两数之和 --- 输入是二叉查找树BST，不是数组 findTarget
  * 
  * 题目：
  * 给定一个二叉搜索树和一个目标结果，如果 BST 中存在两个元素且它们的和
@@ -32,12 +32,13 @@ function findTarget(root, k) {
         return false;
     }
 
-    // 中序遍历
+    // 中序遍历结果，从小到大排序
     let bstNums = [];
     inOrderTraverse(root, bstNums);
 
     console.log(bstNums);
 
+    // 和167解法类似，双指针
     let low = 0;
     let high = bstNums.length - 1;
     while (low < high) {

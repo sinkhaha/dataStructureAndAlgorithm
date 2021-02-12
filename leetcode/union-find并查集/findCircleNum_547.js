@@ -100,6 +100,7 @@ var findCircleNum = function (M) {
     }
 
     const n = M.length;
+    // 构造并查集
     const uf = new UF(n);
 
     // 连通所有的同学

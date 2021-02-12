@@ -44,6 +44,7 @@ var eraseOverlapIntervals = function(intervals) {
 
      // 最多不重叠区间数，至少为1
     let count = 1;
+    
     // 排序后，初始时，第一个区间的最后一个元素即为end
     let x_end = intervals[0][1];
     for (let inter of intervals) {

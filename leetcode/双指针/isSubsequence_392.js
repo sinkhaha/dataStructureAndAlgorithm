@@ -14,6 +14,7 @@
  */
 var isSubsequence = function (s, t) {
     let i = 0, j = 0;
+    // i指针指向s，j指针指向t
     while (i < s.length && j < t.length) {
         if (s[i] == t[j]) {
             i++;
