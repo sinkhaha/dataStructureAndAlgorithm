@@ -82,7 +82,7 @@ function removeNodeFromEnd2(head, n) {
     let first = shaoHead;
     let last = shaoHead;
 
-    // 第一个指针向前一定n+1步
+    // 第一个指针向前走n+1步
     let step = n + 1;
     while(step > 0) {
         first = first.next;
@@ -90,7 +90,7 @@ function removeNodeFromEnd2(head, n) {
     }
     console.log(`first = ${first.val}, last=${last.val}`);
 
-    // 此时第一个指针和第二个指针相差n，第一个指针和第二个指针同时移动一步
+    // 此时第一个指针和第二个指针相隔n个节点，第一个指针和第二个指针同时移动一步
     while(first !== null) {
         first = first.next;
         last = last.next;

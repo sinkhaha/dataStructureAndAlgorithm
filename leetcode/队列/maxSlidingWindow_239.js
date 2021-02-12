@@ -23,22 +23,23 @@
  */
 var maxSlidingWindow = function(nums, k) {
     let res = [];
-    let window = []; // 存放nums的下标，最左边下标对应的nums的值最大
+    // 窗口存放nums的下标，最左边下标对应的nums的值最大，window的元素对应的nums的元素是单调递减的
+    let window = [];
  
     for (let i = 0; i < nums.length; i++) {
 
-        // 窗口已满，需要把最左边的元素去掉
-        if (window[0] <= i - k) {
+        // 窗口扩大后，原先窗口不包含原先最大的那个数，需要把window最左边的元素去掉，即缩小窗口
+        if (i - k >= window[0]) {
             window.shift();
         }
 
         const num = nums[i];
-        // 新加入的元素比窗口(从右往左)的元素大,则删除
+        // 新加入的元素的值比窗口(从右往左)的元素的值大,则删除窗口的元素(下标)
         while(nums[window[window.length - 1]] < num) {
             window.pop();
         }
 
-        // 加入新元素的下标
+        // 新元素的下标加入窗口
         window.push(i);
 
         // 是否超过窗口的大小，是的话加入最大元素nums[window[0]]

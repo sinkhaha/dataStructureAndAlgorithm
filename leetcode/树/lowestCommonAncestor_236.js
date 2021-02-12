@@ -13,6 +13,9 @@
  * }
  */
 /**
+ * 时间复杂度：O(N)，其中 NN 是二叉树的节点数
+ * 空间复杂度：O(N)
+ * 
  * @param {TreeNode} root
  * @param {TreeNode} p
  * @param {TreeNode} q

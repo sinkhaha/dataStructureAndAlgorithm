@@ -32,7 +32,7 @@ function maxPathSum(root) {
         // 程中进行更新的，getMax方法返回的结果跟最后所求的最大路径和没关系
         res = Math.max(res, root.val + left + right);
 
-        // 返回某个节点左或右最大的路径和
+        // 返回左右子树和根节点的最大贡献值
         return root.val + Math.max(left, right);
     }
 

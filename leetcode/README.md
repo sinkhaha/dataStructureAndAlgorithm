@@ -76,14 +76,14 @@
   
 * [104. 二叉树的最大深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/maxDepth_104.js)
 
+* [111. 二叉树的最小深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/minDepth_111.js)
+
 * [105. 从前序与中序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/buildTree_105.js)
   
 * [106. 从中序与后序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/buildTree_106.js)
   
 * [109. 有序链表转换二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/sortedListToBST_109.js)
   
-* [111. 二叉树的最小深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/minDepth_111.js)
-
 * [114.  二叉树展开为链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/flatten_114.js)
 
 * [116. 填充每个节点的下一个右侧节点指针](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%91/connect116.js)
@@ -104,17 +104,18 @@
 
 
 ### Trie字典树/前缀树
-* [79. 单词搜索](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/Trie%E5%AD%97%E5%85%B8%E6%A0%91/exist_79.js)
-  
 * [208. 实现 Trie (前缀树)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/Trie%E5%AD%97%E5%85%B8%E6%A0%91/Trie_208.js)
 
+* [79. 单词搜索](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/Trie%E5%AD%97%E5%85%B8%E6%A0%91/exist_79.js)
+
 * [212. 单词搜索 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/Trie%E5%AD%97%E5%85%B8%E6%A0%91/findWords_212.js)
+
 
 ### 二分查找
 
 * [875. 爱吃香蕉的珂珂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/minEatingSpeed_875.js)
   
-* [1101. 在 D 天内送达包裹的能力](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/shipWithinDays_1101.js)
+* [1101. 在 D 天内送达包裹的能力](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/shipWithinDays_1011.js)
 
 
 ### 排序

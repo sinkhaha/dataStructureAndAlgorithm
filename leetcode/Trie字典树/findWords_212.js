@@ -94,7 +94,7 @@ var findWords = function (board, words) {
         }
         visited[x][y] = true;
 
-        // 从当前节点的前后左右遍历
+        // 从当前节点的前后左右四个方向遍历
         this.dfs(board, visited, str, x - 1, y, trie);
         this.dfs(board, visited, str, x + 1, y, trie);
         this.dfs(board, visited, str, x, y - 1, trie);
@@ -117,6 +117,7 @@ var findWords = function (board, words) {
     let m = board.length;
     let n = board[0].length;
 
+    // 初始化二维数组，默认false
     // 当前二维数组里的字符是否访问过标识
     const visited = [];
     for (let i = 0; i < m; i++) {
@@ -128,7 +129,7 @@ var findWords = function (board, words) {
 
     console.log('visited是', visited);
 
-    // 遍历二维数组，把符合的结果存起来
+    // 遍历board二维数组，把符合的结果存起来
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
             this.dfs(board, visited, '', i, j, trie);
