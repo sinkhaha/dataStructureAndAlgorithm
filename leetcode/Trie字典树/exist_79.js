@@ -47,7 +47,7 @@ var exist = function (board, word) {
 
         let result = false;
 
-        // [i][j]的上下左右元素
+        // board[i][j]的上下左右元素
         for (const [dx, dy] of directions) {
             let newi = i + dx;
             let newj = j + dy;

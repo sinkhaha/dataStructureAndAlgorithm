@@ -2,7 +2,9 @@
  * https://leetcode-cn.com/problems/merge-two-sorted-lists/
  * 21. 合并两个有序链表
  * 
- * 其他题意相关题目 23. 合并K个升序链表mergeKLists  https://leetcode-cn.com/problems/merge-k-sorted-lists/
+ * 其他题意相关题目 
+ * 23. 合并K个升序链表mergeKLists  https://leetcode-cn.com/problems/merge-k-sorted-lists/
+ * 88. 合并两个有序数组 merge
  * 
  * @param {*} list1 
  * @param {*} list2 

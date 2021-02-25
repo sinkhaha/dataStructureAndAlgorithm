@@ -25,14 +25,17 @@ function minEatingSpeed1(piles, H) {
  * @param {*} H 
  */
 function minEatingSpeed2(piles, H) {
+    // 获取数组的最大值
     let max = getMax(piles);
+
     let left = 1;
     let right = max;
   
     // 注意是小于号
     while (left < right) {
-        // 防溢出
+        // 吃香蕉的速度
         let mid = left + Math.floor((right - left) / 2);
+
         if (canFinish(piles, mid, H)) {
             right = mid;
         } else {
@@ -56,9 +59,9 @@ function getMax(arr) {
 }
 
 /**
- * 判断是否能吃完
+ * 判断H是否能吃完香蕉(以speed的速度吃)
  * @param {*} piles 
- * @param {*} speed 
+ * @param {*} speed 吃香蕉的速度
  * @param {*} H 
  */
 function canFinish(piles, speed, H) {

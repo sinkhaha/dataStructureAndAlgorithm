@@ -30,14 +30,17 @@ var groupAnagrams1 = function(strs) {
     if (strs.length === 0) {
         return [];
     }
+ 
     // key是有序的字符串，value是所有的异位词
     let strMap = {};
     for (let str of strs) {
         const strArr = str.split('');
         // 先排序后转成字符串，计算key
         strArr.sort();
+
         const key = strArr.join('');
         const value = strMap[key];
+
         if (value === undefined) {
             strMap[key] = [ str ];
         } else {
@@ -45,7 +48,7 @@ var groupAnagrams1 = function(strs) {
             strMap[key] = value;
         }
     }
-    console.log('strMap是', strMap);
+
     return Object.values(strMap);
 };
 

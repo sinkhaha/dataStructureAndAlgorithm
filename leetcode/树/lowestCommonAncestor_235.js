@@ -32,6 +32,7 @@ var lowestCommonAncestor = function(root, p, q) {
         return null;
     }
     
+    // 根为其中一个要找的节点重合，那这个就是结果
     if (root == p || root == q) {
         return root;
     }

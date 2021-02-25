@@ -1,6 +1,9 @@
 /**
- * leetcode 316 去除重复字母  类似的题目还有1081
+ * leetcode 316 去除重复字母  
  * 中等
+ * 
+ * 类似的题目还有1081
+ * 
  * 题目：
  * 给你一个仅包含小写字母的字符串，请你去除字符串中重复的字母，
  * 使得每个字母只出现一次。需保证返回结果的字典序最小（要求不能打乱其他字符的相对位置）。
@@ -42,10 +45,11 @@ var removeDuplicateLetters = function(s) {
         }
 
         // 当遇到比栈顶的字母更小时，检查栈顶字母出现的次数
-        // 出现一次不需要pop,有出现多次则pop掉，等后面该字符重新入栈
+        // 出现一次不需要pop(因为小字母要在大字母前面)，有出现多次则pop掉，等后面该字符重新入栈
         while (result.length && char < result[result.length - 1]) {
             const last = result[result.length - 1];
-            // 说明该字符在字符串只出现过一次，不能pop
+            // 说明该last字符在字符串只出现过一次，不能pop
+            // 否则说明last字符在后面还会出现，此处pop掉
             if (countMap[last] === 0) {
                 break;
             }

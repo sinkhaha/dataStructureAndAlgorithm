@@ -18,7 +18,7 @@
  * @return {number}
  */
 var openLock = function (deadends, target) {
-    // 已经穷举过的密码，防止走回头路
+    // 记录已经穷举过的密码，避免重复穷举
     const visited = new Set();
     visited.add('0000');
     
@@ -26,11 +26,12 @@ var openLock = function (deadends, target) {
     const queue = [];
     queue.push('0000');
 
+    // 记录步数
     let step = 0;
-    while (queue.length !== 0) {
+    while (queue.length) {
         let n = queue.length;
 
-        // 将当前队列中的所有节点向周围扩散
+        // 依次遍历当前队列的每个节点，对每个节点向周围扩散
         for (let i = 0; i < n; i++) {
             const cur = queue.shift();
             
@@ -38,7 +39,7 @@ var openLock = function (deadends, target) {
             if (deadends.includes(cur)) {
                 continue;
             }
-            // 是否到达终点
+            // 找到目标值
             if (cur == target) {
                 return step;
             }

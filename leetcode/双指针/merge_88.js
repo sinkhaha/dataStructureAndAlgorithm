@@ -4,6 +4,12 @@
  * 
  * 双指针，从后往前
  * 
+ * 
+ * 
+ * 其他题意相关题目 
+ * 23. 合并K个升序链表mergeKLists  https://leetcode-cn.com/problems/merge-k-sorted-lists/
+ * 21. 合并两个有序链表 mergeTwoLists
+ * 
  * 时间复杂度 : O(n + m)
  * 空间复杂度 : O(1)
  *

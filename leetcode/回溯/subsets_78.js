@@ -8,8 +8,9 @@
  */
 var subsets = function (nums) {
     let res = [];
+    
     this.backtrack = function(nums, start, track) {
-        // 不能直接res.push(track)
+        // 不能直接res.push(track)，因为引用问题，所以要存拷贝后的值
         res.push(track.slice());
 
         for (let i = start; i < nums.length; i++) {
@@ -21,6 +22,7 @@ var subsets = function (nums) {
             track.pop();
         }
     }
+
     // 记录所做的选择
     const track = [];
     backtrack(nums, 0, track); 

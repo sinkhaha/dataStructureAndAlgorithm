@@ -14,9 +14,9 @@ var combine = function(n, k) {
     }
 
     this.backtrack = function (n, k, start, track) {
-        // 结束条件
+        // 结束条件，长度等于要求的长度即可以存入结果集
         if (track.length === k) {
-            // 不能直接res.push(track)，因为该引用的值会改变，需要先拷贝
+            // 不能直接res.push(track)，因为该引用的值会改变，需要存拷贝后的值
             res.push(track.slice());
             return;
         }

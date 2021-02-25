@@ -23,16 +23,18 @@ function maxPathSum(root) {
             return 0;
         }
 
-        // 和0比较是因为如果左或右子树的最大贡献值为负数，则可以不计算此贡献值
+        // 左右子树的和为负数的话，不计算，返回0
         const left = Math.max(0, getMax(root.left));
         const right = Math.max(0, getMax(root.right));
 
         // “根+左+右”
-        // 最大贡献值不一定会经过根节点，最大贡献值是在整个递归遍历树的过
-        // 程中进行更新的，getMax方法返回的结果跟最后所求的最大路径和没关系
-        res = Math.max(res, root.val + left + right);
+        // 节点的最大路径和取决于该节点的值与该节点的左右子节点的最大贡献值
+        let sum = root.val + left + right;
 
-        // 返回左右子树和根节点的最大贡献值
+        // 更新路径的最大和，因为最大和可以为不经过根节点的子树
+        res = Math.max(res, sum);
+
+        // 返回节点的最大贡献值
         return root.val + Math.max(left, right);
     }
 

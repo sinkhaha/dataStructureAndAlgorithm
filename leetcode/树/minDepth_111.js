@@ -26,33 +26,29 @@ var minDepth = function(root) {
         return 0;
     }
 
-    // 队列
     const q = [root];
 
     // root本身是一层，depth 初始化为 1
     let depth = 1;
-    while (q.length !== 0) {
+
+    while (q.length) {
         let n = q.length;
-        // 将当前队列中的所有节点向四周扩散
+
+        // 一层层遍历
         for (let i = 0; i < n; i++) {
-            // 删除队头的元素
             const curNode = q.shift();
 
-            // 判断是否到达终点
+            // 当前层有叶子节点，则当前深度即为所求结果
             if (curNode.left == null && curNode.right == null) {
                 return depth;
             }
-            //  将相邻节点加入队列
-            if (curNode.left != null) {
-                q.push(curNode.left);
-            }
-            if (curNode.right != null) {
-                q.push(curNode.right);
-            }
-            // console.log(q);
+
+            if (curNode.left) q.push(curNode.left);
+            if (curNode.right) q.push(curNode.right);
         }
         depth++;
     }
+    
     return depth;
 };
 

@@ -100,7 +100,7 @@ var findWords = function (board, words) {
         this.dfs(board, visited, str, x, y - 1, trie);
         this.dfs(board, visited, str, x, y + 1, trie);
 
-        // 把x,y恢复成未读状态，继续返回上一层
+        // 把x,y恢复成未访问状态
         visited[x][y] = false;
     }
 
@@ -118,7 +118,7 @@ var findWords = function (board, words) {
     let n = board[0].length;
 
     // 初始化二维数组，默认false
-    // 当前二维数组里的字符是否访问过标识
+    // 表示字符是否访问过标识
     const visited = [];
     for (let i = 0; i < m; i++) {
         visited[i] = [];

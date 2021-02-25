@@ -3,6 +3,8 @@
  * 
  * 中等
  * 
+ * 区间已经是排好序的
+ * 
  * @param {*} A 
  * @param {*} B 
  */
@@ -26,6 +28,7 @@ function intervalIntersection(A, B) {
             // 注意点：计算出交集
             result.push([one, two]);
         }
+        
         // 注意点：i和j指针推进
         if (b2 < a2) {
             j += 1;

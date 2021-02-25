@@ -6,6 +6,7 @@ function TreeNode(val) {
     this.val = val;
     this.left = this.right = null;
 }
+
 /**
  * @param {TreeNode} root
  * @return {TreeNode}
@@ -15,7 +16,7 @@ var invertTree = function(root) {
         return null;
     }
 
-    //root节交换左右子节点
+    // root节交换左右子节点
     let temp = root.left;
     root.left = root.right;
     root.right = temp;

@@ -26,9 +26,11 @@ function buildTree(nums, low, high) {
     if (low > high) {
         return null;
     }
-    // 最大元素索引
+
+    // 最大值的索引
     let index = -1;
-    // 最大元素的值
+
+    // 找出最大值
     let maxVal = Number.MIN_SAFE_INTEGER;
     for (let i = low; i <= high; i++) {
         if (nums[i] > maxVal) {

@@ -2,6 +2,8 @@
  * 1011 在 D 天内送达包裹的能力
  * 中等
  * 
+ * 解法：二分查找
+ * 
  * 类似875. 爱吃香蕉的珂珂
  * 
  * @param {number[]} weights
@@ -15,11 +17,11 @@ var shipWithinDays = function (weights, D) {
     let left = getMax(weights);
     let right = getSum(weights) + 1;
 
-    // 二分查找
     // 注意是小于号
     while (left < right) {
-        // 防溢出
+        // 取载重的中间值
         let mid = left + Math.floor((right - left) / 2);
+        // 判断用此载重能否运输完
         if (canFinish(weights, mid, D)) {
             right = mid;
         } else {

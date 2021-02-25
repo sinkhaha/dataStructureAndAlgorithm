@@ -1,5 +1,5 @@
 /**
- *
+ * 105. 从前序与中序遍历序列构造二叉树
  */
 function TreeNode(val) {
     this.val = val;
@@ -29,7 +29,8 @@ function build(preorder, preStart, preEnd, inorder, inStart, inEnd) {
 
     // 前序遍历的第一个值preorder[0]就是根节点的值
     let rootVal = preorder[preStart];
-    // 中序遍历中根节点的索引
+
+    // 在中序遍历中找根节点的索引
     let index = 0;
     for (let i = inStart; i <= inEnd; i++) {
         if (inorder[i] === rootVal) {
@@ -45,6 +46,7 @@ function build(preorder, preStart, preEnd, inorder, inStart, inEnd) {
     // 递归构造左右子树 难点
     tree.left =  build(preorder, preStart + 1, preStart + leftSize, inorder, inStart, index - 1);
     tree.right = build(preorder, preStart + leftSize + 1, preEnd, inorder, index + 1, inEnd);
+    
     return tree;
 }
 

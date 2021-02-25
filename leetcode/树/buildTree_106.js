@@ -27,8 +27,10 @@ function build(inorder, inStart, inEnd, postorder, postStart, postEnd) {
         return null;
     }
 
+    // 后序遍历最后一个值就是根节点
     let rootVal = postorder[postEnd];
-    // 中序遍历中根节点的索引
+
+    // 在中序遍历中找根节点的索引
     let index = 0;
     for (let i = inStart; i <= inEnd; i++) {
         if (inorder[i] === rootVal) {

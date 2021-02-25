@@ -99,6 +99,7 @@ var findCircleNum = function (M) {
         return 0;
     }
 
+    // n行n列
     const n = M.length;
     // 构造并查集
     const uf = new UF(n);

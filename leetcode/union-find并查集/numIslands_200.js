@@ -118,6 +118,7 @@ var numIslands = function (grid) {
         return 0;
     }
 
+    // 构建m行n列的并查集
     const uf = new UF(grid);
     // 方向数组
     const directions = [[0, 1], [0, -1], [-1, 0], [1, 0]];
@@ -133,9 +134,8 @@ var numIslands = function (grid) {
                 continue;
             }
 
-            // 等于1时向四周扩散
+            // 等于1时，分别取上下左右4个方向的点，如果该点是1，则连通
             for (let d of directions) {
-                // 找到扩散出来的坐标
                 let nr = i + d[0];
                 let nc = j + d[1];
 

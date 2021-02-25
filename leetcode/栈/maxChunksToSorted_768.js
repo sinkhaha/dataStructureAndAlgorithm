@@ -25,7 +25,7 @@ var maxChunksToSorted1 = function (arr) {
     let stack = [];
 
     for (let val of arr) {
-        // 小于栈顶元素，直接入栈，算一个块
+        // 大于等于栈顶元素，直接入栈，算一个块
         if (!stack.length || stack[stack.length - 1] <= val) {
             stack.push(val);
         } else {

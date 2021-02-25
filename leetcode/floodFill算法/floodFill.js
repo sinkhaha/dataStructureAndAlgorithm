@@ -20,6 +20,7 @@ function floodFill(image, sr, sc, newColor) {
     return image;
 }
 
+// 回溯
 function fill(image, x, y, originColor, newColor) {
     // 超出边界
     if (!inArea(image, x, y)) {

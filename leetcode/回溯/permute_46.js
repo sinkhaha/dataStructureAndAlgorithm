@@ -17,7 +17,7 @@ var permute = function (nums) {
     this.backtrack = function (nums, track) {
         // 选择的列表满足全排列的个数，则加入结果集
         if (track.length === n) {
-            // 不能直接res.push(track)，因为该引用的值会改变，需要先拷贝
+            // 不能直接res.push(track)，因为该引用的值会改变，需要存拷贝后的值
             res.push(track.slice());
             return;
         } 

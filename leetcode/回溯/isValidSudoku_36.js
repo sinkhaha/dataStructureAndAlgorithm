@@ -21,18 +21,18 @@
  */
 const isValidSudoku = (board) => {
     // 步骤 1：初始化横、纵以及小九宫格
-    const rows = [],
-        columns = [],
-        boxes = [];
+    const rows = [];
+    const columns = [];
+    const boxes = [];
     for (let i = 0; i < 9; i++) {
         rows[i] = [];
         columns[i] = [];
         boxes[i] = [];
     }
     
-    // 对应的 rows 为 [[], [], [], [], [], [], [], [], []]
+    // 如对应的 rows 为 [[], [], [], [], [], [], [], [], []]
 
-    // 步骤 2：遍历填充值
+    // 步骤 2：遍历二维数组，填充值
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
 
