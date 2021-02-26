@@ -12,7 +12,7 @@ https://leetcode-cn.com/problems/longest-palindromic-substring/
 `dp[i][j]`表示`s[i..j]`的字符串是回文串，即`s[i]`到`s[j]`是回文串
 4. 状态转移方程
 * 当`s[i] != s[j]，dp[i][j] = false `
->`dp[i][j] = false `表示s[i]`不等于`s[j]`，则`i`和`j`之间的字符串一定不是回文串
+>`dp[i][j] = false `表示`s[i]`不等于`s[j]`，则`i`和`j`之间的字符串一定不是回文串
 
 * 当`s[i] == s[j]`， `dp[i][j] = dp[i + 1][j - 1] 或 dp[i][j] = true (j - i < 3）`
 

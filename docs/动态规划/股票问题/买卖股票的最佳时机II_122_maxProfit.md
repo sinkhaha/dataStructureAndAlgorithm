@@ -6,8 +6,8 @@ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
 
 ## 解法：贪心算法
 ### 思路
-* 如果当天价格比昨天高，则当天选择买入，计算可得的利润
-* 如果当天价格比昨天低，则选择不买入
+* 如果当天价格比昨天高，则当天选择卖出，计算可得的利润
+* 如果当天价格比昨天低，则选择不卖出
   
 ### 代码
 ```javascript
@@ -26,7 +26,7 @@ var maxProfit = function (prices) {
     let maxProfit = 0;
 
     for (let i = 1; i < n; i++) {
-        // 如果当前价格比昨天大，则买入，那加上今天可以所得的利润，即每一步都是最佳选择
+        // 如果当前价格比昨天大，则卖出，那加上今天可以所得的利润，即每一步都是最佳选择
         if (prices[i] > prices[i - 1]) {
             maxProfit += prices[i] - prices[i - 1];
         }
