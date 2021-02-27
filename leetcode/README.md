@@ -57,7 +57,9 @@
 * [316. 去除重复字母](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%88/removeDuplicateLetters_316.js)
   
 * [496. 下一个更大元素 I ](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%88/nextGreaterElement_496.js)
-  
+
+* 503 下一个更大元素 II
+
 * [768. 最多能完成排序的块 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%88/maxChunksToSorted_768.js)
   
 * [844. 比较含退格的字符串](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%88/backspaceCompare_844.js)
