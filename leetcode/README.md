@@ -120,6 +120,8 @@
 
 
 ### 排序
+* 414 第三大的数
+    
 * 179 最大数
 
 * [969. 煎饼排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%8E%92%E5%BA%8F/pancakeSort_969.js)
