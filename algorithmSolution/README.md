@@ -134,6 +134,7 @@
 * [50. Pow(x, n)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%80%92%E5%BD%92-%E5%88%86%E6%B2%BB/myPow_50.js)
 
 ### 动态规划
+动态规划专题可参考另一个目录中的[详细题解](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/docs)
 ##### 打家劫舍
 
 * [198. 打家劫舍](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D/rob_198.js)
