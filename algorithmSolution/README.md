@@ -59,7 +59,7 @@
   
 * [496. 下一个更大元素 I ](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/nextGreaterElement_496.js)
 
-* 503 下一个更大元素 II
+* [503. 下一个更大元素 II]((https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/nextGreaterElements_503.js))
 
 * [768. 最多能完成排序的块 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/maxChunksToSorted_768.js)
   
