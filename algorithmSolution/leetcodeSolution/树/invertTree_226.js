@@ -1,6 +1,7 @@
 /**
  * 226. 翻转二叉树
  * 简单
+ * https://leetcode-cn.com/problems/invert-binary-tree/
  */
 function TreeNode(val) {
     this.val = val;

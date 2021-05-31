@@ -2,6 +2,7 @@
  * 236. 二叉树的最近公共祖先
  * 
  * 中等
+ * https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/
  * 
  * 跟235题的区别是这个不是二叉搜索树
  */

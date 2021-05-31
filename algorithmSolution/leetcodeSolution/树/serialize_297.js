@@ -2,6 +2,7 @@
  * 297. 二叉树的序列化与反序列化
  * 
  * 困难
+ * https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
  * 
  * 前序遍历解法：遍历后的列表第一个元素是root
  * 

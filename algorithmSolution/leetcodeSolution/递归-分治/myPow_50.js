@@ -3,6 +3,8 @@
  * 
  * 中等
  * 
+ * https://leetcode-cn.com/problems/powx-n/
+ * 
  * 解法1: 利用分治递归解法，
  * 当n为偶数时，结果为 myPow(x, n/2) * yPow(x, n/2)
  * 当n为奇数时，结果为 x * myPow(x, n/2) * yPow(x, n/2)

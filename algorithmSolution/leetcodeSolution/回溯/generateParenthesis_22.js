@@ -1,5 +1,6 @@
 /**
  * leetcode 22 括号生成
+ * https://leetcode-cn.com/problems/generate-parentheses/
  * 
  * @param {number} n
  * @return {string[]}

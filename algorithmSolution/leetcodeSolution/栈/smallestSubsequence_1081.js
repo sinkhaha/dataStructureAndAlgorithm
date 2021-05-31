@@ -1,5 +1,6 @@
 /**
  * leetcode 1081 不同字符的最小子序列
+ * https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters/
  * 
  * 解法同316题 removeDuplicateLetters
  * 

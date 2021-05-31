@@ -2,6 +2,7 @@
  * 26 删除排序数组中的重复项
  * 
  * 简单
+ * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
  * 
  * 难点：要求空间复杂度O(1)
  * 

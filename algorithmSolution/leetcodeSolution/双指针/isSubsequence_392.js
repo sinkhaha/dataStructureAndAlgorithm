@@ -2,6 +2,7 @@
  * 392. 判断子序列
  * 
  * 简单
+ * https://leetcode-cn.com/problems/is-subsequence/
  * 
  * 双指针
  * 

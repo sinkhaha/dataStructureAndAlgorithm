@@ -1,5 +1,6 @@
 /**
  * leetcode 28 easy
+ * https://leetcode-cn.com/problems/implement-strstr/
  * 
  * 实现 strStr() 函数:
  * 给定一个 txt 字符串和一个 pat 字符串，在 txt 字符串中找出 pat 字符串出现的

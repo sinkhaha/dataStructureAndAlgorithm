@@ -2,8 +2,8 @@
  * 109. 有序链表转换二叉搜索树
  * 
  * 中等
+ * https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree/
  * 
- * 详细解法见 https://github.com/sinkhaha/my91algo/blob/master/solution/9_sortedListToBST_109.md
  */
 /**
  * Definition for singly-linked list.

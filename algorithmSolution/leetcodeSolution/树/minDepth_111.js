@@ -2,6 +2,7 @@
  * 111. 二叉树的最小深度
  * 
  * 简单
+ * https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/
  * 
  * 解法：BFS
  * bfs本质是在一个图中找到从起点start到终点target的最近距离

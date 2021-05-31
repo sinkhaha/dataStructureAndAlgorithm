@@ -3,6 +3,7 @@
  * 给定一个整数 n，返回 n! 结果尾数中零的数量。
  * 
  * 简单
+ * https://leetcode-cn.com/problems/factorial-trailing-zeroes/
  * 
  * 因为两个数相乘结果末尾有 0，一定是两个数中有因子 2 和 5，因为 10 = 2 x 5
  * 

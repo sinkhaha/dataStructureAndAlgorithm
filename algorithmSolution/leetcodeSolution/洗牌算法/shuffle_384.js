@@ -1,6 +1,7 @@
 /**
  * leetcode 384 打乱数组
  * 中等
+ * https://leetcode-cn.com/problems/shuffle-an-array/
  * 
  * 洗牌算法：产生的结果必须有 n! 种可能
  * 

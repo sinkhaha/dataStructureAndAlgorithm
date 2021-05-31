@@ -1,6 +1,8 @@
-// 2. 两数相加 https://leetcode-cn.com/problems/add-two-numbers/
-// 中等
-/**
+ /**
+ * 2. 两数相加
+ * 中等
+ * https://leetcode-cn.com/problems/add-two-numbers/
+ * 
  * Definition for singly-linked list.
  * function ListNode(val, next) {
  *     this.val = (val===undefined ? 0 : val)

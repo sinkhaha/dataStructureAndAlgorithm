@@ -69,6 +69,8 @@ class Difference {
  * 
  * 中等
  * 
+ * https://leetcode-cn.com/problems/corporate-flight-bookings/
+ * 
  * 利用以上的 差分值算法 类解题
  * 
  * 时间复杂度O(n)

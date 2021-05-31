@@ -1,6 +1,7 @@
 /**
  * 36 有效的数独
  * 中等
+ * https://leetcode-cn.com/problems/valid-sudoku/
  * 
  * 哈希表解法
  * 

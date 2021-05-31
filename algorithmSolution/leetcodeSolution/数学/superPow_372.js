@@ -1,6 +1,7 @@
 /**
  * 372 超级次方
  * 中等
+ * https://leetcode-cn.com/problems/super-pow/
  * 
  * 处理数组指数：
  * a^[1,2,3] = a^1 * (a^[2,3])^10

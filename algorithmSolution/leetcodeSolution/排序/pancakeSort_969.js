@@ -1,5 +1,6 @@
 /**
  * leetcode 969. 煎饼排序
+ * https://leetcode-cn.com/problems/pancake-sorting/
  * 
  * 递归解法
  * 

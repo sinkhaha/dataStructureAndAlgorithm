@@ -1,5 +1,5 @@
 //  56. 合并区间 中等
-
+// https://leetcode-cn.com/problems/merge-intervals/
 /**
  * 解法1
  * @param {*} intervals 

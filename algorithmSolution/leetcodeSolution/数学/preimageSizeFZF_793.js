@@ -2,6 +2,7 @@
  * 793. 阶乘函数后K个零
  * 
  * 困难
+ * https://leetcode-cn.com/problems/preimage-size-of-factorial-zeroes-function/
  * 
  * 问题可以转化为
  * 在区间 [0, MAX_VALUE] 中寻找满足 trailingZeroes(n) == K 的左侧边界和右侧边界

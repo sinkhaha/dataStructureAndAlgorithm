@@ -1,6 +1,7 @@
 /**
  * 875. 爱吃香蕉的珂珂
  * 中等
+ * https://leetcode-cn.com/problems/koko-eating-bananas/
  */
 /**
  * 解法一：暴力解法

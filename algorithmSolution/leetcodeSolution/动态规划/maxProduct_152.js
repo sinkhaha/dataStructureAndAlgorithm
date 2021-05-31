@@ -2,6 +2,7 @@
  * 152 积最大子数组
  * 
  * 中等
+ * https://leetcode-cn.com/problems/maximum-product-subarray/
  * 
  * 注意：有负数
  * 

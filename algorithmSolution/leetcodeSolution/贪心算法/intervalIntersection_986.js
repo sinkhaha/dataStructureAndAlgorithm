@@ -2,6 +2,7 @@
  * 986. 区间列表的交集
  * 
  * 中等
+ * https://leetcode-cn.com/problems/interval-list-intersections/
  * 
  * 区间已经是排好序的
  * 

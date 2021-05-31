@@ -1,6 +1,7 @@
 /**
  * 83 删除排序链表中的重复元素
  * 简单
+ * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
  * 
  * 解法类似26题
  */

@@ -2,8 +2,8 @@
  * 160. 相交链表
  * 
  * 简单
+ * https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
  * 
- * 参考 https://github.com/sinkhaha/my91algo/blob/master/solution/10_getIntersectionNode_160.md
  */
 /**
  * 链表节点类

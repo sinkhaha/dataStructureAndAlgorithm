@@ -1,6 +1,7 @@
 /**
  * leetcode 3 无重复字符的最长子串
  * Medium
+ * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  * 
  * 输入: "abcabcbb"
  * 输出: 3 

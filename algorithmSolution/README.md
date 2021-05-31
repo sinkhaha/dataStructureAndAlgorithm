@@ -90,7 +90,7 @@
   
 * [114.  二叉树展开为链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/flatten_114.js)
 
-* [116. 填充每个节点的下一个右侧节点指针](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/connect116.js)
+* [116. 填充每个节点的下一个右侧节点指针](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/connect_116.js)
   
 * [124. 二叉树中的最大路径和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/maxPathSum_124.js)
   
@@ -123,9 +123,9 @@
 
 
 ### 排序
-* 414 第三大的数
+* [414. 第三大的数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/thirdMax_414.js)
     
-* 179 最大数
+* [179. 最大数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/largestNumber_179.js)
 
 * [969. 煎饼排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/pancakeSort_969.js)
 
@@ -268,19 +268,19 @@
 * [88. 合并两个有序数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/merge_88.js)
 ### 计数法
 
-* [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid.js)
+* [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid_921.js)
 
 ### 两/三/四数之和
 
-* [1. 两数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum1.js)
+* [1. 两数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum_1.js)
   
-* [167. 两数之和--给定的数据有序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum2.js)
+* [167. 两数之和--给定的数据有序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum_167.js)
   
-* [653. 两数之和 --- 输入是二叉查找树BST，不是数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum3.js)
+* [653. 两数之和 --- 输入是二叉查找树BST，不是数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum_653.js)
   
-* [15. 三数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/threeSum.js)
+* [15. 三数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/threeSum_15.js)
   
-* [18. 四数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/fourSum.js)
+* [18. 四数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/fourSum_18.js)
 
 ### 前缀和
 * 724.寻找数组的中心下标

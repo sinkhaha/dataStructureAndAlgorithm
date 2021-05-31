@@ -2,7 +2,7 @@
  * 268. 缺失数字
  * 
  * 简单
- * 
+ * https://leetcode-cn.com/problems/missing-number/
  * 
  * 异或运算：
  * 一个数和它本身做异或运算结果为 0，一个数和 0 做异或运算还是它本身

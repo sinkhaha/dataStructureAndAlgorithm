@@ -3,8 +3,7 @@
  * 
  * 简单
  * 
- * https://github.com/sinkhaha/my91algo/blob/master/solution/13_maxDepth_104.md
- * 
+ * https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
  * 对应相反的题目是111题
  * 
  */

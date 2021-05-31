@@ -1,6 +1,7 @@
 /**
  * leetcode 567 字符串的排列
  * Medium
+ * https://leetcode-cn.com/problems/permutation-in-string/
  * 
  * 输入: s1 = "ab" s2 = "eidbaooo"
  * 输出: True

@@ -1,6 +1,7 @@
 /**
  * 51. N 皇后
  * 困难
+ * https://leetcode-cn.com/problems/n-queens/
  * 
  * 回溯算法
  * 此题是返回一种可能的结果

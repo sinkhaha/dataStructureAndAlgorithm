@@ -1,6 +1,7 @@
 /**
  * leetcode 232 用两个栈实现队列
  * 简单
+ * https://leetcode-cn.com/problems/implement-queue-using-stacks/
  */
 /**
  * 用两个栈实现队列

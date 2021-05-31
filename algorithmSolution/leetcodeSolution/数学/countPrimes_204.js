@@ -2,6 +2,7 @@
  * 204 计算质数
  * 
  * 简单
+ * https://leetcode-cn.com/problems/count-primes/
  * 
  * 素数: 一个数如果只能被 1 和它本身整除，那么这个数就是素数
  */

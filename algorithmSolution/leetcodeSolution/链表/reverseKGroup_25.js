@@ -1,6 +1,7 @@
 /**
  * 25 K 个一组翻转链表
  * 困难
+ * https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
  * 
  * 24 题目swapPairs 两个一组翻转链表 也可以用该解法，把k设置为2即可
  */

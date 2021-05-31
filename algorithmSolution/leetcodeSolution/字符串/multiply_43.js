@@ -1,6 +1,7 @@
 /**
  * leetcode 43 字符串相乘
- *
+ * https://leetcode-cn.com/problems/multiply-strings/
+ * 
  * 思路：
  * 有两个指针 i，j 在 num1 和 num2 上遍历，计算乘积，同时将乘积叠加到结果 result 的正确位置
  * 

@@ -1,6 +1,7 @@
 /**
  * 1262. 可被3整除的最大和
  * Medium
+ * https://leetcode-cn.com/problems/greatest-sum-divisible-by-three/
  * 
  * 题目：
  * 给你一个整数数组 nums，请你找出并返回能被3整除的元素最大和。

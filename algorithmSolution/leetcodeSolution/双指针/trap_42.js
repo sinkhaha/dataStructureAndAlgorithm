@@ -1,6 +1,7 @@
 /**
  * 42. 接雨水
  * 困难 
+ * https://leetcode-cn.com/problems/trapping-rain-water/
  */
 /**
  * 暴力解法

@@ -1,6 +1,7 @@
 /**
  * leetcode 560 和为K的子数组
  * 中等
+ * https://leetcode-cn.com/problems/subarray-sum-equals-k/
  * 
  * 前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。
  * 

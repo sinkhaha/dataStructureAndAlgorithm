@@ -2,6 +2,7 @@
  * 382 链表随机节点
  * 
  * 中等
+ * https://leetcode-cn.com/problems/linked-list-random-node/
  * 
  * 水塘抽样算法
  * 

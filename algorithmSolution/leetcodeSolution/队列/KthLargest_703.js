@@ -1,6 +1,7 @@
 /**
  * leetcode 703 数据流中的第K大元素
  * 简单
+ * https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/
  * 
  * 解法1:维护一个倒序的数组，然后取第k个即可
  * 解法2:用小顶堆（优先队列）实现，java有内置api
