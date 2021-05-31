@@ -2,7 +2,7 @@
 ### 其他
 * [动态规划讲解](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92.md)
 
-* [509. 斐波拉契数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0_509.md) 
+* [509. 斐波拉契数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0_509_fib.md) 
 
 * [10. 正则匹配](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D_10_isMatch.md)
   
@@ -24,7 +24,7 @@
   
 * [516. 最长回文子序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97-%E5%AD%90%E4%B8%B2-%E5%9B%9E%E6%96%87/%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E5%BA%8F%E5%88%97_516_longestPalindromeSubseq.md)
     
-* [1312. 让字符串成为回文串的最少插入次数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97-%E5%AD%90%E4%B8%B2-%E5%9B%9E%E6%96%87/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%90%E4%B8%BA%E5%9B%9E%E6%96%87%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%8F%92%E5%85%A5%E6%AC%A1%E6%95%B0_1312_minInsertions.md)
+* [1312. 让字符串成为回文串的最少插入次数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97-%E5%AD%90%E4%B8%B2-%E5%9B%9E%E6%96%87/%E8%AE%A9%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%90%E4%B8%BA%E5%9B%9E%E6%96%87%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%8F%92%E5%85%A5%E6%AC%A1%E6%95%B0_1312_minInsertions.md)
     
 * [1143. 最长公共子序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E5%AD%90%E5%BA%8F%E5%88%97-%E5%AD%90%E4%B8%B2-%E5%9B%9E%E6%96%87/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97_1143_longestCommonSubsequence.md)
 
