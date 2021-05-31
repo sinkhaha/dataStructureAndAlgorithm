@@ -1,0 +1,1 @@
+https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/docs/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/%E5%88%86%E5%89%B2%E7%AD%89%E5%92%8C%E5%AD%90%E9%9B%86_416_canPartition.md
