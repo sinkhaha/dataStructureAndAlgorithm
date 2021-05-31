@@ -58,7 +58,7 @@
   
 * [496. 下一个更大元素 I ](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%88/nextGreaterElement_496.js)
 
-* 503 下一个更大元素 II
+* [503. 下一个更大元素 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/nextGreaterElements_503.js)
 
 * [768. 最多能完成排序的块 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E6%A0%88/maxChunksToSorted_768.js)
   
@@ -282,7 +282,7 @@
 * [18. 四数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/fourSum.js)
 
 ### 前缀和
-* 724.寻找数组的中心下标
+* [724.寻找数组的中心下标](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/pivotIndex_724.js)
  
 * [560. 和为K的子数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/leetcode/%E5%89%8D%E7%BC%80%E5%92%8C/subarraySum_560.js)
 
