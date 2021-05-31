@@ -13,7 +13,7 @@
 * [1109. 航班预订统计](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84/corpFlightBookings_1109.js)
 
 ### 链表
-* 2.两数相加
+* [2. 两数相加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/addTwoNumbers_2.js)
 
 * [19. 删除链表的倒数第N个节点](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/removeNthFromEnd_19.js)
 
