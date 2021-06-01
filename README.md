@@ -1,6 +1,6 @@
 # dataStructureAndAlgorithm
 
-* [详细题解](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/algorithmSolution)
+* [leetcode详细题解](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/algorithmSolution)
 
 * [动态规划专题](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/docs)
 
