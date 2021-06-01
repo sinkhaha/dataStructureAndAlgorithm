@@ -88,7 +88,9 @@
 #### 33、位运算系列
 * [78. 子集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//33_%E4%BD%8D%E8%BF%90%E7%AE%97%E7%B3%BB%E5%88%97/1_subsets_78.md)  `中等` `回溯` `位运算`
 
-#### 34、动态规划
+#### 34、
+> 动态规划专题可参考另一个目录中的[详细题解](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/docs)
+
 * [70. 爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//34_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/1_climbStairs_70.md) `简单` `动态规划` `递归`
 
 
