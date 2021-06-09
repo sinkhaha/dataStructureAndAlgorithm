@@ -539,7 +539,7 @@
 
 * 51、[1046. 最后一块石头的重量](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//51_lastStoneWeight_1046.md) `简单` `大顶堆`
 
-* 52、[23. 合并K个升序链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//52_mergeKLists_23.md) `困难` `小顶堆` `合并k个有序数组`
+* 52、[23. 合并K个升序链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//52_mergeKLists_23.md) `困难` `小顶堆` `合并k个有序数组`  `合并k个有序数组`
 
 * 53、[451. 根据字符出现频率排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//53_frequencySort_451.md) `中等` `大顶堆` `哈希表`
 
