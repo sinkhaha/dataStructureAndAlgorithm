@@ -23,6 +23,7 @@ let nextGreaterElementsCircle = function(nums) {
     let n = nums.length;
     let stack = [];
     let resultArr = [];
+
     // 乘以2假装把数组扩为两倍长度
     for (let i = 2 * n - 1; i >= 0; i--) {
         // i % n 除模取余模拟环形, 后面的操作会把前面的数组相同的下标的值覆盖掉,
@@ -30,7 +31,11 @@ let nextGreaterElementsCircle = function(nums) {
         while (stack.length && nums[i % n] >= stack[stack.length - 1]) {
             stack.pop();
         }
-        resultArr[i % n] = stack.length ? stack[stack.length - 1] : -1;
+
+        resultArr[i % n] = stack.length 
+            ? stack[stack.length - 1] 
+            : -1;
+
         stack.push(nums[i % n]);
     }
     return resultArr;

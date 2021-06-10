@@ -31,7 +31,9 @@ var removeDuplicateLetters = function(s) {
     let countMap = {};
     for (let char of s) {
         const value = countMap[char];
-        countMap[char] = value ? value + 1 : 1;
+        countMap[char] = value 
+            ? value + 1 
+            : 1;
     }
 
     console.log(countMap);
@@ -60,7 +62,7 @@ var removeDuplicateLetters = function(s) {
         result.push(char);
     }
 
-    return result.toString().replace(/,/g, '');
+    return result.join(''); 
 };
 
 const s = 'bacbabc';

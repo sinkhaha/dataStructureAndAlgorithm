@@ -9,14 +9,18 @@
  */
 var smallestSubsequence = function(text) {
     let countMap = {};
+
     for (let c of text) {
-        countMap[c] = countMap[c] ? countMap[c] + 1 : 1;
+        countMap[c] = countMap[c] 
+            ? countMap[c] + 1 
+            : 1;
     }
 
     let result = [];
     for (let s of text) {
         // 计数减1
         countMap[s] = +countMap[s] - 1;
+
         if (result.includes(s)) {
             continue;
         }
@@ -32,7 +36,7 @@ var smallestSubsequence = function(text) {
         result.push(s);
     }
     
-    return result.toString().replace(/,/g, ''); 
+    return result.join(''); 
 };
 
 const text = 'cdadabcc';

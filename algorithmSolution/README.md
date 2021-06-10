@@ -135,7 +135,7 @@
 
 ### 递归-分治
 
-* [50. Pow(x, n)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%80%92%E5%BD%92-%E5%88%86%E6%B2%BB/myPow_50.js)
+* [50. Pow(x, n) 计算x的n次幂函数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%80%92%E5%BD%92-%E5%88%86%E6%B2%BB/myPow_50.js)
 
 ### 动态规划
 动态规划专题可参考另一个目录中的[详细题解](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/docs)

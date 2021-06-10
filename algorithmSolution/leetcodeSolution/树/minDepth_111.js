@@ -39,7 +39,7 @@ var minDepth = function(root) {
         for (let i = 0; i < n; i++) {
             const curNode = q.shift();
 
-            // 当前层有叶子节点，则当前深度即为所求结果
+            // 当前节点没有叶子节点，则当前深度即为所求结果
             if (curNode.left == null && curNode.right == null) {
                 return depth;
             }

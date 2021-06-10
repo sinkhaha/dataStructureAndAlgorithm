@@ -16,7 +16,8 @@
  * 
  * 思路:当且仅当它们的排序字符串相等时，两个字符串是字母异位词
  * 
- * 维护一个映射 strMap : {String -> List}，
+ * 维护一个映射 strMap : {String -> List}， // 如{ aet: [ 'eat', 'tea', 'ate' ], ant: [ 'tan', 'nat' ], abt: [ 'bat' ] }
+
  * 其中每个键 K 是一个排序字符串，每个值是初始输入的字符串数组(数组里的值排序后等于K)
  *
  * 时间复杂度O(NKlogK)：N 是 strs 的长度，而 K 是 strs 中字符串的最大长度。
@@ -27,11 +28,11 @@
  * @param {string[]} strs
  * @return {string[][]}
  */
-var groupAnagrams1 = function(strs) {
+var groupAnagrams1 = function (strs) {
     if (strs.length === 0) {
         return [];
     }
- 
+
     // key是有序的字符串，value是所有的异位词
     let strMap = {};
     for (let str of strs) {
@@ -43,7 +44,7 @@ var groupAnagrams1 = function(strs) {
         const value = strMap[key];
 
         if (value === undefined) {
-            strMap[key] = [ str ];
+            strMap[key] = [str];
         } else {
             value.push(str);
             strMap[key] = value;
@@ -53,7 +54,7 @@ var groupAnagrams1 = function(strs) {
     return Object.values(strMap);
 };
 
-const strs = ['eat','tea','tan','ate','nat','bat'];
+const strs = ['eat', 'tea', 'tan', 'ate', 'nat', 'bat'];
 console.log(groupAnagrams1(strs));
 
 /**
@@ -71,7 +72,7 @@ console.log(groupAnagrams1(strs));
  * 
  * @param {*} strs 
  */
-var groupAnagrams2 = function(strs) {
+var groupAnagrams2 = function (strs) {
     if (strs.length === 0) {
         return [];
     }
@@ -82,8 +83,8 @@ var groupAnagrams2 = function(strs) {
         // 26个非负整数
         let countArr = Array(26).fill(0);
         for (let i = 0; i < str.length; i++) {
-           const index = str.charCodeAt(i) - 97;
-           countArr[index]++;
+            const index = str.charCodeAt(i) - 97;
+            countArr[index]++;
         }
 
         // 用#分隔key，如eat是'1#0#0#0#1#0#0#0#0#0#0#0#0#0#0#0#0#0#0#1#0#0#0#0#0#0'
