@@ -15,8 +15,8 @@ https://leetcode-cn.com/problems/longest-palindromic-subsequence/
 >`dp[i][j]`可以由`dp[i+1][j-1]`的结果推出来，因为`s[i]`和`s[j]`字符相等时，则`[i...j]`的字符串为`[i+1...j-1]`之间的字符串加上`s[i]`和`s[j]`这两个字符串
 
 4. 状态转移方程
-* `当 i== j，即s[i] == s[j]，dp[i][j] = dp[i + 1][j - 1] + 2 `
-* `当 i!= j，即s[i] != s[j]，dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]) `
+* `当 i == j，即s[i] == s[j]，dp[i][j] = dp[i + 1][j - 1] + 2 `
+* `当 i != j，即s[i] != s[j]，dp[i][j] = max(dp[i + 1][j], dp[i][j - 1]) `
 
 `dp[i][j] = dp[i + 1][j - 1] + 2` 表示：
 >当`i = j `即`s[i]`和`s[j]`两个字符相等，则`[i...j]`的字符串为`[i+1...j-1]`之间的字符串加上`s[i]`和`s[j]`这两个字符串，即要在`dp[i+1][j-1]`的结果加上2
@@ -25,7 +25,7 @@ https://leetcode-cn.com/problems/longest-palindromic-subsequence/
 >当`i != j`即当两个字符不相等时，需要分别求出`s[i+1...j]`和`s[i..j-1]`哪个回⽂⼦序列更⻓，即`dp[i][j] = max(dp[i + 1][j], dp[i][j - 1])`
 
 5. 基础情况 base case
-如果`s`只有一个字符，只能构成一个回文子序列，即最长长度为1，也就是`dp[i][j] = 1 (当i==j时)`，即dp二维数组对角线都为1
+如果`s`只有一个字符，只能构成一个回文子序列，即最长长度为1，也就是`dp[i][j] = 1 (当i ==j 时)`，即dp二维数组对角线都为1
 
 
 

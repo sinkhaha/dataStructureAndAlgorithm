@@ -46,7 +46,7 @@ var longestCommonSubsequence = function (text1, text2) {
 1. 状态：`i`和`j`不同时，`dp[i][j]`最长公共子串状态改变
 2. 选择：两层循环从前往后遍历，做选择时，选择`text1[i]`和`text2[j]`
 3. dp数组：
-  `dp[i][j]`表示：对于 `text1[1..i]` 和 `text2[1..j]`，它们的 LCS ⻓度是`dp[i][j]`，`dp[i][j]`即为所求结果
+    `dp[i][j]`表示：对于 `text1[1..i]` 和 `text2[1..j]`，它们的 LCS ⻓度是`dp[i][j]`，`dp[m][n]`即为所求结果（m为text1的长度，n为text2的长度）
 4. 状态转移方程：
     两层循环从前往后遍历dp二维数组，做选择，即选择`text1[i]`和`text2[j]`
  * 当`text1[i] == text2[j]`时，说明这字符一定在LCS中，则`dp[i][j] = dp[i-1][j-1] + 1`

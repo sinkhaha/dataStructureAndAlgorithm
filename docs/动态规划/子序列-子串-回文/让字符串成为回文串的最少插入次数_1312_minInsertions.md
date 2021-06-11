@@ -40,7 +40,7 @@ if (s[i] == s[j]) {
 var minInsertions = function (s) {
     let n = s.length;
 
-    // n行，n列的二维数组，初始化为0，base case为 i===j时，dp[i][j]=0
+    // n行，n列的二维数组，初始化为0，base case为 i == j时，dp[i][j]=0
     const dp = Array.from(Array(n), () => Array(n).fill(0));
     console.log(dp);
 

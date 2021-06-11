@@ -7,7 +7,7 @@ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/
 ## 解法1：贪心算法
 ### 思路
 可以在历史最低点买的股票，记录一个历史最低价格点 minprice，
-在第 i 天卖出股票能得到的利润就是 prices[i] - minprice，(即 数组中最高的 - 最低的 = 利润最大的)
+在第 i 天卖出股票能得到的利润就是 `prices[i] - minprice`，(即` 数组中最高的 - 最低的 = 利润最大的`)
 
 只需要遍历价格数组一遍，判断当前值是否是记录历史最低价格点，如果当前值比最低点大，重新计算是否是最大利润 
 
