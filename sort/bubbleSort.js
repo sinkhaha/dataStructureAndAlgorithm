@@ -11,19 +11,23 @@
  */
 function bubbleSort(arr) {
     const len = arr.length;
-  
+
     for (let i = 0; i < len; i++) {
         // 引入后面序列是否有序标志
         let isSorted = true;
 
-        for(let j = 0; j < len-i; j++) {
+        for (let j = 0; j < len - i; j++) {
             if (arr[j] > arr[j + 1]) {
+                // 交换
                 let temp = arr[j];
-                arr[j] = arr [j+1];
-                arr[j+1] = temp;
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                // js交换两个数也可以用以下简洁语句
+                // [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+                
                 // 有数据交换，说明后面序列无序
                 isSorted = false;
-            } 
+            }
         }
         // 后面序列已是有序，则不执行后面的循环
         if (isSorted) {

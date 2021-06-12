@@ -18,7 +18,7 @@ function directInsertSort(arr) {
         return arr;
     }
 
-    // i=0第一个元素默认是有序区
+    // i=0第一个元素默认是有序区，所以从下标1开始遍历
     for (let i = 1; i < arr.length; i++) {
         // 需要插入有序区的当前值
         let needInsertValue = arr[i];
@@ -27,7 +27,7 @@ function directInsertSort(arr) {
         let j = i - 1;
         for (; j >= 0; j--) {
             if (needInsertValue < arr[j]) {
-                // 当前元素小于之前的元素，则把元素往后移动
+                // 要插入的元素小于前面的元素，则把前面的元素往后移动，把位置空出来给要插入的元素
                 arr[j + 1] = arr[j];
             } else {
                 break;

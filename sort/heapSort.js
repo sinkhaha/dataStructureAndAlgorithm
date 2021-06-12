@@ -33,7 +33,7 @@ function adjustHeap(arr, i, length) {
 
     // 对节点 i 以下的结点全部做顺序调整
     for (let j = 2 * i + 1; j < length; j = 2 * j + 1) {
-        temp = arr[i];  
+        temp = arr[i];
         if (j + 1 < length && arr[j] < arr[j + 1]) {
             j++;
         }

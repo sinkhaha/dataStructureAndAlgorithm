@@ -19,7 +19,7 @@ function shellSort(arr) {
             let temp = arr[i];
             // 对距离为 step 的元素组进行排序
             let j = i - step;
-            for (;j >= 0; j -= step) {
+            for (; j >= 0; j -= step) {
                 if (temp >= arr[j]) {
                     break;
                 }
@@ -29,11 +29,11 @@ function shellSort(arr) {
         }
 
         // 减小步长增量为一半
-        step = Math.floor(step / 2); 
+        step = Math.floor(step / 2);
     }
 
     return arr;
 }
 
-const arr = [ 2, 5, 13, 4, 13, 45, 67, 34, 80, 1];
+const arr = [2, 5, 13, 4, 13, 45, 67, 34, 80, 1];
 console.log(shellSort(arr));

@@ -1,6 +1,8 @@
 /**
  * 计数排序
  * 
+ * 比较适合数组的最大值是比较小的数据，数据相对集中的，这样不会浪费太多的空间
+ * 
  * @param {*} array 
  */
 function countingSort(array) {
@@ -20,7 +22,7 @@ function countingSort(array) {
         arrCounts[val]++;
     });
 
-    // i是下标即元素, count是元素个数
+    // i是下标即要排序的元素, count是元素个数
     let newArray = [];
     let sortedIndex = 0;
     arrCounts.forEach((count, i) => {

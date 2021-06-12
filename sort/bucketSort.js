@@ -41,7 +41,7 @@ function createBuckets(array, bucketSize) {
 
     // 计算桶的个数
     const bucketCount = Math.floor((maxValue - minValue) / bucketSize) + 1;
-    
+
     console.log(`桶的个数 ${bucketCount}`);
 
     // 二维数组模拟桶
@@ -78,6 +78,7 @@ function sortBuckets(buckets) {
     return result;
 }
 
+/**===================================================== */
 /**
  * 插入排序
  * @param {*} array 
