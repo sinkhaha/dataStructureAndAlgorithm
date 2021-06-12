@@ -21,7 +21,7 @@ function mySqrt(x) {
 
     while (low <= high) {
         const middle = Math.floor(low + (high - low) / 2);
-        
+
         if (middle * middle <= x) {
             result = middle;
             low = middle + 1;

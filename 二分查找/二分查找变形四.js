@@ -7,11 +7,11 @@ const binaryFindLastSmall = (a, target) => {
     if (a.length === 0) {
         return -1;
     }
-    
+
     let low = 0;
     let high = a.length - 1;
     while (low <= high) {
-        const mid = Math.floor(low+(high-low)/2);
+        const mid = Math.floor(low + (high - low) / 2);
         if (a[mid] > target) {
             high = mid - 1;
         } else {

@@ -11,7 +11,7 @@ const binaryFindLast = (a, target) => {
     let low = 0;
     let high = a.length - 1;
     while (low <= high) {
-        const mid =  Math.floor(low+(high-low)/2);
+        const mid = Math.floor(low + (high - low) / 2);
 
         if (target < a[mid]) {
             high = mid - 1;

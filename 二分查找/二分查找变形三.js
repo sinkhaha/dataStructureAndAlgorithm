@@ -1,5 +1,3 @@
-const { first } = require("lodash");
-
 /**
  * 变形三：查找第一个大于等于给定值的元素
  * @param {*} a 
@@ -13,7 +11,7 @@ const binaryFindFistBig = (a, target) => {
     let low = 0;
     let high = a.length - 1;
     while (low <= high) {
-        const mid =  Math.floor(low+(high-low)/2);
+        const mid = Math.floor(low + (high - low) / 2);
         if (a[mid] >= target) {
             // 如果mid此时是数组第一个元素 或者 前一个值小于要查找的值，那此时就是要查找的第一个大于target的值了
             if (mid === 0 || a[mid - 1] < target) {

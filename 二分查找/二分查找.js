@@ -19,7 +19,7 @@ const binarySearch1 = (arr, target) => {
         // 因为如果 low 和 high 比较大的话，两者之和就有可能会溢出
         // 改进方式mid = low+(high-low)/2
         // 也可以将这里的除以 2 操作转化成位运算 mid = low+((high-low)>>1)        
-        const mid = Math.floor(low+(high-low)/2);
+        const mid = Math.floor(low + (high - low) / 2);
         if (target === arr[mid]) {
             return mid;
         } else if (target < arr[mid]) {
@@ -49,11 +49,11 @@ const binarySearch2 = (sortedArr, target) => {
 }
 
 function bsearchInternally(arr, low, high, value) {
-    if (low > high) { 
+    if (low > high) {
         return -1;
     }
 
-    const mid = low+((high-low)>>1);
+    const mid = low + ((high - low) >> 1);
     if (arr[mid] === value) {
         return mid;
     } else if (arr[mid] < value) {
