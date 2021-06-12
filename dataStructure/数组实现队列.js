@@ -10,7 +10,7 @@ class MyQueue {
     }
     // 出队
     deQueue() {
-        return this.array.shift();  
+        return this.array.shift();
     }
     // 是否为空
     isEmpty() {
@@ -45,10 +45,3 @@ console.log(myQueue.getDatas());
 console.log(myQueue.isEmpty());
 console.log(myQueue.getFirst());
 console.log(myQueue.getLast());
-
-
-
-
-
-
-

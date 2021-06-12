@@ -28,6 +28,10 @@ class Heap {
         }
     }
 
+    /**
+     * 插入元素
+     * @param {*} n 
+     */
     insert(n) {
         this.list.push(n);
         const size = this.size();
@@ -36,10 +40,18 @@ class Heap {
         }
     }
 
+    /**
+     * 获取堆顶元素
+     * @returns 
+     */
     peek() {
         return this.list[0];
     }
 
+    /**
+     * 弹出堆顶元素
+     * @returns 
+     */
     pop() {
         const last = this.list.pop();
         if (this.size() === 0) {
@@ -51,6 +63,10 @@ class Heap {
         return returnItem;
     }
 
+    /**
+     * 堆的大小
+     * @returns 
+     */
     size() {
         return this.list.length;
     }
@@ -81,7 +97,7 @@ class Heap {
         if (right < this.size() && this.comparator(arr[largest], arr[right])) {
             largest = right;
         }
-        
+
         // 交换位置
         if (largest !== i) {
             [arr[largest], arr[i]] = [arr[i], arr[largest]];

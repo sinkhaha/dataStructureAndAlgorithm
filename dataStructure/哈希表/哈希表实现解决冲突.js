@@ -9,6 +9,7 @@ class MyHashMap {
         this.size = 0;
         this.table = new Array(size);
     }
+
     hashConversion(value) {
         let keyCode = 0;
         for (let item of value) {
@@ -17,6 +18,7 @@ class MyHashMap {
         let key = keyCode % this.table.length;
         return key;
     }
+
     set(value) {
         let key = this.hashConversion(value);
         // 该位置已经有其他值了，一直往数组后面找
@@ -34,6 +36,7 @@ class MyHashMap {
             this.table[key] = value;
         }
     }
+
     get(value) {
         let key = this.hashConversion(value);
         while (this.table[key] && value !== this.table[key]) {
@@ -44,6 +47,7 @@ class MyHashMap {
         }
         return this.table[key];
     }
+
     delete(value) {
         let key = this.hashConversion(value);
         while (this.table[key] && this.table[key] !== value) {
@@ -56,6 +60,7 @@ class MyHashMap {
         this.table[key] = undefined;
         return true;
     }
+
     has(value) {
         let key = this.hashConversion(value);
         while (this.table[key] && this.table[key] !== value) {
@@ -64,6 +69,7 @@ class MyHashMap {
         }
         return this.table[key] !== undefined ? true : false;
     }
+
     getAllData() {
         let result = []
         for (let item of this.table) {
@@ -73,10 +79,12 @@ class MyHashMap {
         }
         return result
     }
+
     getSize() {
         return this.size;
     }
 }
+
 let hashMap = new MyHashMap(2);
 hashMap.set('aa');
 hashMap.set('bb');

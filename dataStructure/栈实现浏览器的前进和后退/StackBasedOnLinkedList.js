@@ -1,5 +1,5 @@
 /**
- * 基于链表实现的栈。
+ * 基于链表实现的栈
  *
  * Author: nameczz
  * 
@@ -19,6 +19,7 @@ class StackBasedLinkedList {
     constructor() {
         this.top = null
     }
+    
     push(value) {
         const node = new Node(value)
         if (this.top === null) {
@@ -28,6 +29,7 @@ class StackBasedLinkedList {
             this.top = node
         }
     }
+
     pop() {
         if (this.top === null) {
             return -1
@@ -36,10 +38,12 @@ class StackBasedLinkedList {
         this.top = this.top.next
         return value
     }
+
     // 为了实现浏览器前进后退
     clear() {
         this.top = null
     }
+
     display() {
         if (this.top !== null) {
             let temp = this.top
@@ -50,6 +54,7 @@ class StackBasedLinkedList {
         }
     }
 }
+
 // Test
 const newStack = new StackBasedLinkedList()
 newStack.push(1)

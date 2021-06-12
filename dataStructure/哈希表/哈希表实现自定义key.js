@@ -14,6 +14,7 @@ class MyHashMap {
         }
         this.size = 0;
     }
+
     hashConversion(key) {
         let keyCode = 0;
         for (let char of key) {
@@ -22,6 +23,7 @@ class MyHashMap {
         const hash = keyCode % this.table.length;
         return hash;
     }
+
     set(index, value) {
         let hash = this.hashConversion(index);
         while ((this.table[hash])[0] !== undefined && (this.table[hash])[0] !== index) {
@@ -35,6 +37,7 @@ class MyHashMap {
             (this.table[hash])[1] = value;
         }
     }
+
     get(index) {
         let hash = this.hashConversion(index);
         while ((this.table[hash])[0] !== undefined && (this.table[hash])[0] !== index) {
@@ -44,6 +47,7 @@ class MyHashMap {
         }
         return (this.table[hash])[1];
     }
+
     delete(index) {
         let hash = this.hashConversion(index);
         while ((this.table[hash])[0] !== undefined && (this.table[hash])[0] !== index) {
@@ -56,6 +60,7 @@ class MyHashMap {
         this.size--;
         return true;
     }
+
     has(index) {
         let hash = this.hashConversion(index)
         while ((this.table[hash])[0] !== undefined && (this.table[hash])[0] !== index) {
@@ -66,6 +71,7 @@ class MyHashMap {
         }
         return (this.table[hash])[0] !== undefined ? true : false;
     }
+
     getAllData() {
         let result = [];
         for (let item of this.table) {
@@ -75,6 +81,7 @@ class MyHashMap {
         }
         return result;
     }
+    
     getSize() {
         return this.size;
     }

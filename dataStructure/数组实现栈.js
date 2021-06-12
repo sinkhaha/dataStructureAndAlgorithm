@@ -10,7 +10,7 @@ class Stack {
     }
     // 出栈 时间复杂度都是 O(1) 空间复杂度是 O(1)
     pop() {
-        return this.array.pop();  
+        return this.array.pop();
     }
     // 是否为空
     isEmpty() {
