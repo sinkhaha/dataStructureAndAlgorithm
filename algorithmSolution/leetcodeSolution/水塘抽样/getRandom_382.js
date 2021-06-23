@@ -60,8 +60,8 @@ Solution.prototype.getRandomK = function (k) {
     let res = new Array(k);
     let p = this.head;
 
-     // 前 k 个元素先默认选上
-     for (let j = 0; j < k && p != null; j++) {
+    // 前 k 个元素先默认选上
+    for (let j = 0; j < k && p != null; j++) {
         res[j] = p.val;
         p = p.next;
     }

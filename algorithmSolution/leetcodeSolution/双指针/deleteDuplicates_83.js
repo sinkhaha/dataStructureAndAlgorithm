@@ -15,11 +15,11 @@ function ListNode(val) {
  * @param {ListNode} head
  * @return {ListNode}
  */
-var deleteDuplicates = function(head) {
+var deleteDuplicates = function (head) {
     if (head == null) {
         return null;
     }
-    
+
     let slow = head;
     let fast = head.next;
     while (fast != null) {

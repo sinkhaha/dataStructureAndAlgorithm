@@ -20,7 +20,7 @@ function minAddToMakeValid(S) {
     for (let i = 0; i < S.length; i++) {
         if (S[i] === '(') {
             // 对右括号的需求 + 1
-            needRight++; 
+            needRight++;
         }
         if (S[i] === ')') {
             // 对右括号的需求 - 1

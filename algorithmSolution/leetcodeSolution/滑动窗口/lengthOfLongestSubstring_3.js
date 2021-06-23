@@ -7,13 +7,15 @@
  * 输出: 3 
  * 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
  * 
+ * 双指针
+ * 
  * 时间复杂度O(n) n为s的长度
  * 空间复杂度O(n)
  * 
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
+var lengthOfLongestSubstring = function (s) {
     if (!s) {
         return 0;
     }
@@ -36,13 +38,13 @@ var lengthOfLongestSubstring = function(s) {
 
         right++;
 
-        // 左指针移动(当前窗口加入该right指向的字符后，如果已经出现重复字符了，需要移动左指针)
+        // 左指针移动(当窗口加入right指针指向的字符后，如果已经出现重复字符了，需要移动左指针直到窗口没有重复的字符)
         while (win.get(rightLetter) > 1) {
             const leftLetter = s[left];
 
             const value = win.get(leftLetter);
             if (value !== undefined) {
-                // 左移时，如果窗口包含了该字符，移除该字符
+                // 左指针指针右移时，如果窗口包含了该字符，移除该字符
                 win.set(leftLetter, value - 1);
             }
             left++;

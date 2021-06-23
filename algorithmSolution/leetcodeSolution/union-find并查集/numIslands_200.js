@@ -158,4 +158,4 @@ const grid = [
     ["0", "0", "0", "0", "0"]
 ];
 
-console.log(numIslands(grid)); 
+console.log(numIslands(grid));

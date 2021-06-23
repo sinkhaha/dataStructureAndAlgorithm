@@ -1,6 +1,8 @@
 /**
  * 26 删除排序数组中的重复项
  * 
+ * 是一个有序数组
+ * 
  * 简单
  * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
  * 
@@ -36,7 +38,7 @@ function removeDuplicates(nums) {
         }
     }
 
-    return slow+1;
+    return slow + 1;
 }
 const nums = [1, 1, 2];
 console.log(removeDuplicates(nums)); // 2, 即[1,2]

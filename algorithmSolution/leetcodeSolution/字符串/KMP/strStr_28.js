@@ -21,8 +21,8 @@ const KMP = require('./kmp算法');
  * @return {number}
  */
 var strStr = function (haystack, needle) {
-    const kmp = new KMP(needle);
-    return kmp.search(haystack);
+  const kmp = new KMP(needle);
+  return kmp.search(haystack);
 };
 const haystack = 'aaaaa';
 const needle = 'bba';
@@ -38,17 +38,17 @@ console.log(strStr(haystack, needle)); // -1
  * @param {string} needle
  * @return {number}
  */
-var strStr2 = function(haystack, needle) {
-    let L = needle.length;
-    let n = haystack.length;
+var strStr2 = function (haystack, needle) {
+  let L = needle.length;
+  let n = haystack.length;
 
-    for (let j = 0; j < n - L + 1; ++j) {
-      const sub = haystack.substring(j, j + L);
-      if (sub == needle) {
-        return j;
-      }
+  for (let j = 0; j < n - L + 1; ++j) {
+    const sub = haystack.substring(j, j + L);
+    if (sub == needle) {
+      return j;
     }
-    return -1;
+  }
+  return -1;
 };
 
 console.log(strStr2(haystack, needle)); // -1

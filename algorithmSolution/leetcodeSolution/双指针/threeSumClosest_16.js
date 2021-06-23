@@ -4,7 +4,7 @@
  * 排序 + 双指针
  * https://leetcode-cn.com/problems/3sum-closest/
  * 
- * 解法有点类似3数之和
+ * 解法有点类似 第15题目(3数之和)
  * 
  * 空间复杂度O(logN) 排序
  * 时间复杂度O(n^2)
@@ -13,12 +13,12 @@
  * @param {number} target
  * @return {number}
  */
-var threeSumClosest = function(nums, target) {
+var threeSumClosest = function (nums, target) {
     // 先排序
     nums = nums.sort((a, b) => {
         return parseInt(a) - parseInt(b);
     });
-    
+
     let n = nums.length;
     let result = Number.MAX_SAFE_INTEGER; // 和（最小差值的和）
 
@@ -27,7 +27,7 @@ var threeSumClosest = function(nums, target) {
         if (i > 0 && nums[i] === nums[i - 1]) {
             continue;
         }
-        
+
         let second = i + 1;
         let third = n - 1;
         while (second < third) {
@@ -48,11 +48,11 @@ var threeSumClosest = function(nums, target) {
             if (sum > target) {
                 let third1 = third - 1;
                 // 移动到前一个不相等的元素
-                while(third1 > second && nums[third1] === nums[third]) {
-                   third1--;
+                while (third1 > second && nums[third1] === nums[third]) {
+                    third1--;
                 }
                 third = third1;
-            // 向后移动第2个指针
+                // 向后移动第2个指针
             } else {
                 let second1 = second + 1;
                 // 移动到下一个不相等的元素

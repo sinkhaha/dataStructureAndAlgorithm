@@ -27,11 +27,11 @@ var countPrimeSetBits = function (L, R) {
         19: true
     };
 
-    this.count = function(n) {
+    this.count = function (n) {
         let res = 0;
-        while(n != 0) {
+        while (n != 0) {
             res++;
-            n = n & (n-1); 
+            n = n & (n - 1);
         }
         return res;
     }

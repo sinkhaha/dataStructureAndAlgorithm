@@ -62,7 +62,7 @@ function right_bound(target) {
  * 求n!结果尾数中零的数量  172题度解法
  * @param {*} n 
  */
-var trailingZeroes = function(n) {
+var trailingZeroes = function (n) {
     let res = 0;
     for (let d = n; Math.floor(d / 5) > 0; d = Math.floor(d / 5)) {
         res += Math.floor(d / 5);
@@ -70,6 +70,5 @@ var trailingZeroes = function(n) {
     return res;
 };
 
-// TODO
 const K = 0;
 console.log(preimageSizeFZF(K));

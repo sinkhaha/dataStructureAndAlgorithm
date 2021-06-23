@@ -39,7 +39,7 @@
  * @param {string} t
  * @return {string}
  */
-var minWindow = function(source, target) {
+var minWindow = function (source, target) {
     if (source.length < target.length) {
         return null;
     }
@@ -58,7 +58,7 @@ var minWindow = function(source, target) {
             needs.set(t, v + 1);
         }
     }
-   
+
     console.log(needs);
 
     // 存滑动窗口出现的字符，key是出现在target的字符，value是出现的次数
@@ -73,10 +73,10 @@ var minWindow = function(source, target) {
     // 左右指针
     let left = 0;
     let right = 0;
-    
+
     while (right < source.length) {
         let rightLetter = source[right];
-                
+
         // 1.进行窗口的数据更新，当前字符是需要的则加入窗口
         if (needs.has(rightLetter)) {
             const count = window.get(rightLetter); // key不存在返回undefined
@@ -92,9 +92,9 @@ var minWindow = function(source, target) {
             }
         }
 
-        right++; // 右移动窗口
+        right++; // 右指针移动，扩大窗口
 
-        // 3.左移动窗口，window已经包含了needs所有的字符
+        // 3. 左指针向右移动，缩小窗口，window已经包含了needs所有的字符
         while (isValidCount === needs.size) {
             // 更新最小覆盖字串
             const curLen = right - left;
@@ -105,7 +105,7 @@ var minWindow = function(source, target) {
 
             let l = source[left];
             if (needs.has(l)) {
-                // 4.即将窗口左边移动后，窗口已经不包含需要的字符了，有效计数需要减一
+                // 4. 即左指针向右移动后，窗口已经不包含需要的字符了，有效计数需要减1
                 if (window.get(l) === needs.get(l)) {
                     isValidCount--;
                 }
@@ -115,15 +115,15 @@ var minWindow = function(source, target) {
                     window.set(l, curWinValue - 1);
                 }
             }
-            
-            // 左移窗口
+
+            // 左指针向右移动，缩小窗口
             left++;
         }
     }
 
     console.log(`start=${start} len=${len}`);
 
-    return len === Number.MAX_VALUE 
+    return len === Number.MAX_VALUE
         ? null
         : source.substr(start, len);
 };

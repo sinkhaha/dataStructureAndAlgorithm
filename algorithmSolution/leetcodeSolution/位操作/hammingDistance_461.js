@@ -17,12 +17,12 @@
  * @param {number} y
  * @return {number}
  */
-var hammingDistance = function(x, y) {
+var hammingDistance = function (x, y) {
     // 异或，相同为0，不同为1，此时含有1的个数即为不同的个数
-    let result = x^y; 
-    
+    let result = x ^ y;
+
     let countOne = 0;
-    while (result !== 0 ) {
+    while (result !== 0) {
         // （n & (n-1)）可以消除n最后一个1，一直到n为0为止
         result = result & (result - 1);
         countOne++;

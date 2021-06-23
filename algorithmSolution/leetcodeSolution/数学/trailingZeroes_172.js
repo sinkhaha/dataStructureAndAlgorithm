@@ -38,7 +38,7 @@
  * @param {number} n
  * @return {number}
  */
-var trailingZeroes1 = function(n) {
+var trailingZeroes1 = function (n) {
     let res = 0;
     // 除数
     let divisor = 5;
@@ -52,7 +52,7 @@ var trailingZeroes1 = function(n) {
 };
 
 // 解法一的简化
-var trailingZeroes2 = function(n) {
+var trailingZeroes2 = function (n) {
     let res = 0;
     for (let d = n; Math.floor(d / 5) > 0; d = Math.floor(d / 5)) {
         res += Math.floor(d / 5);

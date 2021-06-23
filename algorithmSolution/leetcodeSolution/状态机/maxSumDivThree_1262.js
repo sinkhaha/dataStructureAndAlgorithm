@@ -48,7 +48,7 @@ function sum(arr) {
     return s;
 };
 
-const nums = [1,2,3,4,4];
+const nums = [1, 2, 3, 4, 4];
 console.log(maxSumDivThree1(nums)); // 12
 
 /**
@@ -86,12 +86,12 @@ console.log(maxSumDivThree1(nums)); // 12
  * @param {number[]} nums
  * @return {number}
  */
-var maxSumDivThree2 = function(nums) {
+var maxSumDivThree2 = function (nums) {
     let state = [0, Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER];
 
     for (let num of nums) {
         if (num % 3 === 0) {
-            state = [state[0] + num, state[1] + num, state[2] + num ]
+            state = [state[0] + num, state[1] + num, state[2] + num]
         } else if (num % 3 === 1) {
             const a = Math.max(state[2] + num, state[0]);
             const b = Math.max(state[0] + num, state[1]);
@@ -113,7 +113,7 @@ console.log(maxSumDivThree2(nums)); // 12
  * 解法二的代码整洁版
  * @param {*} nums 
  */
-var maxSumDivThree3 = function(nums) {
+var maxSumDivThree3 = function (nums) {
     let state = [0, Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER];
 
     for (let num of nums) {

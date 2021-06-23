@@ -22,7 +22,7 @@
  * @param {number} target
  * @return {number[][]}
  */
-var fourSum1 = function(nums, target) {
+var fourSum1 = function (nums, target) {
     let n = nums.length;
     if (n < 4) {
         return [];
@@ -33,10 +33,10 @@ var fourSum1 = function(nums, target) {
         return parseInt(a) - parseInt(b);
     });
     console.log(`排序后 ${nums}`);
-    
+
     // { 和: [[i, j]] } 
     // key是和，值是等于该和的两个数的下标
-    let map = new Map(); 
+    let map = new Map();
     let results = [];
 
     // 先处理第一对，把它们的sum存下来
@@ -66,7 +66,7 @@ var fourSum1 = function(nums, target) {
             for (let one of list) {
                 // 
                 if (one[1] < i) {
-                    results.push([ nums[one[0]], nums[one[1]], nums[i], nums[j] ]);
+                    results.push([nums[one[0]], nums[one[1]], nums[i], nums[j]]);
                 }
             }
         }
@@ -100,7 +100,7 @@ function fourSum2(nums, target) {
     nums = nums.sort((a, b) => {
         return parseInt(a) - parseInt(b);
     });
-    
+
     let results = [];
     for (let first = 0; first < n; first++) {
         if (nums[first] === nums[first - 1]) {
@@ -108,28 +108,28 @@ function fourSum2(nums, target) {
         }
 
         for (let second = first + 1; second < n; second++) {
-            if (second > first + 1 && nums[second] == nums[second-1]) {
+            if (second > first + 1 && nums[second] == nums[second - 1]) {
                 continue;
             }
 
             let third = second + 1;
             let four = n - 1;
-            
+
             // 双指针
             while (third < four) {
                 const sum = nums[first] + nums[second] + nums[third] + nums[four];
                 if (sum > target) {
-                    four--; 
-                } else if (sum < target){
+                    four--;
+                } else if (sum < target) {
                     third++;
                 } else {
                     results.push([nums[first], nums[second], nums[third], nums[four]]);
                     // 第3数重复，继续向后移动指针
-                    while(third < four && nums[third] === nums[third + 1]) {
+                    while (third < four && nums[third] === nums[third + 1]) {
                         third++;
                     }
                     // 第4数重复，继续向前移动指针
-                    while(third < four && nums[four] === nums[four - 1]) {
+                    while (third < four && nums[four] === nums[four - 1]) {
                         four--;
                     }
                     // 继续移动third,four指针

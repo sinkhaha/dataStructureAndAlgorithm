@@ -12,12 +12,12 @@
  * @param {number} num
  * @return {number}
  */
-var findComplement = function(num) {
+var findComplement = function (num) {
     // num在二进制下右多少位为0
     let count = 0;
     let tmpNum = num;
 
-    while(tmpNum != 0) {
+    while (tmpNum != 0) {
         count += 1;
         tmpNum >>= 1;
     }

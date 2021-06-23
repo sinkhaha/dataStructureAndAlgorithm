@@ -23,7 +23,7 @@ var isSubsequence = function (s, t) {
         }
         j++;
     }
-    
+
     return i == s.length;
 };
 

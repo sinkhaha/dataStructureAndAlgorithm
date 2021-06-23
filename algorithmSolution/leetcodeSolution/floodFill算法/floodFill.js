@@ -60,9 +60,9 @@ function inArea(image, x, y) {
 }
 
 const image = [
-    [1,1,1],
-    [1,1,0],
-    [1,0,1]
+    [1, 1, 1],
+    [1, 1, 0],
+    [1, 0, 1]
 ];
 const sr = 1;
 const sc = 1;

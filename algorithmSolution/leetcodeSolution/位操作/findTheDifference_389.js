@@ -13,14 +13,14 @@
  * @param {string} t
  * @return {character}
  */
-var findTheDifference = function(s, t) {
+var findTheDifference = function (s, t) {
     if (!s) {
         return t;
     }
 
     // 因为t比s多一个字符，所以可以先默认取t最后一个字符，字符转成unicode
     let result = t.charCodeAt(t.length - 1);
-    
+
     // 获取字符的unicode值
     for (let i = 0; i < s.length; i++) {
         result ^= s.charCodeAt(i);

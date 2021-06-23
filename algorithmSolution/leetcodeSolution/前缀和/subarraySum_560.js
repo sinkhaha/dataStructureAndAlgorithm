@@ -3,7 +3,7 @@
  * 中等
  * https://leetcode-cn.com/problems/subarray-sum-equals-k/
  * 
- * 前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和。
+ * 前缀和主要适用的场景是原始数组不会被修改的情况下，频繁查询某个区间的累加和
  * 
  * 题目:
  * 给定一个整数数组和一个整数 k，你需要找到该数组中和为 k 的连续的子数组的个数。
@@ -14,6 +14,7 @@
  *
  * 解题思路：前缀和数组
  * 前缀和数组preSum的含义：preSum[i]就是nums[0..i-1]所有元素的累加和。
+ * 
  * 如果想求nums[i..j]的累加和，只需要一步操作preSum[j+1]-preSum[i]即可，
  * 而不需要重新去遍历数组。
  * 
@@ -25,19 +26,19 @@
  * @param {number} k
  * @return {number}
  */
-var subarraySum = function(nums, k) {
+var subarraySum = function (nums, k) {
     let n = nums.length;
-    
+
     // 构造前缀和数组
     let preSum = [];
     preSum[0] = 0;
     for (let i = 1; i <= n; i++) {
         preSum[i] = preSum[i - 1] + nums[i - 1];
     }
-    
+
     // 符合条件的个数
     let count = 0;
-    
+
     for (let j = 1; j <= n; j++) {
         for (let i = 0; i < j; i++) {
             // preSum[j] - preSum[i] 表示区间[i,j-1]的和
@@ -60,7 +61,7 @@ console.log(subarraySum(nums, k)); // 2
  * @param {*} nums 
  * @param {*} k 
  */
-var subarraySum2 = function(nums, k) {
+var subarraySum2 = function (nums, k) {
     let n = nums.length;
     let count = 0;
     // map存 {前缀和j: 该前缀和出现的次数}
@@ -80,11 +81,11 @@ var subarraySum2 = function(nums, k) {
         }
 
         // 记录 前缀和nums[0...j] 的 出现次数
-        preSumObj[sum_j] = preSumObj[sum_j] !== undefined 
+        preSumObj[sum_j] = preSumObj[sum_j] !== undefined
             ? preSumObj[sum_j] + 1
             : 1;
     }
-    
+
     console.log(preSumObj);
     return count;
 };

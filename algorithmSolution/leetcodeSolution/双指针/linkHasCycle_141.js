@@ -23,23 +23,23 @@ function ListNode(val) {
 * @param {*} head 
 */
 function hasCycle1(head) {
-   if (head === null || head.next === null) {
-       return false
-   }
+    if (head === null || head.next === null) {
+        return false
+    }
 
-   let slow = head;
-   let fast = head.next; // 指向下一个节点
+    let slow = head;
+    let fast = head.next; // 指向下一个节点
 
-   while (slow !== fast) {
-       if(fast === null || fast.next === null) {
-           return false;
-       }
-       fast = fast.next.next; // 快指针走两步
-       slow = slow.next; // 慢指针走一步
-   }
-   console.log(`相遇节点的值是：${fast.val}`);
+    while (slow !== fast) {
+        if (fast === null || fast.next === null) {
+            return false;
+        }
+        fast = fast.next.next; // 快指针走两步
+        slow = slow.next; // 慢指针走一步
+    }
+    console.log(`相遇节点的值是：${fast.val}`);
 
-   return true;
+    return true;
 }
 
 /**
@@ -54,17 +54,17 @@ function hasCycle1(head) {
 * @param {*} head 
 */
 function hasCycle2(head) {
-   const map = new Map();
+    const map = new Map();
 
-   while (head !== null) {
-       if (map.has(head)) {
-           return true;
-       } else {
-           map.set(head);
-           head = head.next;
-       }
-   }
-   return false;
+    while (head !== null) {
+        if (map.has(head)) {
+            return true;
+        } else {
+            map.set(head);
+            head = head.next;
+        }
+    }
+    return false;
 }
 
 const node1 = new ListNode(1);
@@ -105,7 +105,7 @@ function hasCycleAndGetCycleLength(head) {
     let count = 1; // 因为快慢指针相差1，所以从1开始
 
     while (slow !== fast) {
-        if(fast === null || fast.next === null) {
+        if (fast === null || fast.next === null) {
             return -1;
         }
         fast = fast.next.next; // 快指针走两步
@@ -159,7 +159,7 @@ function hasCycleAndGetNode2(head) {
     let fast = head.next; // 指向下一个节点，注意这里快慢指针的起始点相差了1，和hasCycleAndGetNode3的区别
 
     while (slow !== fast) {
-        if(fast === null || fast.next === null) {
+        if (fast === null || fast.next === null) {
             return -1;
         }
         fast = fast.next.next; // 快指针走两步
@@ -177,7 +177,7 @@ function hasCycleAndGetNode2(head) {
         fast = fast.next;
     }
     // 此时再次相遇，指向的那个节点就是入环节点
-    return slow; 
+    return slow;
 }
 
 console.log('入环节点：' + hasCycleAndGetNode2(node1).val);
@@ -194,7 +194,7 @@ function hasCycleAndGetNode3(head) {
         fast = fast.next.next;
         slow = slow.next;
 
-        if(fast == slow){
+        if (fast == slow) {
             console.log(`相遇节点值是：${slow.val}`);
             // 其中一个指针指向不动，另一个指针指向头
             slow = head;
@@ -204,7 +204,7 @@ function hasCycleAndGetNode3(head) {
                 fast = fast.next;
             }
             // 此时再次相遇，指向的那个节点就是入环节点
-            return slow; 
+            return slow;
         }
     }
 

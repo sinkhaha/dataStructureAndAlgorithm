@@ -10,9 +10,9 @@
  * @param {number[]} nums
  * @return {number}
  */
-var pivotIndex = function(nums) {
+var pivotIndex = function (nums) {
     let total = nums.reduce((total, cur) => total + cur, 0);
-    
+
     let preSum = 0;
     for (let i = 0; i < nums.length; i++) {
         // 左边之和等于右边之和

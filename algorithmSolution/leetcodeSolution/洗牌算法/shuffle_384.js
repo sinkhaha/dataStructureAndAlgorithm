@@ -12,7 +12,7 @@
 /**
  * @param {number[]} nums
  */
-var Solution = function(nums) {
+var Solution = function (nums) {
     this.nums = nums;
 };
 
@@ -21,7 +21,7 @@ var Solution = function(nums) {
  * Resets the array to its original configuration and return it.
  * @return {number[]}
  */
-Solution.prototype.reset = function() {
+Solution.prototype.reset = function () {
     return this.nums;
 };
 
@@ -30,16 +30,16 @@ Solution.prototype.reset = function() {
  * Returns a random shuffling of the array.
  * @return {number[]}
  */
-Solution.prototype.shuffle = function() {
+Solution.prototype.shuffle = function () {
     const nums = this.nums.slice(0);
     let n = nums.length;
 
     // 产生的结果有 n! 种可能
     for (let i = 0; i < n; i++) {
         // 从 i 到 n-1 随机选一个
-        const rand = randOne(i, n - 1); 
+        const rand = randOne(i, n - 1);
         // 交换nums数组i和rand下标的两个元素
-        [ nums[i], nums[rand] ] = [ nums[rand], nums[i] ];
+        [nums[i], nums[rand]] = [nums[rand], nums[i]];
     }
 
     return nums;
@@ -51,11 +51,8 @@ function randOne(n, m) {
 };
 
 const nums = ['Solution', 'shuffle', 'reset', 'shuffle'];
- var obj = new Solution(nums);
- var param_1 = obj.reset();
- var param_2 = obj.shuffle();
- console.log(param_1);
- console.log(param_2);
-
-
- 
+var obj = new Solution(nums);
+var param_1 = obj.reset();
+var param_2 = obj.shuffle();
+console.log(param_1);
+console.log(param_2);

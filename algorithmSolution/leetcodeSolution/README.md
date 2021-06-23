@@ -261,7 +261,7 @@
   
 * [86. 分隔链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/partition_86.js)
   
-* [141. 环形链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/linkHasCycle_141.js)
+* [141. 环形链表 (跟变形问题)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/linkHasCycle_141.js)
   
 * [392. 判断子序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/isSubsequence_392.js)
 

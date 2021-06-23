@@ -13,20 +13,20 @@
  */
 function twoSum(nums, target) {
     let low = 0;
-    let high = nums.length - 1; 
+    let high = nums.length - 1;
 
-    while(low < high) {
+    while (low < high) {
         const sum = nums[low] + nums[high];
         if (sum > target) {
-            high--; 
-        } else if(sum < target) {
+            high--;
+        } else if (sum < target) {
             low++;
         } else {
             // 相等，题目要求的是输出第几个，而非数组下标
-            return [low+1, high+1];
+            return [low + 1, high + 1];
         }
     }
-    
+
     // 找不到
     return [-1, -1];
 };

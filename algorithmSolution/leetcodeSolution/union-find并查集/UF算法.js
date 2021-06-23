@@ -6,7 +6,7 @@
 class UF {
     constructor(n) {
         // 连通分量的个数
-        this.count = n; 
+        this.count = n;
         // 节点 x 的节点是 parent[x], 父节点指针初始指向自己
         this.parent = new Array(n);
         for (let i = 0; i < n; i++) {
@@ -39,7 +39,7 @@ class UF {
             this.parent[rootP] = rootQ;
             this.size[rootQ] += this.size[rootP];
         }
-        
+
         this.count--;
     }
 
@@ -70,7 +70,7 @@ class UF {
      * @param {*} x 
      */
     find(x) {
-        while(this.parent[x] != x) {
+        while (this.parent[x] != x) {
             // 进行路径压缩
             this.parent[x] = this.parent[this.parent[x]];
             x = this.parent[x];

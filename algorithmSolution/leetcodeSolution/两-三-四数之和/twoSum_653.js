@@ -33,7 +33,7 @@ function findTarget(root, k) {
         return false;
     }
 
-    // 中序遍历结果，从小到大排序
+    // 先中序遍历，结果从小到大排序
     let bstNums = [];
     inOrderTraverse(root, bstNums);
 

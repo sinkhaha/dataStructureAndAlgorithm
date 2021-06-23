@@ -5,8 +5,8 @@
 function ListNode(val) {
     this.val = val;
     this.next = null;
- }
- 
+}
+
 /**
  * leetcode 86 分隔链表
  * https://leetcode-cn.com/problems/partition-list/
@@ -27,7 +27,7 @@ function ListNode(val) {
  * @param {number} x
  * @return {ListNode}
  */
-var partition = function(head, x) {
+var partition = function (head, x) {
     let lt = new ListNode(-1); // 小于x的链表
     let gt = new ListNode(-1); // 大于x的链表
 
@@ -35,7 +35,7 @@ var partition = function(head, x) {
     let after = gt; // 大于x移动的指针
 
     // 遍历链表，把元素分别放在lt和gt链表中
-    while(head !== null) {
+    while (head !== null) {
         const val = head.val;
         if (val < x) {
             before.next = head;
@@ -49,9 +49,10 @@ var partition = function(head, x) {
     // after是最后一个元素，所以其下一个值置为null
     after.next = null;
 
-    // 拼接lt和gt两个链表，before此时指向了lt的最后一个元素，gt.next是跳过哨兵元素
+    // 拼接lt和gt两个链表
+    // before此时指向了lt的最后一个元素，gt.next是跳过哨兵元素
     before.next = gt.next;
-    
+
     // lt.next是因为lt的头一个哨兵元素是-1，需要返回-1后的第一个元素的链表
     return lt.next;
 };

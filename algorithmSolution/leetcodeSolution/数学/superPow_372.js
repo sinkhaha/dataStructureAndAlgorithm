@@ -74,13 +74,13 @@ function myPow2(a, k) {
     if (k == 0) {
         return 1;
     }
-    
+
     a %= base;
 
     // k 是奇数
-    if (k % 2 == 1) { 
+    if (k % 2 == 1) {
         return (a * myPow2(a, k - 1)) % base;
-    // k 是偶数
+        // k 是偶数
     } else {
         let sub = myPow2(a, k / 2);
         return (sub * sub) % base;

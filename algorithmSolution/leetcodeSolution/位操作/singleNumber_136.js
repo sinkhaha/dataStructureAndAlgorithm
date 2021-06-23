@@ -19,7 +19,7 @@ var singleNumber = function (nums) {
     for (let num of nums) {
         result ^= num;
     }
-    
+
     return result;
 };
 const nums = [1, 1, 2, 3, 3, 4, 4];

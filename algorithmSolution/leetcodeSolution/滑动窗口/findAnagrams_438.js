@@ -21,7 +21,7 @@
  * @param {string} p
  * @return {number[]}
  */
-var findAnagrams = function(source, target) {
+var findAnagrams = function (source, target) {
     const results = []; // 结果数组
     if (source.length < target.length) {
         return results;
@@ -37,7 +37,7 @@ var findAnagrams = function(source, target) {
             needs.set(t, v + 1);
         }
     }
-   
+
     // console.log(needs);
 
     // 滑动窗口，key是出现在target的字符，value是出现的次数
@@ -48,10 +48,10 @@ var findAnagrams = function(source, target) {
     // 左右指针
     let left = 0;
     let right = 0;
-    
+
     while (right < source.length) {
         let rightLetter = source[right];
-                
+
         // 1.进行窗口的数据更新，当前字符是需要的则加入窗口
         if (needs.has(rightLetter)) {
             const count = window.get(rightLetter); // key不存在返回undefined
@@ -67,9 +67,9 @@ var findAnagrams = function(source, target) {
             }
         }
 
-        right++; // 右移动窗口
+        right++; // 右指针移动，扩大窗口
 
-        // 3.左移动窗口，当前左右指针的长度>=要找的目标字符串长度 即可向右滑动窗口
+        // 3.左指针移动，缩小窗口，当前左右指针的长度>=要找的目标字符串长度 即可向右滑动窗口
         while (right - left >= target.length) {
             // 当前窗口的个数符合需要查找的个数了
             if (isValidCount === needs.size) {
@@ -88,8 +88,8 @@ var findAnagrams = function(source, target) {
                     window.set(l, curWinValue - 1);
                 }
             }
-            
-            // 左移窗口
+
+            // 左指针移动，缩小窗口
             left++;
         }
     }
