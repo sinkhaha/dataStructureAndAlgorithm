@@ -27,7 +27,7 @@ function ListNode(val, next) {
  * @return {ListNode}
  */
 var swapPairs1 = function (head) {
-    // 结束条件 当前已经是链表的尾节点了 或 已经是链表的最后一个节点
+    // 结束条件 当前已经是链表尾了 或 已经是链表的最后一个节点
     if (head === null || head.next === null) {
         return head;
     }
@@ -48,10 +48,10 @@ var swapPairs1 = function (head) {
 /**
  * 解法2:迭代
  * 
- * 保存一个当前节点指针cur，该cur指向每次已经交换好的部分的第二个节点，
- * 循环交换后面的每两个节点，cur指针继续移动，直到最后一个节点或只剩一个节点后停止
+ * 1. 保存一个当前节点指针cur，该cur指向每次已经交换好的部分的第二个节点
+ * 2. 循环交换后面的每两个节点，cur指针继续移动，直到最后一个节点或只剩一个节点后停止
  * 
- * 时间复杂度：O(n)， n是链表节点数
+ * 时间复杂度：O(n)，n是链表节点数
  * 空间复杂度：O(1)
  * 
  * @param {*} head 
@@ -61,13 +61,14 @@ var swapPairs2 = function(head) {
     const dummyHead = new ListNode(0);
     dummyHead.next = head;
 
-    // 当前节点（指向已经交换后的节点的第二个节点）
+    // 当前节点（永远指向已经交换后的节点的第二个节点）
     let cur = dummyHead;
+
     // 不是尾节点 且 不是只剩下一个节点 则循环交换每两个节点
     while (cur.next !== null && cur.next.next !== null) {
-        // 每组的第一个节点
+        // 每组原来要交换的第一个节点
         const node1 = cur.next;
-        // 每组的第二个节点
+        // 每组原来要交换的第二个节点
         const node2 = cur.next.next;
 
         // 上一组的后一个节点指向交换后的第一个节点

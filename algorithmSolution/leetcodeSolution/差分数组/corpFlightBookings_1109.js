@@ -33,7 +33,7 @@ class Difference {
      * 用途：构造差分数组diff，可以快速进行区间增减的操作
      * 
      * 例如：
-     * 回想通过diff反推nums的过程，如果想对区间nums[i..j]的元素全部加 3，
+     * 查看getOriginArrFromDiff方法通过diff反推nums的过程，如果想对区间nums[i..j]的元素全部加 3，
      * 那么只需要让diff[i] += 3（表示nums[i..]所有的元素都加了 3），
      * 然后再让diff[j+1] -= 3（表示nums[j+1..]所有元素再减 3）即可，
      * 综合起来，就是对nums[i..j]中的所有元素都加 3
@@ -46,7 +46,7 @@ class Difference {
         this.diff[i] += val;
         // 说明是对nums[i]及以后的整个数组都进行修改，那么就不需要再给diff数组减val了
         if (j + 1 < this.diff.length) {
-           this.diff[j+1] -= val;
+            this.diff[j + 1] -= val;
         }
     }
 
@@ -83,7 +83,7 @@ class Difference {
  * @param {number} n 数组的长度为n
  * @return {number[]}
  */
-var corpFlightBookings1 = function(bookings, n) {
+var corpFlightBookings1 = function (bookings, n) {
     // nums实例化n为元素且初始化为全 0，不能用 new Array(n)，不然是undefined
     const nums = Array(n).fill(0);
     const difference = new Difference(nums);
@@ -103,7 +103,7 @@ var corpFlightBookings1 = function(bookings, n) {
     return difference.getOriginArrFromDiff();
 };
 
-const bookings = [[1,2,10], [2,3,20], [2,5,25]];
+const bookings = [[1, 2, 10], [2, 3, 20], [2, 5, 25]];
 const n = 5;
 console.log('解法一结果是：', corpFlightBookings1(bookings, n)); // [ 10, 55, 45, 25, 25 ]
 
@@ -115,7 +115,7 @@ console.log('解法一结果是：', corpFlightBookings1(bookings, n)); // [ 10,
  * @param {*} bookings 
  * @param {*} n 
  */
-var corpFlightBookings2 = function(bookings, n) {
+var corpFlightBookings2 = function (bookings, n) {
     // 有点类似差分数组，counters表示增量数组
     const counters = Array(n).fill(0);
 
@@ -135,6 +135,6 @@ var corpFlightBookings2 = function(bookings, n) {
     return counters;
 }
 
-const bookings2 = [[1,2,10], [2,3,20], [2,5,25]];
+const bookings2 = [[1, 2, 10], [2, 3, 20], [2, 5, 25]];
 const n2 = 5;
 console.log('解法二结果是：', corpFlightBookings2(bookings2, n2)); // [ 10, 55, 45, 25, 25 ]

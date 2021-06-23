@@ -4,9 +4,10 @@
  * 简单
  * https://leetcode-cn.com/problems/palindrome-linked-list/
  * 
- * 寻找回文串的核心思想是从中心向两端扩展
+ * 寻找回文串的核心思想是 从中心向两端扩展
  * 
- * 因为回文串长度可能为奇数也可能是偶数，长度为奇数时只存在一个中心点，而长度为偶数时存在两个中心点
+ * 因为回文串长度可能为奇数也可能是偶数，长度为奇数时只存在一个中心点，
+ * 而长度为偶数时存在两个中心点
  * 
  * 最简单的方法：
  * 把原始链表反转存入一条新的链表，然后比较这两条链表是否相同
@@ -100,7 +101,6 @@ function reverse(head) {
     return pre;
 }
 
-// TODO
 function test() {
     let head = new ListNode(1);
     let node1 = new ListNode(2);

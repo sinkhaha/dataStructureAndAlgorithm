@@ -41,7 +41,7 @@ var mergeTwoLists = function(list1, list2) {
 };
 
 /**
- * 解法2:迭代
+ * 解法2:迭代（推荐）
  * 时间复杂度：O(n+m)，其中 n 和 m 分别为两个链表的长度
  * 空间复杂度：O(1)
  * 
@@ -53,7 +53,7 @@ var mergeTwoLists2 = function(l1, l2) {
 
     let prev = prehead;
 
-    while (l1 != null && l2 != null) {
+    while (l1 !== null && l2 !== null) {
         if (l1.val <= l2.val) {
             // 下一个节点指向l1，l1前进一个节点
             prev.next = l1;
@@ -62,6 +62,7 @@ var mergeTwoLists2 = function(l1, l2) {
             prev.next = l2;
             l2 = l2.next;
         }
+        
         // 指针前进
         prev = prev.next;
     }

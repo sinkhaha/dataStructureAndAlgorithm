@@ -6,7 +6,7 @@
  */
 
 /**
- * 实现方式一：反转链表(用两个指针实现)
+ * 实现方式一：反转链表(双指针)
  * 
  * 时间复杂度：O(n)，n 是列表的长度
  * 空间复杂度：O(1)
@@ -14,19 +14,23 @@
  * @param {*} head 链表
  */
 function reverseList1(head) {
-    // 空链表或单个节点链表
+    // 空链表 或 只有一个节点的链表
     if (head === null || head.next === null) {
         return head;
     }
+
     // 双指针实现
     let prev = null;
     let curr = head;
     while(curr !== null) {
         const curNext = curr.next;
+        // 反转
         curr.next = prev;
+        // 双指针都向前移动
         prev = curr;
         curr = curNext;
     }
+
     // 当cur为null时，prev指向最后一个节点
     return prev;
 }
@@ -40,20 +44,23 @@ function reverseList1(head) {
  * @param {*} head 假设为9->6->1->4->2
  */
 function reverseList2(head) {
-    // 1.第一个条件是判断递归开始，传入的参数的合法性，
-    // 第二个是递归的终止条件，递归到链表的最后一个将其指针反转
+    // 递归的终止条件，递归到链表的最后一个将其指针反转
     if (head === null || head.next === null) {
         return head;
     }
+
     // 1、reverseList2(4)递归开始，
     // 9->6->1->4->2,此时head指向4，则结束，此时返回2，即newHead指向2
     const newHead = reverseList2(head.next);
+
     // 2、此时head为4，head.next为2，
     // head.next.next指向head，即4.next.next指向2，即2.next指向4
     // 此时是9->6->1->4<->2 (4.next还是指向2)
     head.next.next = head; // 5.next = 4 即5指向4， 4<-5
+
     // 3、断开4和2的连接，此时是9->6->1->4<->2，断开后即9->6->1->4<-2
     head.next = null;
+
     // 4、此时的newHead指向2，head指向4；
     return newHead;
     // 以此类推，所以整个过程是：

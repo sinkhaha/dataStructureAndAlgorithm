@@ -69,7 +69,7 @@ function middleNode2(head) {
 }
 
 /**
- * 解法3：快慢指针实现
+ * 解法3：快慢指针实现（推荐）
  * 
  * 实现思路：快指针和慢指针同时指向头节点，
  * 快指针每次走2步，慢指针每次走1步，当快指针走完时，此时慢指针指向的为中间节点
@@ -82,6 +82,8 @@ function middleNode2(head) {
 function middleNode3(head) {
     let fast = head;
     let slow = head;
+    
+    // 单数返回中间节点，偶数返回中间第2个节点
     while (fast !== null && fast.next !== null) {
         slow = slow.next;
         fast = fast.next.next;

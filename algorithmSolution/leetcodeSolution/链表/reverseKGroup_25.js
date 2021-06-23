@@ -17,6 +17,9 @@ function ListNode(val) {
  * 2.将第 k + 1 个元素作为 head 递归调用 reverseKGroup 函数
  * 3.将上述两个过程的结果连接起来
  * 
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(1)
+ * 
  * @param {ListNode} head
  * @param {number} k
  * @return {ListNode}
@@ -30,7 +33,7 @@ var reverseKGroup = function (head, k) {
     let a, b;
     a = b = head;
     for (let i = 0; i < k; i++) {
-        // 不足 k 个，不需要反转，base case
+        // 不足 k 个，不需要反转，即base case
         if (b == null) {
             return head;
         }
