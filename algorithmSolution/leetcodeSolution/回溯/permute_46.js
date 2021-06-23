@@ -2,6 +2,8 @@
  * leetcode 46 全排列
  * https://leetcode-cn.com/problems/permutations/
  * 
+ * 返回一个数组的全排列
+ * 
  * 回溯
  * 
  * @param {number[]} nums
@@ -22,6 +24,7 @@ var permute = function (nums) {
             res.push(track.slice());
             return;
         } 
+        
         for (let i = 0; i < n; i++) {
             // 因为是全排列，该选择已经选择过的，可以跳过
             if (track.includes(nums[i])) {

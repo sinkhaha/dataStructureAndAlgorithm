@@ -1,5 +1,6 @@
 /**
  * leetcode 22 括号生成
+ * 
  * https://leetcode-cn.com/problems/generate-parentheses/
  * 
  * @param {number} n
@@ -9,6 +10,7 @@ var generateParenthesis = function (n) {
     if (n <= 0) {
         return [];
     }
+
     let res = [];
 
     // left 和 right 分别表示左括号、右括号剩下的个数
@@ -17,6 +19,7 @@ var generateParenthesis = function (n) {
         if (right < left) {
             return;
         }
+
         // 数量⼩于 0 不合法
         if (left < 0 || right < 0) {
             return;
@@ -40,8 +43,10 @@ var generateParenthesis = function (n) {
     }
 
     let track = [];
+
     // 刚开始左括号和右括号都是n个
     this.backtrack(n, n, track);
+    
     return res;
 };
 

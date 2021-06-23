@@ -14,7 +14,6 @@
  * base case
  * 当 p 超过最后一格时，不需要跳跃
  * 
- * 
  * 时间复杂度：O(N^2) 递归深度 × 每次递归需要的时间复杂度
  * 
  * 超出时间限制
@@ -24,6 +23,7 @@
  */
 var jump = function (nums) {
     let n = nums.length;
+    
     // 备忘录都初始化为 n，相当于最大值，因为从 0 跳到 n - 1 最多 n - 1 步
     const memo = Array(n).fill(n);
 

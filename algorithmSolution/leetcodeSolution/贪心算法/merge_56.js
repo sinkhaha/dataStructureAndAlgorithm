@@ -11,7 +11,7 @@ function merge(intervals) {
     }
 
     // 根据区间第一个元素升序排序
-    intervals.sort(function(a, b) {
+    intervals.sort(function (a, b) {
         return a[0] - b[0];
     });
 
@@ -37,7 +37,7 @@ function merge(intervals) {
     return result;
 }
 
-const intervals1 = [[1,4],[4,5]];
+const intervals1 = [[1, 4], [4, 5]];
 console.log(merge(intervals1)); // [[1,4]]
 
 /**
@@ -51,7 +51,7 @@ function merge2(intervals) {
     }
 
     // 根据区间第一个元素升序排序
-    intervals.sort(function(a, b) {
+    intervals.sort(function (a, b) {
         return a[0] - b[0];
     });
 
@@ -71,5 +71,5 @@ function merge2(intervals) {
     }
     return result;
 }
-const intervals2 = [[1,4],[4,5]];
+const intervals2 = [[1, 4], [4, 5]];
 console.log(merge2(intervals2));

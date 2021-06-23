@@ -5,10 +5,11 @@
  * 
  * 哈希表解法
  * 
- * 遍历数独，检查看到每个单元格值是否已经在当前的行 / 列 / 子数独中出现过，
+ * 遍历数独，检查看到每个单元格值是否已经在当前的行\列\子数独中出现过，
  * 如果出现重复，返回 false
  * 
- * 可参考 https://leetcode-cn.com/problems/valid-sudoku/solution/ha-xi-biao-jie-fa-shu-zu-jie-fa-by-ac_oi-feac/
+ * 可参考 
+ * https://leetcode-cn.com/problems/valid-sudoku/solution/ha-xi-biao-jie-fa-shu-zu-jie-fa-by-ac_oi-feac/
  * 
  * 本题难点在于如何确定某个数落在哪个小方块中，可以对小方块从左到右依次进行0到8编号，
  * 此时可推导出小方块编号和行列的关系为： idx = i / 3 * 3 + j / 3
@@ -21,7 +22,7 @@
  * @return {boolean}
  */
 const isValidSudoku = (board) => {
-    // 步骤 1：初始化横、纵以及小九宫格
+    // 1. 初始化横、纵以及小九宫格
     const rows = [];
     const columns = [];
     const boxes = [];
@@ -33,16 +34,14 @@ const isValidSudoku = (board) => {
     
     // 如对应的 rows 为 [[], [], [], [], [], [], [], [], []]
 
-    // 步骤 2：遍历二维数组，填充值
+    // 2.遍历二维数组，填充值，看是否可以完成数独
     for (let i = 0; i < 9; i++) {
         for (let j = 0; j < 9; j++) {
-
             // 获取值
             const value = board[i][j];
 
-            // 先判断非 . 元素
+            // 判断非 . 元素
             if (value !== '.') {
-
                 // 检验横排
                 if (!rows[i].includes(value)) {
                     rows[i].push(value);
@@ -68,6 +67,6 @@ const isValidSudoku = (board) => {
         }
     }
 
-    // 步骤 3：如果没有问题，就是真的，返回 true
+    // 3. 如果没有问题，就是真的，返回 true
     return true;
 };

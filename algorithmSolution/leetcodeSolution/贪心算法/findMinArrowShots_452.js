@@ -18,14 +18,15 @@
  * @param {number[][]} points
  * @return {number}
  */
-var findMinArrowShots = function(points) {
+var findMinArrowShots = function (points) {
     let n = points.length;
     if (n === 0) {
         return 0;
     }
+    
     // 根据区间的最后一个元素排序
-    points.sort(function(a, b) {
-       return a[1] - b[1];
+    points.sort(function (a, b) {
+        return a[1] - b[1];
     });
 
     // 最多不重叠区间数，至少为1
@@ -44,5 +45,5 @@ var findMinArrowShots = function(points) {
     return count;
 };
 
-const points = [[10,16], [2,8], [1,6], [7,12]];
+const points = [[10, 16], [2, 8], [1, 6], [7, 12]];
 console.log(findMinArrowShots(points));

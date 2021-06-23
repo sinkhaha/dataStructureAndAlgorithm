@@ -4,9 +4,9 @@
  * https://leetcode-cn.com/problems/n-queens/
  * 
  * 回溯算法
- * 此题是返回一种可能的结果
+ * 此题是返回所有可能的结果
  * 
- * 52题类似，52题是返回可能的结果的数量
+ * 跟52题类似，52题是返回可能的结果的数量
  *
  * @param {number} n
  * @return {string[][]}

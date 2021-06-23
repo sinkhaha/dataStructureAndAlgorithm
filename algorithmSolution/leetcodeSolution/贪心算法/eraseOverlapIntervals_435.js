@@ -32,21 +32,21 @@
  * @param {number[][]} intervals
  * @return {number}
  */
-var eraseOverlapIntervals = function(intervals) {
+var eraseOverlapIntervals = function (intervals) {
     let n = intervals.length;
     if (n === 0) {
         return 0;
     }
     // 根据区间的最后一个元素排序
-    intervals.sort(function(a, b) {
+    intervals.sort(function (a, b) {
         return a[1] - b[1];
     });
-    
+
     console.log(intervals);
 
-     // 最多不重叠区间数，至少为1
+    // 最多不重叠区间数，至少为1
     let count = 1;
-    
+
     // 排序后，初始时，第一个区间的最后一个元素即为end
     let x_end = intervals[0][1];
     for (let inter of intervals) {
@@ -62,5 +62,5 @@ var eraseOverlapIntervals = function(intervals) {
     return n - count;
 };
 
-const intervals = [ [1,2], [2,3] ];
+const intervals = [[1, 2], [2, 3]];
 console.log(eraseOverlapIntervals(intervals));

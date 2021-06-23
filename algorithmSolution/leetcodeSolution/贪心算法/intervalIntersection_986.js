@@ -4,7 +4,7 @@
  * 中等
  * https://leetcode-cn.com/problems/interval-list-intersections/
  * 
- * 区间已经是排好序的
+ * 题目给的区间已经是排好序的
  * 
  * @param {*} A 
  * @param {*} B 
@@ -13,7 +13,7 @@ function intervalIntersection(A, B) {
     // 双指针
     let i = 0;
     let j = 0;
-    
+
     let result = [];
     while (i < A.length && j < B.length) {
         let a1 = A[i][0];
@@ -29,7 +29,7 @@ function intervalIntersection(A, B) {
             // 注意点：计算出交集
             result.push([one, two]);
         }
-        
+
         // 注意点：i和j指针推进
         if (b2 < a2) {
             j += 1;
