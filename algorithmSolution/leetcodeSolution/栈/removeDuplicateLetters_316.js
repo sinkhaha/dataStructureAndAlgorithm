@@ -13,11 +13,11 @@
  * 但是需要返回"abc"，因为它的字典序更小
  * 
  * 思路：
- * 维护一个计数和一个结果栈
- * 1、记录每个字符出现的次数；
- * 2、遍历得到每个字符，修改计数，如果这个字符在字符串只出现过一次，
- * 则把这个字符放入栈中，如果当前字符比栈顶字符小，且栈顶字符出现过多次，
- * 则把栈顶字符出栈，等待该字符下一次入栈
+ * 维护一个哈希表用于计数 和 维护一个结果栈
+ * 1. 记录每个字符出现的次数
+ * 2. 遍历得到每个字符，修改计数，如果这个字符在字符串只出现过一次，
+ * 则把这个字符放入栈中，如果当前字符比栈顶字符小，判断栈顶字符是否出现过多次，
+ * 如果出现过多次则把栈顶字符出栈，等待该字符下一次入栈
  * 
  * 
  * 时间复杂度O(n) n为字符串度长度
@@ -29,6 +29,7 @@
 var removeDuplicateLetters = function(s) {
     // 每个字符对应出现的个数
     let countMap = {};
+
     for (let char of s) {
         const value = countMap[char];
         countMap[char] = value 
@@ -52,7 +53,7 @@ var removeDuplicateLetters = function(s) {
         while (result.length && char < result[result.length - 1]) {
             const last = result[result.length - 1];
             // 说明该last字符在字符串只出现过一次，不能pop
-            // 否则说明last字符在后面还会出现，此处pop掉
+            // 否则说明last字符在后面还会出现，此处可以pop掉
             if (countMap[last] === 0) {
                 break;
             }

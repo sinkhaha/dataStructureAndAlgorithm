@@ -21,15 +21,16 @@
  * @param {*} nums1 
  * @param {*} nums2 
  * 
- * 单调栈解法
+ * 单调递增栈
  * 
  * 思路：
- * 忽略数组 nums1，先对将 nums2 中的每一个元素，求出其下一个更大的元素。
- * 接着对于将这些答案放入哈希映射（HashMap）中，再遍历数组 nums1，并直接找出答案
+ * 忽略数组 nums1，先对将 nums2 中的每一个元素，求出其下一个更大的元素，
+ * 将映射关系存于哈希表中，key是nums2的元素，value是当前key的下一个更大的元素，
+ * 最后遍历数组 nums1，可直接在哈希表中找到结果
  *
  * 具体实现：
- * 维护了一个单调递增栈，栈中的元素从栈顶到栈底是单调递增的。
- * 当遍历到一个新的元素 nums2[i] 时，判断栈顶元素是否小于 nums2[i]，
+ * 1. 维护了一个单调递增栈，栈中的元素从栈顶到栈底是单调递增的
+ * 2. 遍历nums2数组，当遍历到一个新的元素 nums2[i] 时，判断栈顶元素是否小于 nums2[i]，
  * 如果是，那么栈顶元素的下一个更大元素即为 nums2[i]，我们将栈顶元素出栈保存到哈希表。
  * 重复这一操作，直到栈为空或者栈顶元素大于 nums2[i]。此时我们将 nums2[i] 入栈，
  * 保持栈的单调性，并对接下来的 nums2[i + 1], nums2[i + 2] ... 执行同样的操作。
@@ -42,20 +43,18 @@ var nextGreaterElement = function(nums1, nums2) {
     let stack = [];
     for (let n2 of nums2) {
         while (stack.length && n2 > stack[stack.length - 1]) {
+            // 说明比前一个元素(即stack.pop()元素)大，存入哈希表中
             map.set(stack.pop(), n2);
         }
         stack.push(n2);
     }
 
-    // while (stack.length) {
-    //     map.set(stack.pop(), -1);
-    // }
-    
     // 因为是子集，直接取值即可
     return nums1.map(n1 => {
         return map.get(n1) || -1;
     });
 };
+
 const nums1 = [2, 4];
 const nums2 = [1, 2, 3, 4]
 console.log(nextGreaterElement(nums1, nums2));

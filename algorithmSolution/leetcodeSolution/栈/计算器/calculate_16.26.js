@@ -6,7 +6,9 @@
  * 题目：
  * 给定一个包含正整数、加(+)、减(-)、乘(*)、除(/)的算数表达式(括号除外)，计算其结果。
  * 表达式仅包含非负整数，+， - ，*，/ 四种运算符和空格。 整数除法仅保留整数部分。
- *
+ */
+/** 
+ * 解法1（推荐）
  * @param {string} s
  * @return {number}
  */
@@ -27,13 +29,13 @@ var calculate1 = function (s) {
         let curChar = s[i];
 
         // 如果是数字，连续取num，因为一个数字可能有多个字符
-        if (isdigit(curChar)) {
+        if (isDigit(curChar)) {
             // 把字符数字转成数字
             num = 10 * num + (curChar - '0');
         }
 
         // 如果不是数字(空格不处理)，而是运算符号，把前面的数字和符号运算后存进栈中 
-        if ((!isdigit(curChar) && curChar != ' ') || i == s.length - 1) {
+        if ((!isDigit(curChar) && curChar != ' ') || i == s.length - 1) {
             switch (sign) {
                 case '+': 
                     stack.push(num); 
@@ -70,7 +72,7 @@ var calculate1 = function (s) {
  * 判断一个字符串是否是数字
  * @param {*} str 
  */
-function isdigit(str) {
+function isDigit(str) {
     let n = Number(str);
     return !isNaN(n);
 }
@@ -80,6 +82,11 @@ console.log(calculate1(s));
 
 /** ==================================================== */
 
+/**
+ * 解法2
+ * @param {*} s 
+ * @returns 
+ */
 function calculate2(s) {
     let numStack = [];
     let charStack = [];
@@ -88,7 +95,7 @@ function calculate2(s) {
 
     for (let i = 0; i < s.length; i++) {
         const curChar = s[i];
-        if (isdigit(+curChar)) {
+        if (isDigit(+curChar)) {
             num = 10 * num + (curChar - '0');
             if (i === s.length-1) {
                 numStack.push(num);
@@ -143,6 +150,5 @@ function prof(c1, c2) {
     return false;
 }
 
-// TODO
-console.log(calculate2('3+2*2'));
+console.log(calculate2('3+2*2')); // 7
 

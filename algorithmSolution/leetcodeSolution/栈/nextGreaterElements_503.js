@@ -21,6 +21,7 @@
  */
 let nextGreaterElementsCircle = function(nums) {
     let n = nums.length;
+    // 保存下标
     let stack = [];
     let resultArr = [];
 
@@ -44,7 +45,8 @@ console.log(nextGreaterElementsCircle([1,2,4,1])); // [ 2, 4, -1, 2 ]
 
 
 // 原始题一
-// 给一个数组，返回一个等长的数组，对应索引存储着下一个更大元素，如果没有更大的元素，就存 -1。
+// 给一个数组，返回一个等长的数组，对应索引存储着下一个更大元素，
+// 如果没有更大的元素，就存 -1。
 // 例子：
 // 给你一个数组 [2,1,2,4,3]，最后返回数组 [4,2,4,-1,-1]
 let nextGreaterElements = function(nums) {
