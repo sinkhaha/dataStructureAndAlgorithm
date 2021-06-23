@@ -2,7 +2,6 @@
 /**
  * 字典树类 即208题
  * 
- * 
  */
 class Trie {
     constructor() {

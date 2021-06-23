@@ -44,17 +44,19 @@ var exist = function (board, word) {
             return true;
         }
 
+        // 标记为访问过
         visited[i][j] = true;
 
         let result = false;
 
-        // board[i][j]的上下左右元素
+        // 遍历board[i][j]元素的上下左右元素
         for (const [dx, dy] of directions) {
             let newi = i + dx;
             let newj = j + dy;
 
             if (newi >= 0 && newi < m && newj >= 0 && newj < n) {
                 if (!visited[newi][newj]) {
+                    // 检查是否合法
                     const flag = check(newi, newj, s, k + 1);
                     if (flag) {
                         result = true;

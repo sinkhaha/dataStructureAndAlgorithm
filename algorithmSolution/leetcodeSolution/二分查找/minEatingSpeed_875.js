@@ -37,6 +37,7 @@ function minEatingSpeed2(piles, H) {
         // 吃香蕉的速度
         let mid = left + Math.floor((right - left) / 2);
 
+        // 判断H是否能吃完香蕉(以speed的速度吃)
         if (canFinish(piles, mid, H)) {
             right = mid;
         } else {
@@ -46,7 +47,6 @@ function minEatingSpeed2(piles, H) {
     return left;
 }
 
-/**==========================一些辅助函数====================================== */
 /**
  * 获取数组的最大值
  * @param {*} arr 
