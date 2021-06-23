@@ -14,8 +14,8 @@
 /**
  * 
  * 递归
- * 1、将root的左子树和右子树拉平
- * 2、将root的右子树接到左子树下方，然后将整个左子树作为右子树
+ * 1. 将root的左子树和右子树拉平
+ * 2. 将root的右子树接到左子树下方，然后将整个左子树作为右子树
  *
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.
@@ -44,5 +44,3 @@ var flatten = function (root) {
     }
     p.right = right;
 };
-
-// FIXME

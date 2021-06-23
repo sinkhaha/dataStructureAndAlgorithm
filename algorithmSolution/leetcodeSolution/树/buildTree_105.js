@@ -7,12 +7,13 @@ function TreeNode(val) {
 }
 
 /**
+ * 递归
  * 
- * 找根节点：
+ * 怎么找根节点：
  * 前序遍历的第一个值preorder[0]就是根节点的值
  * 
  * 关键：
- * 在于如何通过根节点的值，将preorder和postorder数组划分成两半，构造根节点的左右子树？
+ * 如何通过根节点的值，将preorder和postorder数组划分成两半，构造根节点的左右子树？
  * 
  * @param {number[]} preorder
  * @param {number[]} inorder
@@ -50,7 +51,6 @@ function build(preorder, preStart, preEnd, inorder, inStart, inEnd) {
     return tree;
 }
 
-// FIXME
 const preorder = [3,9,20,15,7];
 const inorder = [9,3,15,20,7];
 console.log(buildTree(preorder, inorder));

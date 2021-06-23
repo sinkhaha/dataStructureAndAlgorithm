@@ -4,10 +4,6 @@
  * 简单
  * https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/
  * 
- * 解法：BFS
- * bfs本质是在一个图中找到从起点start到终点target的最近距离
- * 
- * 
  */
 /**
  * 节点类
@@ -19,6 +15,9 @@ function TreeNode(val) {
 
 /**
  * 广度优先
+ * 时间复杂度：O(N)
+ * 空间复杂度：O(N)
+ * 
  * @param {TreeNode} root
  * @return {number}
  */
@@ -27,26 +26,28 @@ var minDepth = function(root) {
         return 0;
     }
 
-    const q = [root];
+    const queue = [root];
 
     // root本身是一层，depth 初始化为 1
     let depth = 1;
 
-    while (q.length) {
-        let n = q.length;
+    while (queue.length) {
+        // 当前层节点数
+        let n = queue.length;
 
-        // 一层层遍历
+        // 遍历当前层
         for (let i = 0; i < n; i++) {
-            const curNode = q.shift();
+            const curNode = queue.shift();
 
             // 当前节点没有叶子节点，则当前深度即为所求结果
             if (curNode.left == null && curNode.right == null) {
                 return depth;
             }
 
-            if (curNode.left) q.push(curNode.left);
-            if (curNode.right) q.push(curNode.right);
+            if (curNode.left) queue.push(curNode.left);
+            if (curNode.right) queue.push(curNode.right);
         }
+        // 深度加1
         depth++;
     }
     
@@ -55,6 +56,8 @@ var minDepth = function(root) {
 
 /**
  * 递归解法
+ * 时间复杂度：O(N)，N 是树的节点数
+ * 空间复杂度：O(H)，其中 H 是树的高度
  * @param {*} root 
  */
 var minDepth2 = function(root) {

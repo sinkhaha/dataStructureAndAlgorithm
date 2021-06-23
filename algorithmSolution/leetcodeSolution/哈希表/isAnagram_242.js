@@ -9,10 +9,12 @@
  * 输出: true
  *
  * 解法1: map计数(计算s每个字符的个数，然后再计算t每个字符的个数)
+ * 
  * 时间复杂度O(n)，优于解法2
  * 空间复杂度O(n)
  * 
- * 解法2: 分别对s和t排序，然后比较两个排序好的字符串是否相等（假设用快排，时间复杂度N*O(logN)）
+ * 解法2: 分别对s和t排序，然后比较两个排序好的字符串是否相等
+ * （假设用快排，时间复杂度N*O(logN)）
  * 
  */
 /**
@@ -24,6 +26,7 @@ var isAnagram1 = function(s, t) {
     if (s.length !== t.length) {
         return false;
     }
+    
     if (s == t) {
         return true;
     }

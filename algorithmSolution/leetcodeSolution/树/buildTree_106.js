@@ -8,8 +8,9 @@ function TreeNode(val) {
 }
 
 /**
+ * 递归
  * 
- * 找根节点：
+ * 怎么找根节点：
  * 后序遍历的最后一个值preorder[0]就是根节点的值
  * 
  * 关键：
@@ -50,7 +51,6 @@ function build(inorder, inStart, inEnd, postorder, postStart, postEnd) {
     return tree;
 }
 
-// FIXME
 const inorder = [9, 3, 15, 20, 7]
 const postorder = [9, 15, 7, 20, 3]
 console.log(buildTree(inorder, postorder));

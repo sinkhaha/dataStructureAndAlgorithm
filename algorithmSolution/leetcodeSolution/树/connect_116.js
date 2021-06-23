@@ -16,6 +16,7 @@
  */
 
 /**
+ * 递归
  * @param {Node} root
  * @return {Node}
  */
@@ -48,5 +49,3 @@ function connectTwoNode(node1, node2) {
     // 连接跨越父节点的两个子节点
     connectTwoNode(node1.right, node2.left);
 }
-
-// FIXME

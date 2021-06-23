@@ -17,8 +17,9 @@
 /**
  * 广度优先解法
  * 
- * 时间复杂度O(N),N为节点数
+ * 时间复杂度：O(N)，N为节点数
  * 空间复杂度：取决于队列存储的元素数量，最坏会达到 O(N)
+ * 
  * @param {TreeNode} root
  * @return {number}
  */
@@ -31,13 +32,16 @@ var maxDepth = function(root) {
     let queue = [root];
 
     while(queue.length) {
+        // 当前层的节点数
         let n = queue.length;
-        // 一层一层遍历
+
+        // 遍历当前层
         for (let i = 0; i < n; i++) {
             const curNode = queue.shift();
             if (curNode.left) queue.push(curNode.left);
             if (curNode.right) queue.push(curNode.right);
         }
+        // 遍历完1层则深度加1
         maxDeep++;
     }
     

@@ -1,5 +1,5 @@
 /**
- * 226. 翻转二叉树
+ * 226. 翻转二叉树 
  * 简单
  * https://leetcode-cn.com/problems/invert-binary-tree/
  */
@@ -9,6 +9,10 @@ function TreeNode(val) {
 }
 
 /**
+ * 翻转后和原来的数镜像对称
+ * 
+ * 递归
+ * 
  * @param {TreeNode} root
  * @return {TreeNode}
  */

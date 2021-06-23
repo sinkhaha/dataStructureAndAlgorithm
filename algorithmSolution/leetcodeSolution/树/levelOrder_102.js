@@ -28,10 +28,10 @@ var levelOrder = function (root) {
     while (queue.length) {
         let levelSize = queue.length;
 
-        // 当前层级的结果
+        // 存当前层的结果
         let curLevelResult = [];
 
-        // 遍历当前层级的结果
+        // 遍历当前层的结果
         for (let i = 0; i < levelSize; i++) {
             const node = queue.shift();
             curLevelResult.push(node.val);
