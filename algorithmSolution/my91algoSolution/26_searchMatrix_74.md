@@ -24,7 +24,7 @@
 * m == matrix.length
 * n == matrix[i].length
 * 0 <= m, n <= 100
-* -104 <= matrix[i][j], target <= 104
+* -104 <= `matrix[i][j]`, target <= 104
 
 >来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/search-a-2d-matrix

@@ -36,7 +36,7 @@
 * k == lists.length
 * 0 <= k <= 10^4
 * 0 <= lists[i].length <= 500
-* -10^4 <= lists[i][j] <= 10^4
+* -10^4 <=` lists[i][j]` <= 10^4
 * lists[i] 按 升序 排列
 * lists[i].length 的总和不超过 10^4
 
@@ -68,6 +68,7 @@ class Solution {
         // 小顶堆
         PriorityQueue<ListNode> minHeap = new PriorityQueue<>((a, b) -> a.val - b.val);
       
+        // 所有节点入堆
         for (ListNode node : lists) {
             if (node != null) {
                 minHeap.offer(node);
@@ -78,7 +79,7 @@ class Solution {
         ListNode temp = dummy;
 
         while(!minHeap.isEmpty()) {
-            // 最小节点
+            // 得到最小节点，取该节点下一个节点入堆
             ListNode minNode = minHeap.poll();
             temp.next = minNode;
             temp = minNode;

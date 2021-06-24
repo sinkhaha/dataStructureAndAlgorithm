@@ -452,7 +452,7 @@
 #### 32、反转链表系列
 * [206. 反转链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//32_%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%B3%BB%E5%88%97/1_reverseList_206.md) `简单` `双指针`
 
-* [92. 反转链表 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//32_%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%B3%BB%E5%88%97/2_reverseBetween_92.md) `中等` `双指针`
+* [92. 反转链表 II (反转一部分)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//32_%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%B3%BB%E5%88%97/2_reverseBetween_92.md) `中等` `双指针`
 
 * [25. K 个一组翻转链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//32_%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E7%B3%BB%E5%88%97/3_reverseKGroup_25.md) `困难` `双指针` `递归` 
 
@@ -509,7 +509,7 @@
 * 1504、统计全 1 子矩形
 
 
-### 7. 前缀树
+### 7. 前缀树/字典树
 * 38、[208. 实现 Trie (前缀树)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//38_trie_208.md) `中等` `前缀树`
 
 * 39、[677. 键值映射](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//39_MapSum_677.md) `中等` `前缀树` `哈希表`
@@ -528,9 +528,9 @@
 ### 10. 剪枝
 * 45、[814. 二叉树剪枝](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//45_pruneTree_814.md) `中等` `减枝`
 
-* 46、[39. 组合总和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//46_combinationSum_39.md) `中等` `回溯` `减枝`
+* 46、[39. 组合总和(元素可以重复选)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//46_combinationSum_39.md) `中等` `回溯` `减枝`
 
-* 47、[40. 组合总和 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//47_combinationSum2_40.md) `中等` `回溯` `减枝`
+* 47、[40. 组合总和 II(元素只能选一次)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//47_combinationSum2_40.md) `中等` `回溯` `减枝`
 
 ### 11. RK 和 KMP
 * 48/49、[28. 实现 strStr()](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//48_49_strStr_28.md) `简单` `RK` `KMP`
@@ -539,7 +539,7 @@
 
 * 51、[1046. 最后一块石头的重量](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//51_lastStoneWeight_1046.md) `简单` `大顶堆`
 
-* 52、[23. 合并K个升序链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//52_mergeKLists_23.md) `困难` `小顶堆` `合并k个有序数组`  `合并k个有序数组`
+* 52、[23. 合并K个升序链表(补充合并k个有序数组)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//52_mergeKLists_23.md) `困难` `小顶堆` `合并k个有序数组`  `合并k个有序数组`
 
 * 53、[451. 根据字符出现频率排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//53_frequencySort_451.md) `中等` `大顶堆` `哈希表`
 
