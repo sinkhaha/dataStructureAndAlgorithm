@@ -15,7 +15,9 @@ https://leetcode-cn.com/problems/minimum-insertion-steps-to-make-a-string-palind
 * 如果`s[i] == s[j]`，此时`s[i, j]`和`s[i+1..j-1]`回文串的插入次数相等，因为`s[i]`和`s[j]`相等了，`s[i+1...j-1]`加`上s[i]`和`s[j]`也是回文串，即`dp[i][j] = dp[i+1][j-1]`
 
 * 如果`s[i] != s[j]`，此时要在字符串`s[i..j-1]`或者`s[i+1..j]`插入一个字符串组成回文串，取`两者中插入次数的小者后加上1`即可
-> 因为要把`s[i..j-1]`变回文串，可以在`s[i..j-1]`左边插入一个字符`s[j]`可以将`s[i..j]`变成回文串把`s[i+1..j]`变回文串；也可以在`s[i+1..j]`右边插入一个字符`s[i]`可以将`s[i..j]`变成回文串
+> 因为要把`s[i..j-1]`变回文串，可以在`s[i..j-1]`右边插入一个字符`s[j]`将`s[i..j]`变成回文串
+>
+> 把`s[i+1..j]`变回文串，也可以在`s[i+1..j]`左边插入一个字符`s[i]`将`s[i..j]`变成回文串
 ```javascript
 // 状态转移方程
 if (s[i] == s[j]) {
@@ -44,7 +46,7 @@ var minInsertions = function (s) {
     const dp = Array.from(Array(n), () => Array(n).fill(0));
     console.log(dp);
 
-    // 因为所有结果在dp表格右上角，即dp[0][n-1]，所以从下往上，从左往右遍历
+    // 因为所求结果在dp表格右上角，即dp[0][n-1]，所以从下往上，从左往右遍历
     for (let i = n - 2; i >= 0; i--) {
         for (let j = i + 1; j < n; j++) {
             if (s[i] === s[j]) {

@@ -39,7 +39,7 @@ var longestCommonSubsequence = function (text1, text2) {
 };
 ```
 
-## 解法二：动态规划
+## 解法二：动态规划(推荐)
 ### 思路
 解法一的优化，dp表格优化时间复杂度
 

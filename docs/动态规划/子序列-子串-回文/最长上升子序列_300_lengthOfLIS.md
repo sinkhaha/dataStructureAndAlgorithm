@@ -7,10 +7,10 @@ https://leetcode-cn.com/problems/longest-increasing-subsequence/
 ## 解法1：动态规划
 ### 思路
 1. 状态：`i`改变，`dp[i]`的值即当前的最大长度改变
-2. 选择：当前为`i`时，可以选择`0...i`之间的元素，即选择`dp[j](j<i 即 nums[j]<nums[i])`时，此时`dp[i]`的最大长度
+2. 选择：当前为`i`时，可以选择`0...i`之间的元素，即选择`dp[j](j < i 即 nums[j]<nums[i])`时，此时`dp[i]`的最大长度
    
 3. dp数组：
-dp[i]一维数组表示以`nums[i]`这个数为结尾的最长子序列的长度 (即从头到第`i`个元素的最长序列长度)，所以所求的最终结果就是dp数组中的最大值
+`dp[i]`一维数组表示以`nums[i]`这个数为结尾的最长子序列的长度 (即从头到第`i`个元素的最长序列长度)，所以所求的最终结果就是dp数组中的最大值
 
 4. 状态转移方程
 当 `0 ≤ j < i 且 num[j] < num[i]`，`dp[i] = max(dp[i]，dp[j] + 1)`
@@ -34,6 +34,7 @@ var lengthOfLIS = function(nums) {
 
     // 初始化为1，因为子序列最少包含自己，即1
     let dp = Array(n).fill(1);
+  
     // dp数组的最大值
     let maxResult = 0;
     // 做选择
