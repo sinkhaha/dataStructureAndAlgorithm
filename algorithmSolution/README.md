@@ -592,9 +592,9 @@
 
 * 76、[494. 目标和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//76_findTargetSumWays_494.md) `中等` `动态规划` `0-1背包`
 
-* 77、[322. 零钱兑换](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//77_coinChange_322.md) `中等` `动态规划` `0-1背包`
+* 77、[322. 零钱兑换(返回最少硬币数)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//77_coinChange_322.md) `中等` `动态规划` `0-1背包`
 
-* 78、[518. 零钱兑换 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//78_change_518.md) `中等` `动态规划` `完全背包`
+* 78、[518. 零钱兑换 II(返回组合数)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//78_change_518.md) `中等` `动态规划` `完全背包`
 ### 18. 动态规划
 * 79、[746. 使用最小花费爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//79_minCostClimbingStairs_746.md) `简单` `动态规划` 
   
