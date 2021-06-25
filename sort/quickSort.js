@@ -1,8 +1,8 @@
 /**
  * 快速排序
  * 
- * 时间复杂度：最好 O(nlog2 n), 最坏O(n^2), 平均O(nlog2 n)
- * 空间复杂度：O(nlog2 n)
+ * 时间复杂度：最好 O(nlog2n)、平均O(nlog2n)、最坏O(n^2)
+ * 空间复杂度：O(nlog2n)
  *
  * 不稳定排序/非原地排序
  *
@@ -29,7 +29,7 @@ function quickSort(arr, i, j) {
                 arr[i] = arr[j];
                 i++;
             }
-            
+
             // 从前往后找比基准大的数
             while (arr[i] <= pivot && i < j) {
                 i++;
