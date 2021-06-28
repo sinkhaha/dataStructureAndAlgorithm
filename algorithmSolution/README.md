@@ -5,7 +5,7 @@
 # 一、题解-js
 
 ### 数组
-442.数组中重复的数据
+* [442.数组中重复的数据](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/findDuplicates_442.js)
 
 * [448. 找到所有数组中消失的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/findDisappearedNumbers_448.js)
 
