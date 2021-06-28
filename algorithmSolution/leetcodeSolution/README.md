@@ -1,6 +1,8 @@
 ## leetcode相关题目题解-js版
 ### 数组
 
+442.数组中重复的数据
+
 * [448. 找到所有数组中消失的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/findDisappearedNumbers_448.js)
 
 * [645. 错误的集合](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/findErrorNums_645.js)
