@@ -135,6 +135,34 @@ var largestRectangleArea = function (heights) {
     return result;
 };
 ```
+或
+```js
+// 单调递增栈
+var largestRectangleArea = function (heights) {
+    heights.push(0);
+    const len = heights.length;
+
+    let result = 0;
+    const indexStack = [];
+
+    for (let i = 0; i < len; i++) {
+        while (indexStack.length && heights[i] <= heights[indexStack.slice(-1)]) {
+            let h = heights[indexStack.slice(-1)];
+            indexStack.pop();
+    
+            const j = indexStack.length
+                ? indexStack.slice(-1)
+                : -1;
+
+            result = Math.max(result, h * (i - j - 1));
+        }
+
+        indexStack.push(i);
+    }
+
+    return result;
+};
+```
 ### 复杂度
  * 时间复杂度O(N)
  * 空间复杂度O(N)
