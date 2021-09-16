@@ -246,3 +246,5 @@
 
 * 86、[435. 无重叠区间](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//86_eraseOverlapIntervals_435.md) `中等` `贪心`
 
+### 其他
+* 87、[84. 柱状图中最大的矩形](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution/87_largestRectangleArea_84.md) `单调栈` `数组`
