@@ -9,7 +9,7 @@
 
 示例 1：
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/74_1.jpg)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/74_1.jpg)
 ```
 输入：matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,50]], target = 3
 输出：true
@@ -40,7 +40,7 @@
 * 映射成下标从`0 到 m * n - 1`的一维数组oneList
 * 假设一维数组中元素的下标为idx，则对应二维数组中的元素的下标为的行为`row=Math.floor(idx / n)`，列为`col=idx % n`；即`twoList[row][col] = onwList[idx]`
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/74_2.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/74_2.png)
 (图片来自[leetcode 74. 搜索二维矩阵 官方题解](https://leetcode-cn.com/problems/search-a-2d-matrix/solution/sou-suo-er-wei-ju-zhen-by-leetcode/))
 
 ### 代码

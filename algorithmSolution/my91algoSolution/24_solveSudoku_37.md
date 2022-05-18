@@ -13,11 +13,11 @@
 数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
 空白格用 '.' 表示。
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/37-1.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/37-1.png)
 
 一个数独。
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/37-2.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/37-2.png)
 
 答案被标成红色。
 

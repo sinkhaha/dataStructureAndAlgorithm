@@ -14,7 +14,7 @@
 
 **示例 1：**
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/142_1.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/142_1.png)
 
 
 >输入：head = [3,2,0,-4], pos = 1
@@ -23,7 +23,7 @@
 
 **示例 2：**
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/142_2.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/142_2.png)
 
 
 >输入：head = [1,2], pos = 0
@@ -32,7 +32,7 @@
 
 **示例 3：**
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/142_3.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/142_3.png)
 
 
 >输入：head = [1], pos = -1
@@ -83,7 +83,7 @@ function detectCycle1(head) {
 
 推导如下：
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.png)
 
 如图所示：
 

@@ -16,7 +16,7 @@
 
 示例 1：
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/987_1.PNG)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/987_1.PNG)
 
 ```
 输入：[3,9,20,null,null,15,7]
@@ -31,7 +31,7 @@
 ```
 示例 2：
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/987_2.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/987_2.png)
 
 ```
 输入：[1,2,3,4,5,6,7]

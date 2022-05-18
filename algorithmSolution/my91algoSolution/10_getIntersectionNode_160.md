@@ -8,7 +8,7 @@
 
 
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/160_1.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/160_1.png)
 
 
 
@@ -18,7 +18,7 @@
 
 示例 1：
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/160_2.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/160_2.png)
 
 
 ```
@@ -31,7 +31,7 @@
 
 示例 2：
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/160_3.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/160_3.png)
 
 
 ```
@@ -44,7 +44,7 @@
 
 示例 3：
 
-![](https://gitee.com/sinkhaha/picture/raw/master/img/leetcode/160_4.png)
+![](https://sink-blog-pic.oss-cn-shenzhen.aliyuncs.com/img/leetcode/160_4.png)
 
 
 ```
