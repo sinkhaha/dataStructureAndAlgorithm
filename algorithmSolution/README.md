@@ -407,6 +407,8 @@
   
 * 12、[146. LRU缓存机制](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//12_LRUCache_146.md) `中等` `设计` `哈希表` `双向链表`
 
+  > 类似题目 [剑指 Offer II 031. 最近最少使用缓存](https://leetcode.cn/problems/OrIXps/)
+
 ### 3. 树
 * 13、[104. 二叉树的最大深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//13_maxDepth_104.md) `简单` `递归` `bfs广度优先`
 
@@ -414,7 +416,11 @@
   
 * 15、[129. 求根到叶子节点数字之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//15_sumNumbers_129.md) `中等` `深度优先` `广度优先`
 
+  > 类似题目 [剑指 Offer II 049. 从根节点到叶节点的路径数字之和](https://leetcode.cn/problems/3Etpl5/)
+
 * 16、[513. 找树左下角的值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//16_findBottomLeftValue_513.md) `中等` `深度优先` `广度优先`
+
+  > 类似题目 [剑指 Offer II 045. 二叉树最底层最左边的值](https://leetcode.cn/problems/LwUNpT/)
 
 * 17、[297. 二叉树的序列化与反序列化](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//17_serialize_297.md) `困难` `深度优先` `广度优先`
 
@@ -555,6 +561,10 @@
 
 ### 10. 剪枝
 * 45、[814. 二叉树剪枝](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//45_pruneTree_814.md) `中等` `减枝`
+
+  > 类似题目
+  >
+  > [剑指 Offer II 047. 二叉树剪枝](https://leetcode.cn/problems/pOCWxh/)
 
 * 46、[39. 组合总和(元素可以重复选)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//46_combinationSum_39.md) `中等` `回溯` `减枝`
 

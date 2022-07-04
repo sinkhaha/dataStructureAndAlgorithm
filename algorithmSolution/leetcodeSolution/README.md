@@ -35,6 +35,10 @@
   >
   > [剑指 Offer II 059. 数据流的第 K 大数值](https://leetcode.cn/problems/jBjn9C/)
 
+* 剑指 Offer II 042. 最近请求次数
+
+* 剑指 Offer II 041. 滑动窗口的平均值
+
 
 ### 栈
 **计算器**
@@ -62,31 +66,72 @@
 
 * [1081. 不同字符的最小子序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/smallestSubsequence_1081.js)
 
+* 剑指 Offer II 038. 每日温度
+
+  > 类题题目 [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/)
+
+* 剑指 Offer II 037. 小行星碰撞
+
+* \ 150. 逆波兰表达式求值
+
+  > 类似题目 [剑指 Offer II 036. 后缀表达式](https://leetcode.cn/problems/8Zf90G/)
+
+  
+
 ### 哈希表
 
 * [49. 字母异位词分组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/groupAnagrams_49.js)
+
+  > 类似题目 [剑指 Offer II 033. 变位词组](https://leetcode.cn/problems/sfvd7V/)
+
 * [242. 有效的字母异位词](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/isAnagram_242.js)
+
+  > 类似题目 [剑指 Offer II 032. 有效的变位词](https://leetcode.cn/problems/dKk3P7/)
+
 * 剑指 Offer II 119. 最长连续序列
+
 * 剑指 Offer II 064. 神奇的字典
 
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
+
 * [102. 二叉树的层序遍历](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/levelOrder_102.js)
+
 * [104. 二叉树的最大深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/maxDepth_104.js)
+
 * [111. 二叉树的最小深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/minDepth_111.js)
+
 * [105. 从前序与中序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/buildTree_105.js)
+
 * [106. 从中序与后序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/buildTree_106.js)
+
 * [109. 有序链表转换二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/sortedListToBST_109.js)
+
 * [114.  二叉树展开为链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/flatten_114.js)
+
 * [116. 填充每个节点的下一个右侧节点指针](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/connect_116.js)
+
 * [124. 二叉树中的最大路径和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/maxPathSum_124.js)
+
 * [226. 翻转二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/invertTree_226.js)
+
 * [235. 二叉搜索树的最近公共祖先](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/lowestCommonAncestor_235.js)
+
 * [236. 二叉树的最近公共祖先](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/lowestCommonAncestor_236.js)
+
 * [297. 二叉树的序列化与反序列化](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/serialize_297.js) 
+
+  > 类似题目
+  >
+  > [剑指 Offer II 048. 序列化与反序列化二叉树](https://leetcode.cn/problems/h54YBf/)
+
 * [654. 最大二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/constructMaximumBinaryTree_654.js)
+
 * [752. 打开转盘锁](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/openLock_752.js)
+
 * 剑指 Offer II 055. 二叉搜索树迭代器
+
+* 剑指 Offer II 052. 展平二叉搜索树
 
 
 
@@ -129,6 +174,8 @@
 * [969. 煎饼排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/pancakeSort_969.js)
 * 剑指 Offer II 075. 数组相对排序
 * 剑指 Offer II 057. 值和下标之差都在给定的范围内
+* 剑指 Offer II 035. 最小时间差
+* 剑指 Offer II 034. 外星语言是否排序
 
 ### 递归-分治
 
@@ -283,12 +330,16 @@
 
 * 剑指 Offer II 106. 二分图
 * 剑指 Offer II 054. 所有大于等于节点的值之和
+* 剑指 Offer II 050. 向下的路径节点之和
 
 
 
 ##### 广度优先搜索 bfs
 
 * 剑指 Offer II 053. 二叉搜索树中的中序后继
+* 剑指 Offer II 046. 二叉树的右侧视图
+* 剑指 Offer II 044. 二叉树每层的最大值
+* 剑指 Offer II 043. 往完全二叉树添加节点
 
 
 
@@ -353,6 +404,10 @@
 * [167. 两数之和--给定的数据有序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum_167.js)
   
 * [653. 两数之和 --- 输入是二叉查找树BST，不是数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum_653.js)
+  
+  > 类似题目
+  >
+  > [剑指 Offer II 056. 二叉搜索树中两个节点之和](https://leetcode.cn/problems/opLdQZ/)
   
 * [15. 三数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/threeSum_15.js)
   
