@@ -70,8 +70,8 @@
 ### 哈希表
 
 * [49. 字母异位词分组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/groupAnagrams_49.js)
-  
 * [242. 有效的字母异位词](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/isAnagram_242.js)
+* 剑指 Offer II 119. 最长连续序列
 
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
@@ -107,7 +107,17 @@
 * [752. 打开转盘锁](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/openLock_752.js)
 
 
+
+### 拓扑排序
+
+* 剑指 Offer II 115. 重建序列
+* 剑指 Offer II 113. 课程顺序
+* 剑指 Offer II 111. 计算除法
+
+
+
 ### Trie字典树/前缀树
+
 * [208. 实现 Trie (前缀树)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/Trie_208.js)
 
 * [79. 单词搜索](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/exist_79.js)
@@ -124,7 +134,7 @@
 
 ### 排序
 * [414. 第三大的数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/thirdMax_414.js)
-    
+  
 * [179. 最大数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/largestNumber_179.js)
 
 * [969. 煎饼排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/pancakeSort_969.js)
@@ -163,62 +173,90 @@
 * [0-1背包问题](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/zeroOneBag.js)
 
 * [5. 最长回文子串](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/longestPalindrome_5.js)
-  
+
 * [10. 正则表达式匹配](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/isMatch_10.js)
-  
+
 * [70. 爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/climbStairs_70.js)
-  
+
 * [72. 编辑距离](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/minDistance_72.js)
-  
+
 * [120. 三角形最小路径和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/minimumTotal_120.js)
-  
+
+  > 类似题目
+  >
+  > [剑指 Offer II 100. 三角形中最小路径之和](https://leetcode.cn/problems/IlPe0q/)
+
 * [152. 积最大子数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/maxProduct_152.js)
 
 * [300. 最长上升子序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/lengthOfLIS_300.js)
-  
+
 * [312. 戳气球](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/maxCoinsBalloon_312.js)
-  
+
 * [322. 零钱兑换问题](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/coinChange_322.js)
-  
+
 * [354. 俄罗斯套娃信封问题](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/maxEnvelopes_354.js)
-  
+
 * [416. 分割等和子集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/canPartition_416.js)
 
 * [509. 斐波那契数列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/fib_509.js)
-  
+
 * [516. 最长回文子序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/longestPalindromeSubseq_516.js)
-  
+
 * [518. 零钱兑换](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/change_518.js)
-  
+
 * [651. 四字键盘](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/maxA_651.js)
-  
+
 * [877. 石子游戏](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/stoneGame_877.js)
-  
+
 * [887. 鸡蛋掉落](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/superEggDrop_887.js)
-  
+
 * [1143. 最长公共子序列lcs](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/longestCommonSubsequence_1143.js)
 
 * [1312. 让字符串成为回文串的最少插入次数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/minInsertions_1312.js)
+
+* 剑指 Offer II 107. 矩阵中的距离
+
+* 剑指 Offer II 104. 排列的数目
+
+* 剑指 Offer II 099. 最小路径之和
+
+* 剑指 Offer II 098. 路径的数目
+
+* 剑指 Offer II 096. 字符串交织
 
 
 
 ### 回溯
 
 * [22. 括号生成](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/generateParenthesis_22.js)
-  
+
 * [36. 有效的数独](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/isValidSudoku_36.js)
-  
+
 * [37. 解数独](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/solveSudoku_37.js)
 
 * [51. N 皇后](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/solveNQueens_51.js)
-  
+
 * [52. N皇后 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/totalNQueens_52.js)
-  
+
 * [46. 全排列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/permute_46.js)
-  
+
 * [77. 组合](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/combine_77.js)
-  
+
 * [78. 子集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/subsets_78.js)
+
+* 剑指 Offer II 110. 所有路径
+
+  
+
+---
+
+##### 深度优先搜索 dfs
+
+* 剑指 Offer II 106. 二分图
+
+
+
+
 
 ### 贪心算法
 * [45. 跳跃游戏 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/jump_45.js)
@@ -249,7 +287,6 @@
   
 * [16. 接近的三数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/threeSumClosest_16.js)
   
-
 * [28. 实现 strStr() 函数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/strStr_28.js)
 
 * [42. 接雨水](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/trap_42.js)
@@ -285,8 +322,8 @@
 
 ### 前缀和
 * [724. 寻找数组的中心下标](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/pivotIndex_724.js)
- 
 * [560. 和为K的子数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/subarraySum_560.js)
+* 剑指 Offer II 013. 二维子矩阵的和
 
 ### 数学
 
@@ -350,12 +387,18 @@
 ### union-find并查集
 
 * [Union-Find并查集算法](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/union-find%E5%B9%B6%E6%9F%A5%E9%9B%86/UF%E7%AE%97%E6%B3%95.js)
-  
+
 * [200. 岛屿数量](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/union-find%E5%B9%B6%E6%9F%A5%E9%9B%86/numIslands_200.js)
-  
+
 * [547. 朋友圈](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/union-find%E5%B9%B6%E6%9F%A5%E9%9B%86/findCircleNum_547.js)
-  
+
+  > 类似题目
+  >
+  > [剑指 Offer II 116. 省份数量](https://leetcode.cn/problems/bLyHh0/) 
+
 * [990. 等式方程的可满足性](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/union-find%E5%B9%B6%E6%9F%A5%E9%9B%86/equationsPossible_990.js)
+
+* 剑指 Offer II 118. 多余的边
 
 ### 水塘抽样算法
 

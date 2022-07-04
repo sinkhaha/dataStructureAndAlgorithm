@@ -111,6 +111,10 @@
 
 * [752. 打开转盘锁](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/openLock_752.js)
 
+  > 类似题目
+  >
+  >  [剑指 Offer II 109. 开密码锁](https://leetcode.cn/problems/zlDJc7/)
+
 
 ### Trie字典树/前缀树
 * [208. 实现 Trie (前缀树)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/Trie_208.js)
@@ -129,7 +133,7 @@
 
 ### 排序
 * [414. 第三大的数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/thirdMax_414.js)
-    
+  
 * [179. 最大数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/largestNumber_179.js)
 
 * [969. 煎饼排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/pancakeSort_969.js)
@@ -254,7 +258,6 @@
   
 * [16. 接近的三数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/threeSumClosest_16.js)
   
-
 * [28. 实现 strStr() 函数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/strStr_28.js)
 
 * [42. 接雨水](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/trap_42.js)
@@ -290,7 +293,7 @@
 
 ### 前缀和
 * [724.寻找数组的中心下标](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/pivotIndex_724.js)
- 
+
 * [560. 和为K的子数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/subarraySum_560.js)
 
 ### 数学
@@ -466,6 +469,10 @@
 
 * 62.不同路径
   
+  > 类似题目
+  >
+  > [剑指 Offer II 098. 路径的数目](https://leetcode.cn/problems/2AoeFn/)
+  
 * 121.买卖股票的最佳时机
 
 * 122.买卖股票的最佳时机 II
@@ -591,9 +598,21 @@
 ### 17. 背包问题
 * 75、[416. 分割等和子集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//75_canPartition_416.md) `中等` `动态规划` `0-1背包`
 
+  > 类似题目
+  >
+  > [剑指 Offer II 101. 分割等和子集](https://leetcode.cn/problems/NUPfPr/)
+
 * 76、[494. 目标和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//76_findTargetSumWays_494.md) `中等` `动态规划` `0-1背包`
 
+  > 类似题目
+  >
+  > [剑指 Offer II 102. 加减的目标值](https://leetcode.cn/problems/YaVDxD/)
+
 * 77、[322. 零钱兑换(返回最少硬币数)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//77_coinChange_322.md) `中等` `动态规划` `0-1背包`
+
+  > 类似题目
+  >
+  > [剑指 Offer II 103. 最少的硬币数目](https://leetcode.cn/problems/gaM7Ch/)
 
 * 78、[518. 零钱兑换 II(返回组合数)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//78_change_518.md) `中等` `动态规划` `完全背包`
 ### 18. 动态规划
