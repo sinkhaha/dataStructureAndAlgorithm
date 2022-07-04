@@ -522,6 +522,10 @@
 
 * 39、[677. 键值映射](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//39_MapSum_677.md) `中等` `前缀树` `哈希表`
 
+  > 类似题目
+  >
+  > [剑指 Offer II 066. 单词之和](https://leetcode.cn/problems/z1R5dt/)
+
 * 40、[面试题 17.17. 多次搜索](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//40_multiSearch_%E9%9D%A2%E8%AF%95%E9%A2%9817.17.md) `中等` `前缀树`
 ### 8. 并查集
 * 41、[547. 朋友圈](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//41_findCircleNum_547.md) `中等` `并查集`
@@ -538,7 +542,15 @@
 
 * 46、[39. 组合总和(元素可以重复选)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//46_combinationSum_39.md) `中等` `回溯` `减枝`
 
+  > 类似题目
+  >
+  > [剑指 Offer II 081. 允许重复选择元素的组合](https://leetcode.cn/problems/Ygoe9J/)
+
 * 47、[40. 组合总和 II(元素只能选一次)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//47_combinationSum2_40.md) `中等` `回溯` `减枝`
+
+  > 类似题目
+  >
+  > [剑指 Offer II 082. 含有重复元素集合的组合](https://leetcode.cn/problems/4sjJUc/)
 
 ### 11. RK 和 KMP
 * 48/49、[28. 实现 strStr()](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//48_49_strStr_28.md) `简单` `RK` `KMP`
@@ -617,6 +629,10 @@
 * 78、[518. 零钱兑换 II(返回组合数)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//78_change_518.md) `中等` `动态规划` `完全背包`
 ### 18. 动态规划
 * 79、[746. 使用最小花费爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//79_minCostClimbingStairs_746.md) `简单` `动态规划` 
+  
+  > 类似题目
+  >
+  > [剑指 Offer II 088. 爬楼梯的最少成本](https://leetcode.cn/problems/GzCJIP/)
   
 * 79_2、加餐 [铺瓷砖](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//79_2_ceramic.md)
   
