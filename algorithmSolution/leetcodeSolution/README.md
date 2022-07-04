@@ -31,6 +31,10 @@
 
 * [703. 数据流中的第K大元素](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/KthLargest_703.js)
 
+  > 类似题目
+  >
+  > [剑指 Offer II 059. 数据流的第 K 大数值](https://leetcode.cn/problems/jBjn9C/)
+
 
 ### 栈
 **计算器**
@@ -63,39 +67,26 @@
 * [49. 字母异位词分组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/groupAnagrams_49.js)
 * [242. 有效的字母异位词](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/isAnagram_242.js)
 * 剑指 Offer II 119. 最长连续序列
+* 剑指 Offer II 064. 神奇的字典
 
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
-  
 * [102. 二叉树的层序遍历](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/levelOrder_102.js)
-  
 * [104. 二叉树的最大深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/maxDepth_104.js)
-
 * [111. 二叉树的最小深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/minDepth_111.js)
-
 * [105. 从前序与中序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/buildTree_105.js)
-  
 * [106. 从中序与后序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/buildTree_106.js)
-  
 * [109. 有序链表转换二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/sortedListToBST_109.js)
-  
 * [114.  二叉树展开为链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/flatten_114.js)
-
 * [116. 填充每个节点的下一个右侧节点指针](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/connect_116.js)
-  
 * [124. 二叉树中的最大路径和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/maxPathSum_124.js)
-  
 * [226. 翻转二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/invertTree_226.js)
-  
 * [235. 二叉搜索树的最近公共祖先](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/lowestCommonAncestor_235.js)
-  
 * [236. 二叉树的最近公共祖先](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/lowestCommonAncestor_236.js)
-  
 * [297. 二叉树的序列化与反序列化](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/serialize_297.js) 
-  
 * [654. 最大二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/constructMaximumBinaryTree_654.js)
-
 * [752. 打开转盘锁](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/openLock_752.js)
+* 剑指 Offer II 055. 二叉搜索树迭代器
 
 
 
@@ -110,24 +101,34 @@
 ### Trie字典树/前缀树
 
 * [208. 实现 Trie (前缀树)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/Trie_208.js)
+
+  > 类似题目 
+  >
+  > [剑指 Offer II 062. 实现前缀树](https://leetcode.cn/problems/QC3q1f/)
+
 * [79. 单词搜索](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/exist_79.js)
+
 * [212. 单词搜索 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/findWords_212.js)
+
 * 剑指 Offer II 065. 最短的单词编码
+
+* 剑指 Offer II 063. 替换单词
 
 
 ### 二分查找
 
 * [875. 爱吃香蕉的珂珂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/minEatingSpeed_875.js)
-  
 * [1011. 在 D 天内送达包裹的能力](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/shipWithinDays_1011.js)
+* 剑指 Offer II 058. 日程表
+* 剑指 Offer II 069. 山峰数组的顶部
 
 
 ### 排序
 * [414. 第三大的数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/thirdMax_414.js)
-  
 * [179. 最大数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/largestNumber_179.js)
-
 * [969. 煎饼排序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%8E%92%E5%BA%8F/pancakeSort_969.js)
+* 剑指 Offer II 075. 数组相对排序
+* 剑指 Offer II 057. 值和下标之差都在给定的范围内
 
 ### 递归-分治
 
@@ -234,7 +235,9 @@
 
 
 
-### 回溯
+### 搜索
+
+##### 回溯
 
 * [22. 括号生成](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%9B%9E%E6%BA%AF/generateParenthesis_22.js)
 
@@ -279,8 +282,13 @@
 ##### 深度优先搜索 dfs
 
 * 剑指 Offer II 106. 二分图
+* 剑指 Offer II 054. 所有大于等于节点的值之和
 
 
+
+##### 广度优先搜索 bfs
+
+* 剑指 Offer II 053. 二叉搜索树中的中序后继
 
 
 
@@ -290,6 +298,10 @@
 * [55. 跳跃游戏](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/canJump_55.js)
   
 * [56. 合并区间 ](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/merge_56.js)
+
+  > 类似题目
+  >
+  > [剑指 Offer II 074. 合并区间](https://leetcode.cn/problems/SsGoHC/)
 
 * [435. 无重叠子区间](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/eraseOverlapIntervals_435.js)
 
@@ -377,6 +389,7 @@
 * [693. 交替位二进制数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/hasAlternatingBits_693.js)
 * [762. 二进制表示中质数个计算置位](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/countPrimeSetBits_762.js)
 * 剑指 Offer II 067. 最大的异或
+* 剑指 Offer II 070. 排序数组中只出现一次的数字
 
 ### 洗牌算法
 
