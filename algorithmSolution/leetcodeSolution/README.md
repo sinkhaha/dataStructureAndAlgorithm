@@ -6,6 +6,7 @@
 * \289. 生命游戏
 * \189. 轮转数组
 * \118. 杨辉三角
+* 剑指 Offer 61. 扑克牌中的顺子
 
 ### 差分数组
 
@@ -76,6 +77,8 @@
 * 剑指 Offer II 042. 最近请求次数
 
 * 剑指 Offer II 041. 滑动窗口的平均值
+
+* 剑指 Offer 59 - II. 队列的最大值
 
 
 ### 栈
@@ -174,7 +177,11 @@
 
 * [235. 二叉搜索树的最近公共祖先](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/lowestCommonAncestor_235.js)
 
+  > 类似题目 [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
+
 * [236. 二叉树的最近公共祖先](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/lowestCommonAncestor_236.js)
+
+  > 类似题目 [剑指 Offer 68 - II. 二叉树的最近公共祖先](https://leetcode.cn/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
 
 * [297. 二叉树的序列化与反序列化](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/serialize_297.js) 
 
@@ -193,6 +200,10 @@
 * \108. 将有序数组转换为二叉搜索树
 
 * \230. 二叉搜索树中第K小的元素
+
+* 剑指 Offer 55 - II. 平衡二叉树
+
+* 剑指 Offer 54. 二叉搜索树的第k大节点
 
 
 
@@ -276,6 +287,8 @@
 
 * [ 121. 买卖股票的最佳时机 （1次交易）](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/maxProfit_121.js)
   
+  > 类似题目 [剑指 Offer 63. 股票的最大利润](https://leetcode.cn/problems/gu-piao-de-zui-da-li-run-lcof/)
+  
 * [122. 买卖股票的最佳时机II （无数次交易）](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/maxProfit_122.js)
   
 * [123. 买卖股票的最佳时机 III （2次交易)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/maxProfit_123.js)
@@ -292,6 +305,8 @@
 * [5. 最长回文子串](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/longestPalindrome_5.js)
 
 * [10. 正则表达式匹配](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/isMatch_10.js)
+
+  > 类似题目 [剑指 Offer 19. 正则表达式匹配](https://leetcode.cn/problems/zheng-ze-biao-da-shi-pi-pei-lcof/)
 
 * [70. 爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/climbStairs_70.js)
 
@@ -508,6 +523,10 @@
   > 类似题目 [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/)
   
 * \344. 反转字符串
+
+* 剑指 Offer 57 - II. 和为s的连续正数序列
+
+* 剑指 Offer 57. 和为s的两个数字
 ### 计数法
 
 * [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid_921.js)
@@ -550,6 +569,8 @@
 * 剑指 Offer II 011. 0 和 1 个数相同的子数组
 
   > 类似题目 [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
+  
+* 剑指 Offer 66. 构建乘积数组
 
 ### 数学
 
@@ -561,6 +582,8 @@
 * \166. 分数到小数
 * \171. Excel 表列序号
 * \412. Fizz Buzz
+* 剑指 Offer 62. 圆圈中最后剩下的数字
+* 剑指 Offer 43. 1～n 整数中 1 出现的次数
 
 
 
@@ -621,6 +644,12 @@
 
 * 剑指 Offer 65. 不用加减乘除做加法
 
+* 剑指 Offer 56 - I. 数组中数字出现的次数
+
+* 剑指 Offer 56 - II. 数组中数字出现的次数 II
+
+* 剑指 Offer 64. 求1+2+…+n
+
 ### 洗牌算法
 
 * [384. 打乱数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95/shuffle_384.js)
@@ -628,6 +657,7 @@
 ### 状态机
 
 * [ 1262. 可被3整除的最大和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E7%8A%B6%E6%80%81%E6%9C%BA/maxSumDivThree_1262.js)
+* 剑指 Offer 20. 表示数值的字符串
 
 ### 字符串
 ##### KMP
@@ -649,6 +679,12 @@
 * \557. 反转字符串中的单词 III
 
 * \14. 最长公共前缀
+
+* 剑指 Offer 67. 把字符串转换成整数
+
+* 剑指 Offer 58 - I. 翻转单词顺序
+
+* 剑指 Offer 58 - II. 左旋转字符串
 
 ### floodFill算法
 
