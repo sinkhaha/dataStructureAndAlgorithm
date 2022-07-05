@@ -58,8 +58,14 @@
 
   > 类似题目 [剑指 Offer 35. 复杂链表的复制](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
 
+* \328. 奇偶链表
+
+* \237. 删除链表中的节点
+
 ### 队列
 * [239 滑动窗口最大值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/maxSlidingWindow_239.js)
+
+  > 类似题目 [剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 
 * [703. 数据流中的第K大元素](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/KthLargest_703.js)
 
@@ -137,6 +143,12 @@
 
 * \13. 罗马数字转整数
 
+* \350. 两个数组的交集 II
+
+* \387. 字符串中的第一个唯一字符
+
+* \217. 存在重复元素
+
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
 
@@ -177,6 +189,10 @@
 * 剑指 Offer II 055. 二叉搜索树迭代器
 
 * 剑指 Offer II 052. 展平二叉搜索树
+
+* \108. 将有序数组转换为二叉搜索树
+
+* \230. 二叉搜索树中第K小的元素
 
 
 
@@ -229,6 +245,7 @@
 * 剑指 Offer II 035. 最小时间差
 * 剑指 Offer II 034. 外星语言是否排序
 * \324. 摆动排序 II
+* 剑指 Offer 51. 数组中的逆序对
 
 ### 递归-分治
 
@@ -343,6 +360,8 @@
 * \131. 分割回文串
 
 * \91. 解码方法
+
+* 剑指 Offer 60. n个骰子的点数
 
 
 
@@ -487,6 +506,8 @@
 * 剑指 Offer II 018. 有效的回文
 
   > 类似题目 [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/)
+  
+* \344. 反转字符串
 ### 计数法
 
 * [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid_921.js)
@@ -539,6 +560,16 @@
 * \326. 3 的幂
 * \166. 分数到小数
 * \171. Excel 表列序号
+* \412. Fizz Buzz
+
+
+
+### 模拟-矩阵
+
+* \54. 螺旋矩阵
+* \59. 螺旋矩阵 II
+
+
 
 ### 位运算
 
@@ -586,6 +617,10 @@
 
 * \190. 颠倒二进制位
 
+* \89. 格雷编码
+
+* 剑指 Offer 65. 不用加减乘除做加法
+
 ### 洗牌算法
 
 * [384. 打乱数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95/shuffle_384.js)
@@ -604,7 +639,16 @@
 ---
 
 * [43. 字符串相乘](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%AD%97%E7%AC%A6%E4%B8%B2/multiply_43.js)
+
 * \38. 外观数列
+
+* \8. 字符串转换整数 (atoi)
+
+  > 类似题目 [剑指 Offer 67. 把字符串转换成整数](https://leetcode.cn/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/)
+
+* \557. 反转字符串中的单词 III
+
+* \14. 最长公共前缀
 
 ### floodFill算法
 
