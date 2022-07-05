@@ -124,6 +124,8 @@
 * \380. O(1) 时间插入、删除和获取随机元素
 
   > 类似题目 [剑指 Offer II 030. 插入、删除和随机访问都是 O(1) 的容器](https://leetcode.cn/problems/FortPu/)
+  
+*  \41. 缺失的第一个正数
 
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
@@ -209,10 +211,12 @@
 * 剑指 Offer II 057. 值和下标之差都在给定的范围内
 * 剑指 Offer II 035. 最小时间差
 * 剑指 Offer II 034. 外星语言是否排序
+* \324. 摆动排序 II
 
 ### 递归-分治
 
 * [50. Pow(x, n)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%80%92%E5%BD%92-%E5%88%86%E6%B2%BB/myPow_50.js)
+* \395. 至少有 K 个重复字符的最长子串
 
 ### 动态规划
 动态规划专题可参考另一个目录中的[详细题解](https://github.com/sinkhaha/dataStructureAndAlgorithm/tree/master/docs)
@@ -316,6 +320,8 @@
 * 剑指 Offer II 020. 回文子字符串的个数
 
   > 类似题目 [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/)
+  
+* \44. 通配符匹配
 
 
 
@@ -374,6 +380,8 @@
 * 剑指 Offer II 028. 展平多级双向链表
 
   > 类似题目 [430. 扁平化多级双向链表](https://leetcode.cn/problems/flatten-a-multilevel-doubly-linked-list/)
+  
+* \341. 扁平化嵌套列表迭代器
 
 
 
@@ -403,6 +411,8 @@
 
 * [986. 区间列表的交集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/intervalIntersection_986.js)
 
+* \334. 递增的三元子序列
+
 
 ### 滑动窗口
 
@@ -417,6 +427,10 @@
   > 类似题目 [剑指 Offer II 014. 字符串中的变位词](https://leetcode.cn/problems/MPnaiL/)
 
 * [567. 字符串的排列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/checkInclusion_567.js)
+
+* 剑指 Offer II 009. 乘积小于 K 的子数组
+
+* 剑指 Offer II 008. 和大于等于 target 的最短子数组
 
 ### 双指针
 * [剑指 Offer 04. 二维数组中的查找](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8F%8C%E6%8C%87%E9%92%88/findNumberIn2DArray_offer04.js)
@@ -458,6 +472,8 @@
   
 * [167. 两数之和--给定的数据有序](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum_167.js)
   
+  > 类似题目 [剑指 Offer II 006. 排序数组中两个数字之和](https://leetcode.cn/problems/kLl5u1/)
+  
 * [653. 两数之和 --- 输入是二叉查找树BST，不是数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/twoSum_653.js)
   
   > 类似题目
@@ -466,7 +482,11 @@
   
 * [15. 三数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/threeSum_15.js)
   
+  > 类似题目 [剑指 Offer II 007. 数组中和为 0 的三个数](https://leetcode.cn/problems/1fGaJU/)
+  
 * [18. 四数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%B8%A4-%E4%B8%89-%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C/fourSum_18.js)
+
+* \454. 四数相加 II
 
 ### 前缀和
 * [724. 寻找数组的中心下标](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/pivotIndex_724.js)
@@ -488,29 +508,54 @@
 ### 数学
 
 * [ 172. 阶乘后的零](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/trailingZeroes_172.js)
-  
 * [204. 计算质数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/countPrimes_204.js)
-  
 * [372. 超级次方](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/superPow_372.js)
-  
 * [793. 阶乘函数后K个零](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/preimageSizeFZF_793.js)
+* \326. 3 的幂
 
-### 位操作
+### 位运算
 
 * [个别位操作](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/%E4%B8%AA%E5%88%AB%E4%BD%8D%E6%93%8D%E4%BD%9C.js)
+
 * [136. 只出现一次的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/singleNumber_136.js)
+
 * [191.  位1的个数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/hammingWeight_191.js)
+
 * [231. 2的幂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/isPowerOfTwo_231.js)
+
 * [268. 缺失数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/missingNumber_268.js)
+
 * [338. 比特位计数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/countBits_338.js)
+
+  > 类似题目 [剑指 Offer II 003. 前 n 个数字二进制中 1 的个数](https://leetcode.cn/problems/w3tCBm/)
+
 * [342. 4的幂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/isPowerOfFour_342.js)
+
 * [389. 找不同](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/findTheDifference_389.js)
+
 * [461. 汉明距离](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/hammingDistance_461.js)
+
 * [476. 数字的补数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/findComplement_476.js)
+
 * [693. 交替位二进制数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/hasAlternatingBits_693.js)
+
 * [762. 二进制表示中质数个计算置位](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/countPrimeSetBits_762.js)
+
 * 剑指 Offer II 067. 最大的异或
+
 * 剑指 Offer II 070. 排序数组中只出现一次的数字
+
+* 剑指 Offer II 005. 单词长度的最大乘积
+
+* 剑指 Offer II 004. 只出现一次的数字 
+
+* 剑指 Offer II 002. 二进制加法
+
+* 剑指 Offer II 001. 整数除法
+
+  > 类似题目 [29. 两数相除](https://leetcode.cn/problems/divide-two-integers/)
+
+* \371. 两整数之和
 
 ### 洗牌算法
 
