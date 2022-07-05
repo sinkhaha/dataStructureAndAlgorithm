@@ -637,6 +637,8 @@
 
 * 72、[113. 路径总和 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//72_pathSum_113.md) `中等` `深度优先搜索`
 
+  > 类似题目 [剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
+
 * 73、[1255. 得分最高的单词集合](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//73_maxScoreWords_1255.md) `困难` `回溯`
 
 * 74、[301. 删除无效的括号](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//74_removeInvalidParentheses_301.md) `困难` `bfs`

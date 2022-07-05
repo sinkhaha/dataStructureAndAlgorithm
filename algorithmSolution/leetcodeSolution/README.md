@@ -7,6 +7,7 @@
 * \189. 轮转数组
 * \118. 杨辉三角
 * 剑指 Offer 61. 扑克牌中的顺子
+* 剑指 Offer 53 - II. 0～n-1中缺失的数字
 
 ### 差分数组
 
@@ -33,7 +34,11 @@
 
 * [160. 相交链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/getIntersectionNode_160.js)
 
-  > 类似题目 [剑指 Offer II 023. 两个链表的第一个重合节点](https://leetcode.cn/problems/3u1WK4/)
+  > 类似题目
+  >
+  >  [剑指 Offer II 023. 两个链表的第一个重合节点](https://leetcode.cn/problems/3u1WK4/)
+  >
+  > [剑指 Offer 52. 两个链表的第一个公共节点](https://leetcode.cn/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 
 * [206. 反转链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/reverseList_206.js)
 
@@ -120,6 +125,18 @@
 
   > 类似题目 [445. 两数相加 II](https://leetcode.cn/problems/add-two-numbers-ii/)
 
+
+
+### 堆
+
+* 剑指 Offer 41. 数据流中的中位数
+
+  > 类似题目 [295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/)
+
+* 剑指 Offer 49. 丑数
+
+
+
 ### 哈希表
 
 * [49. 字母异位词分组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/groupAnagrams_49.js)
@@ -152,12 +169,18 @@
 
 * \217. 存在重复元素
 
+* 剑指 Offer 50. 第一个只出现一次的字符
+
+* 剑指 Offer 39. 数组中出现次数超过一半的数字
+
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
 
 * [102. 二叉树的层序遍历](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/levelOrder_102.js)
 
 * [104. 二叉树的最大深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/maxDepth_104.js)
+
+  > 类似题目 [剑指 Offer 55 - I. 二叉树的深度](https://leetcode.cn/problems/er-cha-shu-de-shen-du-lcof/)
 
 * [111. 二叉树的最小深度](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/minDepth_111.js)
 
@@ -205,6 +228,12 @@
 
 * 剑指 Offer 54. 二叉搜索树的第k大节点
 
+* 剑指 Offer 36. 二叉搜索树与双向链表
+
+* 剑指 Offer 33. 二叉搜索树的后序遍历序列
+
+* 剑指 Offer 26. 树的子结构
+
 
 
 ### 拓扑排序
@@ -245,6 +274,7 @@
 * 剑指 Offer II 058. 日程表
 * 剑指 Offer II 069. 山峰数组的顶部
 * \29. 两数相除
+* 剑指 Offer 53 - I. 在排序数组中查找数字 I
 
 
 ### 排序
@@ -257,6 +287,8 @@
 * 剑指 Offer II 034. 外星语言是否排序
 * \324. 摆动排序 II
 * 剑指 Offer 51. 数组中的逆序对
+* 剑指 Offer 45. 把数组排成最小的数
+* 面试题40. 最小的k个数
 
 ### 递归-分治
 
@@ -378,6 +410,10 @@
 
 * 剑指 Offer 60. n个骰子的点数
 
+* 剑指 Offer 46. 把数字翻译成字符串
+
+* 剑指 Offer 42. 连续子数组的最大和
+
 
 
 ### 搜索
@@ -419,6 +455,8 @@
 * 剑指 Offer II 086. 分割回文子字符串
 
 * 剑指 Offer II 084. 含有重复元素集合的全排列 
+
+* 剑指 Offer 38. 字符串的排列
 
   
 
@@ -477,7 +515,11 @@
 
 * [3. 无重复字符的最长子串](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/lengthOfLongestSubstring_3.js)
   
-  > 类似题目 [剑指 Offer II 016. 不含重复字符的最长子字符串](https://leetcode.cn/problems/wtcaE1/)
+  > 类似题目
+  >
+  >  [剑指 Offer II 016. 不含重复字符的最长子字符串](https://leetcode.cn/problems/wtcaE1/)
+  >
+  > [剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
   
 * [76. 最小覆盖子串](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/minWindow_76.js)
   
@@ -584,6 +626,7 @@
 * \412. Fizz Buzz
 * 剑指 Offer 62. 圆圈中最后剩下的数字
 * 剑指 Offer 43. 1～n 整数中 1 出现的次数
+* 剑指 Offer 44. 数字序列中某一位的数字
 
 
 
