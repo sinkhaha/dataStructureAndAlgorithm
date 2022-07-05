@@ -1,10 +1,11 @@
 ## leetcode相关题目题解-js版
 ### 数组
 * [442.数组中重复的数据](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/findDuplicates_442.js)
-
 * [448. 找到所有数组中消失的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/findDisappearedNumbers_448.js)
-
 * [645. 错误的集合](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/findErrorNums_645.js)
+* \289. 生命游戏
+* \189. 轮转数组
+* \118. 杨辉三角
 
 ### 差分数组
 
@@ -52,6 +53,10 @@
 * 剑指 Offer II 026. 重排链表
 
   > 类似题目 [143. 重排链表](https://leetcode.cn/problems/reorder-list/)
+  
+* \138. 复制带随机指针的链表
+
+  > 类似题目 [剑指 Offer 35. 复杂链表的复制](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
 
 ### 队列
 * [239 滑动窗口最大值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/maxSlidingWindow_239.js)
@@ -71,10 +76,9 @@
 **计算器**
 
 * [带括号和加减乘除的计算器](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/%E8%AE%A1%E7%AE%97%E5%99%A8/calculateComplex.js)
-
 * [面试题 16.26. 计算器](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/%E8%AE%A1%E7%AE%97%E5%99%A8/calculate_16.26.js)
-
 * [224. 基本计算器](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/%E8%AE%A1%E7%AE%97%E5%99%A8/calculate_224.js)
+* \227. 基本计算器 II
 
 ---
 * [20. 有效的括号](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%88/isValid_20.js)
@@ -127,6 +131,12 @@
   
 *  \41. 缺失的第一个正数
 
+* \202. 快乐数
+
+* \73. 矩阵置零
+
+* \13. 罗马数字转整数
+
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
 
@@ -173,8 +183,14 @@
 ### 拓扑排序
 
 * 剑指 Offer II 115. 重建序列
+
 * 剑指 Offer II 113. 课程顺序
+
 * 剑指 Offer II 111. 计算除法
+
+* \210. 课程表 II
+
+  > 类似题目 [207. 课程表](https://leetcode.cn/problems/course-schedule/)
 
 
 
@@ -201,6 +217,7 @@
 * [1011. 在 D 天内送达包裹的能力](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/shipWithinDays_1011.js)
 * 剑指 Offer II 058. 日程表
 * 剑指 Offer II 069. 山峰数组的顶部
+* \29. 两数相除
 
 
 ### 排序
@@ -323,6 +340,10 @@
   
 * \44. 通配符匹配
 
+* \131. 分割回文串
+
+* \91. 解码方法
+
 
 
 ### 搜索
@@ -383,6 +404,8 @@
   
 * \341. 扁平化嵌套列表迭代器
 
+* \130. 被围绕的区域
+
 
 
 ##### 广度优先搜索 bfs
@@ -412,6 +435,8 @@
 * [986. 区间列表的交集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/intervalIntersection_986.js)
 
 * \334. 递增的三元子序列
+
+* \134. 加油站
 
 
 ### 滑动窗口
@@ -512,6 +537,8 @@
 * [372. 超级次方](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/superPow_372.js)
 * [793. 阶乘函数后K个零](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/preimageSizeFZF_793.js)
 * \326. 3 的幂
+* \166. 分数到小数
+* \171. Excel 表列序号
 
 ### 位运算
 
@@ -557,6 +584,8 @@
 
 * \371. 两整数之和
 
+* \190. 颠倒二进制位
+
 ### 洗牌算法
 
 * [384. 打乱数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%B4%97%E7%89%8C%E7%AE%97%E6%B3%95/shuffle_384.js)
@@ -575,6 +604,7 @@
 ---
 
 * [43. 字符串相乘](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%AD%97%E7%AC%A6%E4%B8%B2/multiply_43.js)
+* \38. 外观数列
 
 ### floodFill算法
 
