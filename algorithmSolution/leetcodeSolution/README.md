@@ -79,6 +79,8 @@
 
 * 剑指 Offer 18. 删除链表的节点
 
+* 剑指 Offer 06. 从尾到头打印链表
+
 ### 队列
 * [239 滑动窗口最大值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/maxSlidingWindow_239.js)
 
@@ -144,6 +146,8 @@
 
 * \739. 每日温度
 
+* \84. 柱状图中最大的矩形
+
 
 
 ### 堆
@@ -191,6 +195,10 @@
 * 剑指 Offer 50. 第一个只出现一次的字符
 
 * 剑指 Offer 39. 数组中出现次数超过一半的数字
+
+* \128. 最长连续序列
+
+* 剑指 Offer 03. 数组中重复的数字
 
 ### 树
 * [98. 验证二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/isValidBST_98.js)
@@ -273,6 +281,10 @@
 
 * \543. 二叉树的直径
 
+* \101. 对称二叉树
+
+* \96. 不同的二叉搜索树
+
 
 
 ### 拓扑排序
@@ -325,6 +337,10 @@
   > 类似题目 [154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 * \240. 搜索二维矩阵 II
+
+* \34. 在排序数组中查找元素的第一个和最后一个位置
+
+* \33. 搜索旋转排序数组
 
 
 ### 排序
@@ -387,6 +403,8 @@
 * [714. 买卖股票的最佳时机含手续费](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/maxProfit_714.js)
 
 ---
+##### 其他
+
 * [0-1背包问题](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/zeroOneBag.js)
 
 * [5. 最长回文子串](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/longestPalindrome_5.js)
@@ -477,6 +495,14 @@
 
 * \279. 完全平方数
 
+* 剑指 Offer 10- I. 斐波那契数列
+
+* \64. 最小路径和
+
+* \62. 不同路径
+
+* \53. 最大子数组和
+
 
 
 ### 搜索
@@ -521,6 +547,8 @@
 
 * 剑指 Offer 38. 字符串的排列
 
+* \17. 电话号码的字母组合
+
   
 
 ---
@@ -542,6 +570,8 @@
 * \130. 被围绕的区域
 
 * 剑指 Offer 13. 机器人的运动范围
+
+* \139. 单词拆分
 
 
 
@@ -643,9 +673,20 @@
 * \581. 最短无序连续子数组
 
 * \287. 寻找重复数
+
+* \283. 移动零
+
+* \27. 移除元素
+
+* \75. 颜色分类
+
+* \31. 下一个排列
+
+* \11. 盛最多水的容器
 ### 计数法
 
 * [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid_921.js)
+* \32. 最长有效括号
 
 ### 两/三/四数之和
 
@@ -716,6 +757,8 @@
 * 剑指 Offer 29. 顺时针打印矩阵
 
   > 类似题目 [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
+
+* \48. 旋转图像
 
 
 
@@ -812,6 +855,10 @@
 * 剑指 Offer 58 - I. 翻转单词顺序
 
 * 剑指 Offer 58 - II. 左旋转字符串
+
+* \58. 最后一个单词的长度
+
+* 剑指 Offer 05. 替换空格
 
 ### floodFill算法
 
