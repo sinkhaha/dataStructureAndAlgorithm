@@ -431,10 +431,9 @@
 
 * 20、[347. 前 K 个高频元素](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//20_topKFrequent_347.md) `中等` `哈希表` `大顶堆`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 060. 出现频率最高的 k 个数字](https://leetcode.cn/problems/g5c51o/)
   >
-  > [剑指 Offer II 060. 出现频率最高的 k 个数字](https://leetcode.cn/problems/g5c51o/)
-
+  
 * 21、[447. 回旋镖的数量](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//21_numberOfBoomerangs_447.md) `中等` `哈希表` `数学组合` 
 
 * 22、[3. 无重复字符的最长子串](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//22_lengthOfLongestSubstring_3.md) `中等` `哈希表` `滑动窗口`
@@ -446,10 +445,9 @@
 ### 5. 双指针
 * 25、[35. 搜索插入位置](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//25_searchInsert_35.md) `简单` `二分查找` `双指针`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 068. 查找插入位置](https://leetcode.cn/problems/N6YdxV/)
   >
-  > [剑指 Offer II 068. 查找插入位置](https://leetcode.cn/problems/N6YdxV/)
-
+  
 * 26、[74. 搜索二维矩阵](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//26_searchMatrix_74.md) `中等` `二分查找` `双指针` `二维数组映射成一维数组`
 
 * 27、[26. 删除排序数组中的重复项](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//27_removeDuplicates_26.md) `简单` `双指针`
@@ -481,9 +479,8 @@
 #### 33、位运算系列
 * [78. 子集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//33_%E4%BD%8D%E8%BF%90%E7%AE%97%E7%B3%BB%E5%88%97/1_subsets_78.md)  `中等` `回溯` `位运算`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 079. 所有子集](https://leetcode.cn/problems/TVdhkn/)
   >
-  > [剑指 Offer II 079. 所有子集](https://leetcode.cn/problems/TVdhkn/)
 
 #### 34、动态规划
 * [70. 爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//34_%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%B3%BB%E5%88%97/1_climbStairs_70.md) `简单` `动态规划` `递归`
@@ -491,9 +488,8 @@
 
 * 62.不同路径
   
-  > 类似题目
+  > 类似题目 [剑指 Offer II 098. 路径的数目](https://leetcode.cn/problems/2AoeFn/)
   >
-  > [剑指 Offer II 098. 路径的数目](https://leetcode.cn/problems/2AoeFn/)
   
 * 121.买卖股票的最佳时机
 
@@ -544,10 +540,9 @@
 
 * 39、[677. 键值映射](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//39_MapSum_677.md) `中等` `前缀树` `哈希表`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 066. 单词之和](https://leetcode.cn/problems/z1R5dt/)
   >
-  > [剑指 Offer II 066. 单词之和](https://leetcode.cn/problems/z1R5dt/)
-
+  
 * 40、[面试题 17.17. 多次搜索](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//40_multiSearch_%E9%9D%A2%E8%AF%95%E9%A2%9817.17.md) `中等` `前缀树`
 ### 8. 并查集
 * 41、[547. 朋友圈](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//41_findCircleNum_547.md) `中等` `并查集`
@@ -562,31 +557,27 @@
 ### 10. 剪枝
 * 45、[814. 二叉树剪枝](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//45_pruneTree_814.md) `中等` `减枝`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 047. 二叉树剪枝](https://leetcode.cn/problems/pOCWxh/)
   >
-  > [剑指 Offer II 047. 二叉树剪枝](https://leetcode.cn/problems/pOCWxh/)
-
+  
 * 46、[39. 组合总和(元素可以重复选)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//46_combinationSum_39.md) `中等` `回溯` `减枝`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 081. 允许重复选择元素的组合](https://leetcode.cn/problems/Ygoe9J/)
   >
-  > [剑指 Offer II 081. 允许重复选择元素的组合](https://leetcode.cn/problems/Ygoe9J/)
-
+  
 * 47、[40. 组合总和 II(元素只能选一次)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//47_combinationSum2_40.md) `中等` `回溯` `减枝`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 082. 含有重复元素集合的组合](https://leetcode.cn/problems/4sjJUc/)
   >
-  > [剑指 Offer II 082. 含有重复元素集合的组合](https://leetcode.cn/problems/4sjJUc/)
 
 ### 11. RK 和 KMP
 * 48/49、[28. 实现 strStr()](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//48_49_strStr_28.md) `简单` `RK` `KMP`
 ### 12. 堆
 * 50、[215. 数组中的第K个最大元素](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//50_findKthLargest_215.md) `中等` `小顶堆`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 076. 数组中的第 k 大的数字](https://leetcode.cn/problems/xx4gT2/)
   >
-  >  [剑指 Offer II 076. 数组中的第 k 大的数字](https://leetcode.cn/problems/xx4gT2/)
-
+  
 * 51、[1046. 最后一块石头的重量](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//51_lastStoneWeight_1046.md) `简单` `大顶堆`
 
 * 52、[23. 合并K个升序链表(补充合并k个有序数组)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//52_mergeKLists_23.md) `困难` `小顶堆` `合并k个有序数组`  `合并k个有序数组`
@@ -601,10 +592,9 @@
 ### 13. 二分
 * 56、[69. x 的平方根](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//56_mySqrt_69.md) `简单` `二分查找`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 072. 求平方根](https://leetcode.cn/problems/jJ0w9p/)
   >
-  >  [剑指 Offer II 072. 求平方根](https://leetcode.cn/problems/jJ0w9p/)
-
+  
 * 57、[278. 第一个错误的版本](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//57_isBadVersion_278.md) `简单` `二分查找`
 
 * 58、[162. 寻找峰值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//58_findPeakElement_162.md) `中等` `二分查找`
@@ -646,29 +636,25 @@
 ### 17. 背包问题
 * 75、[416. 分割等和子集](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//75_canPartition_416.md) `中等` `动态规划` `0-1背包`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 101. 分割等和子集](https://leetcode.cn/problems/NUPfPr/)
   >
-  > [剑指 Offer II 101. 分割等和子集](https://leetcode.cn/problems/NUPfPr/)
-
+  
 * 76、[494. 目标和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//76_findTargetSumWays_494.md) `中等` `动态规划` `0-1背包`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 102. 加减的目标值](https://leetcode.cn/problems/YaVDxD/)
   >
-  > [剑指 Offer II 102. 加减的目标值](https://leetcode.cn/problems/YaVDxD/)
-
+  
 * 77、[322. 零钱兑换(返回最少硬币数)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//77_coinChange_322.md) `中等` `动态规划` `0-1背包`
 
-  > 类似题目
+  > 类似题目 [剑指 Offer II 103. 最少的硬币数目](https://leetcode.cn/problems/gaM7Ch/)
   >
-  > [剑指 Offer II 103. 最少的硬币数目](https://leetcode.cn/problems/gaM7Ch/)
-
+  
 * 78、[518. 零钱兑换 II(返回组合数)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//78_change_518.md) `中等` `动态规划` `完全背包`
 ### 18. 动态规划
 * 79、[746. 使用最小花费爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//79_minCostClimbingStairs_746.md) `简单` `动态规划` 
   
-  > 类似题目
+  > 类似题目 [剑指 Offer II 088. 爬楼梯的最少成本](https://leetcode.cn/problems/GzCJIP/)
   >
-  > [剑指 Offer II 088. 爬楼梯的最少成本](https://leetcode.cn/problems/GzCJIP/)
   
 * 79_2、加餐 [铺瓷砖](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//79_2_ceramic.md)
   
