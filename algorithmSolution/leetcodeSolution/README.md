@@ -42,7 +42,11 @@
 
 * [206. 反转链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/reverseList_206.js)
 
-  > 类似题目 [剑指 Offer II 024. 反转链表](https://leetcode.cn/problems/UHnkqh/)
+  > 类似题目 
+  >
+  > [剑指 Offer II 024. 反转链表](https://leetcode.cn/problems/UHnkqh/)
+  >
+  > [剑指 Offer 24. 反转链表](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/)
 
 * [234. 回文链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/isPalindrome_234.js)
 
@@ -51,6 +55,8 @@
 * [876. 链表的中间结点](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/middleNode_876.js)
 
 * [21. 合并两个有序链表](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%93%BE%E8%A1%A8/mergeTwoLists_21.js)
+
+  > 类似题目 [剑指 Offer 25. 合并两个排序的链表](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)
 
 * 剑指 Offer II 077. 链表排序
 
@@ -67,6 +73,10 @@
 * \328. 奇偶链表
 
 * \237. 删除链表中的节点
+
+* 剑指 Offer 22. 链表中倒数第k个节点
+
+* 剑指 Offer 18. 删除链表的节点
 
 ### 队列
 * [239 滑动窗口最大值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/maxSlidingWindow_239.js)
@@ -124,6 +134,12 @@
 * 剑指 Offer II 025. 链表中的两数相加
 
   > 类似题目 [445. 两数相加 II](https://leetcode.cn/problems/add-two-numbers-ii/)
+  
+* 剑指 Offer 31. 栈的压入、弹出序列
+
+* \155. 最小栈
+
+  > 类似题目 [剑指 Offer 30. 包含min函数的栈](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
 
 
 
@@ -198,6 +214,8 @@
 
 * [226. 翻转二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/invertTree_226.js)
 
+  > 类似题目 [剑指 Offer 27. 二叉树的镜像](https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/)
+
 * [235. 二叉搜索树的最近公共祖先](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/lowestCommonAncestor_235.js)
 
   > 类似题目 [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
@@ -233,6 +251,14 @@
 * 剑指 Offer 33. 二叉搜索树的后序遍历序列
 
 * 剑指 Offer 26. 树的子结构
+
+* 剑指 Offer 32 - III. 从上到下打印二叉树 III
+
+* 剑指 Offer 32 - II. 从上到下打印二叉树 II
+
+* 剑指 Offer 32 - I. 从上到下打印二叉树
+
+* 剑指 Offer 28. 对称的二叉树
 
 
 
@@ -293,6 +319,9 @@
 ### 递归-分治
 
 * [50. Pow(x, n)](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%80%92%E5%BD%92-%E5%88%86%E6%B2%BB/myPow_50.js)
+
+  > 类似题目 [剑指 Offer 16. 数值的整数次方](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
+
 * \395. 至少有 K 个重复字符的最长子串
 
 ### 动态规划
@@ -414,6 +443,8 @@
 
 * 剑指 Offer 42. 连续子数组的最大和
 
+* 剑指 Offer 14- I. 剪绳子
+
 
 
 ### 搜索
@@ -478,6 +509,8 @@
 
 * \130. 被围绕的区域
 
+* 剑指 Offer 13. 机器人的运动范围
+
 
 
 ##### 广度优先搜索 bfs
@@ -509,6 +542,8 @@
 * \334. 递增的三元子序列
 
 * \134. 加油站
+
+* 剑指 Offer 14- II. 剪绳子 II
 
 
 ### 滑动窗口
@@ -569,6 +604,8 @@
 * 剑指 Offer 57 - II. 和为s的连续正数序列
 
 * 剑指 Offer 57. 和为s的两个数字
+
+* 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面
 ### 计数法
 
 * [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid_921.js)
@@ -627,13 +664,19 @@
 * 剑指 Offer 62. 圆圈中最后剩下的数字
 * 剑指 Offer 43. 1～n 整数中 1 出现的次数
 * 剑指 Offer 44. 数字序列中某一位的数字
+* 剑指 Offer 17. 打印从1到最大的n位数
 
 
 
 ### 模拟-矩阵
 
 * \54. 螺旋矩阵
+
 * \59. 螺旋矩阵 II
+
+* 剑指 Offer 29. 顺时针打印矩阵
+
+  > 类似题目 [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
 
 
 
@@ -644,6 +687,8 @@
 * [136. 只出现一次的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/singleNumber_136.js)
 
 * [191.  位1的个数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/hammingWeight_191.js)
+
+  > 类似题目 [剑指 Offer 15. 二进制中1的个数](https://leetcode.cn/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 
 * [231. 2的幂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/isPowerOfTwo_231.js)
 
