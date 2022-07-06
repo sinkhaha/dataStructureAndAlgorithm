@@ -8,6 +8,7 @@
 * \118. 杨辉三角
 * 剑指 Offer 61. 扑克牌中的顺子
 * 剑指 Offer 53 - II. 0～n-1中缺失的数字
+* \621. 任务调度器
 
 ### 差分数组
 
@@ -141,6 +142,8 @@
 
   > 类似题目 [剑指 Offer 30. 包含min函数的栈](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof/)
 
+* \739. 每日温度
+
 
 
 ### 堆
@@ -202,6 +205,8 @@
 
 * [105. 从前序与中序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/buildTree_105.js)
 
+  > 类似题目 [剑指 Offer 07. 重建二叉树](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/)
+
 * [106. 从中序与后序遍历序列构造二叉树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/buildTree_106.js)
 
 * [109. 有序链表转换二叉搜索树](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A0%91/sortedListToBST_109.js)
@@ -260,6 +265,14 @@
 
 * 剑指 Offer 28. 对称的二叉树
 
+* \437. 路径总和 III
+
+* \538. 把二叉搜索树转换为累加树
+
+* \617. 合并二叉树
+
+* \543. 二叉树的直径
+
 
 
 ### 拓扑排序
@@ -284,23 +297,34 @@
   >
   > [剑指 Offer II 062. 实现前缀树](https://leetcode.cn/problems/QC3q1f/)
 
-* [79. 单词搜索](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/exist_79.js)
+* [79. 单词搜索 ](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/exist_79.js) `回溯`
+
+  > 类似题目 [剑指 Offer 12. 矩阵中的路径](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 
 * [212. 单词搜索 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/Trie%E5%AD%97%E5%85%B8%E6%A0%91/findWords_212.js)
-
 * 剑指 Offer II 065. 最短的单词编码
-
 * 剑指 Offer II 063. 替换单词
 
 
 ### 二分查找
 
 * [875. 爱吃香蕉的珂珂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/minEatingSpeed_875.js)
+
 * [1011. 在 D 天内送达包裹的能力](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/shipWithinDays_1011.js)
+
 * 剑指 Offer II 058. 日程表
+
 * 剑指 Offer II 069. 山峰数组的顶部
+
 * \29. 两数相除
+
 * 剑指 Offer 53 - I. 在排序数组中查找数字 I
+
+* 剑指 Offer 11. 旋转数组的最小数字
+
+  > 类似题目 [154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/)
+
+* \240. 搜索二维矩阵 II
 
 
 ### 排序
@@ -315,6 +339,8 @@
 * 剑指 Offer 51. 数组中的逆序对
 * 剑指 Offer 45. 把数组排成最小的数
 * 面试题40. 最小的k个数
+* \406. 根据身高重建队列
+* \148. 排序链表
 
 ### 递归-分治
 
@@ -370,6 +396,8 @@
   > 类似题目 [剑指 Offer 19. 正则表达式匹配](https://leetcode.cn/problems/zheng-ze-biao-da-shi-pi-pei-lcof/)
 
 * [70. 爬楼梯](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/climbStairs_70.js)
+
+  > 类似题目 [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
 
 * [72. 编辑距离](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/minDistance_72.js)
 
@@ -445,6 +473,10 @@
 
 * 剑指 Offer 14- I. 剪绳子
 
+* \221. 最大正方形
+
+* \279. 完全平方数
+
 
 
 ### 搜索
@@ -519,6 +551,7 @@
 * 剑指 Offer II 046. 二叉树的右侧视图
 * 剑指 Offer II 044. 二叉树每层的最大值
 * 剑指 Offer II 043. 往完全二叉树添加节点
+* \399. 除法求值
 
 
 
@@ -606,6 +639,10 @@
 * 剑指 Offer 57. 和为s的两个数字
 
 * 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面
+
+* \581. 最短无序连续子数组
+
+* \287. 寻找重复数
 ### 计数法
 
 * [921. 使括号有效的最少添加](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E8%AE%A1%E6%95%B0%E6%B3%95/minAddToMakeValid_921.js)
@@ -650,6 +687,8 @@
   > 类似题目 [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
   
 * 剑指 Offer 66. 构建乘积数组
+
+* \238. 除自身以外数组的乘积
 
 ### 数学
 
