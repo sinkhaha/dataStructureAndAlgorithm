@@ -377,8 +377,8 @@
 
 ---
 
-# 二、91学算法
-> 参与lucifer的91天学算法第2期题解
+# 二、91学算法(markown格式)
+> 参与lucifer的91天学算法第2期的全部题目题解
 ## 基础篇
 ### 1. 数组/栈/队列
 
@@ -506,7 +506,6 @@
 #### 35、有效的括号
 * [20. 有效的括号](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//35_%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7/1_isValid_20.md) `简单` `栈`
 
-* 32.最长有效括号
 
 #### 36、设计系列
 * [剑指 Offer 09. 用两个栈实现队列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//36_%E8%AE%BE%E8%AE%A1%E7%B3%BB%E5%88%97/%E5%89%91%E6%8C%8709_CQueue.md) `简单` `栈`
@@ -520,15 +519,9 @@
 * [网易面试题](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//37_%E5%89%8D%E7%BC%80%E5%92%8C%E7%B3%BB%E5%88%97/1_%E7%BD%91%E6%98%93%E9%9D%A2%E8%AF%95%E9%A2%98.md)
 
 * [560. 和为K的子数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//37_%E5%89%8D%E7%BC%80%E5%92%8C%E7%B3%BB%E5%88%97/2_subarraySum_560.md) `中等` `前缀和` 
-
 * 371.每个元音包含偶数次的最长子字符串
-
-* 308
-
 * 525、 连续数组
 * 1139、最大的以 1 为边界的正方形
-* 1176
-* 1182
 * 1277、统计全为 1 的正方形子矩阵
 * 1292、元素和小于等于阈值的正方形的最大边长
 * 1314、矩阵区域和
