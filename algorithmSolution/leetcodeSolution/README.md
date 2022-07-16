@@ -587,7 +587,7 @@
 
 ### 前缀和
 
-* \238. 除自身以外数组的乘积
+* [238. 除自身以外数组的乘积](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/productExceptSelf_238.js)
 
 * [724. 寻找数组的中心下标](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/pivotIndex_724.js)
 
@@ -597,44 +597,44 @@
 
   > 类似题目 [剑指 Offer II 010. 和为 k 的子数组](https://leetcode.cn/problems/QTMn0o/)
 
-* 剑指 Offer 66. 构建乘积数组
+* [剑指 Offer 66. 构建乘积数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/constructArr_%E5%89%91%E6%8C%87_66.js)
 
-* 剑指 Offer II 011. 0 和 1 个数相同的子数组
+* [剑指 Offer II 011. 0 和 1 个数相同的子数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/findMaxLength_%E5%89%91%E6%8C%87II_11.js)
 
   > 类似题目 [525. 连续数组](https://leetcode.cn/problems/contiguous-array/)
 
-* 剑指 Offer II 013. 二维子矩阵的和
+* [剑指 Offer II 013. 二维子矩阵的和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/NumMatrix_%E5%89%91%E6%8C%87II_13.js)
 
-* 剑指 Offer II 071. 按权重生成随机数
+* [剑指 Offer II 071. 按权重生成随机数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%89%8D%E7%BC%80%E5%92%8C/Solution_%E5%89%91%E6%8C%87II_71.js)
 
   
 
 ### 数学
 
-* \166. 分数到小数
+* [166. 分数到小数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/fractionToDecimal_166.js)
 * [ 172. 阶乘后的零](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/trailingZeroes_172.js)
-* \171. Excel 表列序号
+* [171. Excel 表列序号](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/titleToNumber_171.js)
 * [204. 计算质数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/countPrimes_204.js)
-* \326. 3 的幂
+* [326. 3 的幂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/isPowerOfThree_326.js)
 * [372. 超级次方](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/superPow_372.js)
-* \412. Fizz Buzz
+* [412. Fizz Buzz](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/fizzBuzz_412.js)
 * [793. 阶乘函数后K个零](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/preimageSizeFZF_793.js)
-* 剑指 Offer 17. 打印从1到最大的n位数
-* 剑指 Offer 62. 圆圈中最后剩下的数字
-* 剑指 Offer 43. 1～n 整数中 1 出现的次数
-* 剑指 Offer 44. 数字序列中某一位的数字
+* [剑指 Offer 17. 打印从1到最大的n位数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/printNumbers_%E5%89%91%E6%8C%87_17.js)
+* [剑指 Offer 62. 圆圈中最后剩下的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/lastRemaining_%E5%89%91%E6%8C%87_62.js)
+* [剑指 Offer 43. 1～n 整数中 1 出现的次数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/countDigitOne_%E5%89%91%E6%8C%87_43.js)
+* [剑指 Offer 44. 数字序列中某一位的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E5%AD%A6/findNthDigit_%E5%89%91%E6%8C%87_44.js)
 
 
 
 ### 模拟-矩阵
 
-* \48. 旋转图像
+* [48. 旋转图像](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A8%A1%E6%8B%9F/rotate_48.js)
 
-* \54. 螺旋矩阵
+* [54. 螺旋矩阵](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A8%A1%E6%8B%9F/spiralOrder_54.js)
 
-* \59. 螺旋矩阵 II
+* [59. 螺旋矩阵 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A8%A1%E6%8B%9F/generateMatrix_59.js)
 
-* 剑指 Offer 29. 顺时针打印矩阵
+* [剑指 Offer 29. 顺时针打印矩阵](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%A8%A1%E6%8B%9F/spiralOrder_%E5%89%91%E6%8C%87_29.js)
 
   > 类似题目 [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/)
 
@@ -644,11 +644,11 @@
 
 * [个别位操作](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/%E4%B8%AA%E5%88%AB%E4%BD%8D%E6%93%8D%E4%BD%9C.js)
 
-* \89. 格雷编码
+* [89. 格雷编码](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/grayCode_89.js)
 
 * [136. 只出现一次的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/singleNumber_136.js)
 
-* \190. 颠倒二进制位
+* [190. 颠倒二进制位](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/reverseBits_190.js)
 
 * [191.  位1的个数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/hammingWeight_191.js)
 
@@ -664,7 +664,7 @@
 
 * [342. 4的幂](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/isPowerOfFour_342.js)
 
-* \371. 两整数之和
+* [371. 两整数之和](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/getSum_371.js)
 
 * [389. 找不同](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/findTheDifference_389.js)
 
@@ -676,15 +676,15 @@
 
 * [762. 二进制表示中质数个计算置位](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/countPrimeSetBits_762.js)
 
-* 剑指 Offer 56 - I. 数组中数字出现的次数
+* [剑指 Offer 56 - I. 数组中数字出现的次数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/singleNumbers_%E5%89%91%E6%8C%87_56_I.js)
 
-* 剑指 Offer 56 - II. 数组中数字出现的次数 II
+* [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/singleNumber_%E5%89%91%E6%8C%87_56_II.js)
 
-* 剑指 Offer 64. 求1+2+…+n
+* [剑指 Offer 64. 求1+2+…+n](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/sumNums_%E5%89%91%E6%8C%87_64.js)
 
-* 剑指 Offer 65. 不用加减乘除做加法
+* [剑指 Offer 65. 不用加减乘除做加法](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/add_%E5%89%91%E6%8C%87_65.js)
 
-* 剑指 Offer II 001. 整数除法
+* [剑指 Offer II 001. 整数除法](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E4%BD%8D%E6%93%8D%E4%BD%9C/divide_%E5%89%91%E6%8C%87II_1.js)
 
   > 类似题目 [29. 两数相除](https://leetcode.cn/problems/divide-two-integers/)
 
