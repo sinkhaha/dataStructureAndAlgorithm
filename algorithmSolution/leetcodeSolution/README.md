@@ -137,7 +137,7 @@
 
 ### 队列
 
-* 剑指 Offer II 041. 滑动窗口的平均值
+* [剑指 Offer II 041. 滑动窗口的平均值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/MovingAverage_%E5%89%91%E6%8C%87II_41.js)
 * [剑指 Offer II 042. 最近请求次数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/RecentCounter_%E5%89%91%E6%8C%87II_42.js)
 * [剑指 Offer 59 - II. 队列的最大值](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E9%98%9F%E5%88%97/MaxQueue_%E5%89%91%E6%8C%87_59_II.js)
 
@@ -151,52 +151,52 @@
   >
   > [剑指 Offer II 059. 数据流的第 K 大数值](https://leetcode.cn/problems/jBjn9C/)
 
-* 剑指 Offer 41. 数据流中的中位数
+* [剑指 Offer 41. 数据流中的中位数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%A0%86/MedianFinder_%E5%89%91%E6%8C%87_41.java)
 
   > 类似题目 [295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/)
 
-* 剑指 Offer 49. 丑数
+* [剑指 Offer 49. 丑数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%A0%86/nthUglyNumber_%E5%89%91%E6%8C%87_49.js)
 
 
 
 ### 哈希表
 
-* \13. 罗马数字转整数
-* \41. 缺失的第一个正数
+* [13. 罗马数字转整数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/romanToInt_13.js)
+* [41. 缺失的第一个正数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/firstMissingPositive_41.js)
 
 * [49. 字母异位词分组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/groupAnagrams_49.js)
 
   > 类似题目 [剑指 Offer II 033. 变位词组](https://leetcode.cn/problems/sfvd7V/)
 
-* \73. 矩阵置零
+* [73. 矩阵置零](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/setZeroes_73.js)
 
-* \128. 最长连续序列
+* [128. 最长连续序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/longestConsecutive_128.js)
 
-* \202. 快乐数
+* [202. 快乐数](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/isHappy_202.js)
 
-* \217. 存在重复元素
+* [217. 存在重复元素](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/containsDuplicate_217.js)
 
 * [242. 有效的字母异位词](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/isAnagram_242.js)
 
   > 类似题目 [剑指 Offer II 032. 有效的变位词](https://leetcode.cn/problems/dKk3P7/)
 
-* \350. 两个数组的交集 II
+* [350. 两个数组的交集 II](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/intersect_350.js)
 
-* \380. O(1) 时间插入、删除和获取随机元素
+* [380. O(1) 时间插入、删除和获取随机元素](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/RandomizedSet_380.js)
 
   > 类似题目 [剑指 Offer II 030. 插入、删除和随机访问都是 O(1) 的容器](https://leetcode.cn/problems/FortPu/)
 
-* \387. 字符串中的第一个唯一字符
+* [387. 字符串中的第一个唯一字符](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/firstUniqChar_387.js)
 
-* 剑指 Offer 03. 数组中重复的数字
+* [剑指 Offer 03. 数组中重复的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/findRepeatNumber_%E5%89%91%E6%8C%87_3.js)
 
-* 剑指 Offer 39. 数组中出现次数超过一半的数字
+* [剑指 Offer 39. 数组中出现次数超过一半的数字](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/majorityElement_%E5%89%91%E6%8C%87_39.js)
 
-* 剑指 Offer 50. 第一个只出现一次的字符
+* [剑指 Offer 50. 第一个只出现一次的字符](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/firstUniqChar_%E5%89%91%E6%8C%87_50.js)
 
-* 剑指 Offer II 119. 最长连续序列
+* [剑指 Offer II 119. 最长连续序列](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/longestConsecutive_%E5%89%91%E6%8C%87II_119.js)
 
-* 剑指 Offer II 064. 神奇的字典
+* [剑指 Offer II 064. 神奇的字典](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E5%93%88%E5%B8%8C%E8%A1%A8/MagicDictionary_%E5%89%91%E6%8C%87II_64.js)
 
   
 
