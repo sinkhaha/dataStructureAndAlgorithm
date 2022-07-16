@@ -1,4 +1,4 @@
-## leetcode相关题目题解-js版
+## leetcode题目题解-js版
 ### 数组
 * [118. 杨辉三角](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/generate_118.js)
 * [189. 轮转数组](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/leetcodeSolution/%E6%95%B0%E7%BB%84/rotate_189.js)
