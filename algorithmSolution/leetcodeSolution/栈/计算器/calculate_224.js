@@ -44,67 +44,79 @@
  * 时间复杂度：O(N)，其中 N 指的是字符串的长度。
  * 空间复杂度：O(N)，其中 N 指的是字符串的长度。
  *
- * @param {string} str
+ *
+ */
+/**
+ * @param {string} s
  * @return {number}
  */
-var calculate = function(str) {
-    let operate = 0; // 记录多位整数的和
-    let n = 0; // 记录多位整数的位(个十百)
-    const stack = [];
+var calculate = function(s) {
+    s = s.trim();
 
-    for (let i = str.length;  i > 0; i--) {
-        let ch = str[i];
-        if (ch === ' ') {
+    let stack = [];
+
+    // 整数操作数
+    let operate = 0;
+    // 整数操作数的进位
+    let n = 0;
+
+    // 逆序遍历
+    for (let i = s.length - 1; i >= 0; i--) {
+        let cur_char = s[i];
+
+        // 空格跳过
+        if (cur_char == ' ') {
             continue;
         }
-        // 是多位数整数需要计算
-        if (isInteger(+ch)) {
-            operate = Math.pow(10, n) * Number(ch) + operate;
+
+        // 计算多个字符组成的整数操作数
+        if (isDigit(cur_char)) {
+            operate = (Math.pow(10, n) * Number(cur_char)) + operate;
             n += 1;
         } else {
-            // n有值，说明有多位整数，先加入栈中
-            if (n !== 0) {
+            // 遇到非数字字符，则把操作数入栈
+            if (n != 0) {
                 stack.push(operate);
-                n = 0;
                 operate = 0;
+                n = 0;
             }
 
-            // 遇到左括号先计算括号内的表达式，再放入栈
-            if (ch === '(') {
+            // 遇到左括号，则计算括号内的子表达式的结果值，后重新入栈
+            if (cur_char == '(') {
+                // 计算括号内子表达式的值
                 let res = evaluateExpr(stack);
-                // 去掉左括号
-                stack.pop();
-                // 放入计算后的值
                 stack.push(res);
             } else {
-                // 加减号 或 右括号)
-                stack.push(ch);
+                // 右括号 或 运算符，直接入栈
+                stack.push(cur_char);
             }
         }
     }
 
-    // 最后一位(因为逆序所以此时是表达式的第一位)是多位整数
-    if (n !== 0) {
+    // 字符串左边是一个整数操作数，不是括号
+    if (n != 0) {
         stack.push(operate);
     }
 
     return evaluateExpr(stack);
+
 };
 
-/**
- * 计算括号内的整数
- * @param {*} stack 
- */
 function evaluateExpr(stack) {
    let res = 0;
-   if (stack.length !== 0) {
-       // 第1个整数操作数
-       res = +stack.pop();
+  
+   if (stack.length) {
+        // 如果是整数，当成左操作数（因为也可能是运算符）
+        let topValue = stack[stack.length - 1];
+        if (isDigit(topValue)) {
+            stack.pop();
+            res = topValue;
+        }
    }
 
-   // 栈空了 或 遇到右括号则停止计算
-   while (stack.length !== 0 && stack[stack.length - 1] !== ')') {
-       // 运算符号+或-
+   // 栈为空 或 遇到右括号则停止循环
+   while (stack.length && stack[stack.length - 1] !== ')') {
+       // 运算符号
        let sign = stack.pop();
        // 第2个整数操作数
        const num = +stack.pop();
@@ -116,12 +128,18 @@ function evaluateExpr(stack) {
            res -= num;
        }
    }
-
+  
+   // 去掉右括号
+   if (stack.length) {
+     stack.pop();  
+   }
+   
    return res;
 }
 
-function isInteger(obj) {
-    return typeof obj === 'number' && obj % 1 === 0;
+// 判断字符是否是数字
+function isDigit(c) {
+    return !isNaN(Number(c));
 }
 
 console.log(calculate("(1+(4+2)-1)")); // 6
