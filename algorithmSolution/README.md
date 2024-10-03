@@ -1022,7 +1022,7 @@
 
 * 27、[26. 删除排序数组中的重复项](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//27_removeDuplicates_26.md) `简单` `双指针`
 
-* 28、[876. 链表的中间结点](https://leetcode-cn.com/problems/middle-of-the-linked-list/) `简单` `快慢指针`
+* 28、[876. 链表的中间结点](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution/28_middleNode_876.md) `简单` `快慢指针`
 
 * 29、[1052. 爱生气的书店老板](https://github.com/sinkhaha/dataStructureAndAlgorithm/blob/master/algorithmSolution/my91algoSolution//29_maxSatisfied_1052.md) `中等` `双指针`
 
